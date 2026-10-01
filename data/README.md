@@ -6,7 +6,7 @@ Google’s public local-browser view asks for sign-in to read reviews and has no
 
 No `google-reviews.json` exists. The separate loader remains ready for verified individual reviews; none is fabricated.
 
-To use the same snapshot-based mechanism as Envision, obtain a client-authorized YardU GBP export or verified public review snapshot and YardU’s exact read/write review URLs. Add `data/google-reviews.json` only after verifying identity, current aggregate values, review attribution, observation date, and publishing permission. No API keys are needed for rendering a supplied snapshot. Refreshing it is a separate provider integration task.
+To use the snapshot-based mechanism, obtain a client-authorized YardU GBP export or verified public review snapshot and YardU’s exact read/write review URLs. Add `data/google-reviews.json` only after verifying identity, current aggregate values, review attribution, observation date, and publishing permission. No API keys are needed for rendering a supplied snapshot. Refreshing it is a separate provider integration task.
 
 Required fields:
 
@@ -23,4 +23,4 @@ Required fields:
 | `googleWriteReviewUrl` | YardU’s verified HTTPS Google write-review destination |
 | `reviews` | Nonempty array with actual `name`, `text`, and integer `rating` 1–5 |
 
-The loader rejects a different business identity, unverified source state, malformed review data, or non-Google destinations. It escapes all supplied text. It never borrows Envision’s place ID, ratings, names, text, credentials, or refresh script. No fake review fixture is shipped.
+The loader rejects a different business identity, unverified source state, malformed review data, or non-Google destinations. It escapes all supplied text. It never borrows another client’s place ID, ratings, names, text, credentials, or refresh script. No fake review fixture is shipped.

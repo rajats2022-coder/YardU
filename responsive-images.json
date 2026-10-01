@@ -236,5 +236,143 @@
         "avif": "trimming-1200.avif"
       }
     ]
+  },
+  "client-striped-lawn.webp": {
+    "default": "client-striped-lawn-1200.webp",
+    "variants": [
+      {
+        "name": "client-striped-lawn-480.webp",
+        "width": 480,
+        "height": 640,
+        "avif": "client-striped-lawn-480.avif"
+      },
+      {
+        "name": "client-striped-lawn-800.webp",
+        "width": 800,
+        "height": 1067,
+        "avif": "client-striped-lawn-800.avif"
+      },
+      {
+        "name": "client-striped-lawn-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "avif": "client-striped-lawn-1200.avif"
+      }
+    ]
+  },
+  "client-rock-bed.webp": {
+    "default": "client-rock-bed-1200.webp",
+    "variants": [
+      {
+        "name": "client-rock-bed-480.webp",
+        "width": 480,
+        "height": 640,
+        "avif": "client-rock-bed-480.avif"
+      },
+      {
+        "name": "client-rock-bed-800.webp",
+        "width": 800,
+        "height": 1067,
+        "avif": "client-rock-bed-800.avif"
+      },
+      {
+        "name": "client-rock-bed-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "avif": "client-rock-bed-1200.avif"
+      }
+    ]
+  },
+  "client-crew-customer.webp": {
+    "default": "client-crew-customer-1200.webp",
+    "variants": [
+      {
+        "name": "client-crew-customer-480.webp",
+        "width": 480,
+        "height": 640,
+        "avif": "client-crew-customer-480.avif"
+      },
+      {
+        "name": "client-crew-customer-800.webp",
+        "width": 800,
+        "height": 1067,
+        "avif": "client-crew-customer-800.avif"
+      },
+      {
+        "name": "client-crew-customer-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "avif": "client-crew-customer-1200.avif"
+      }
+    ]
+  },
+  "client-truck.webp": {
+    "default": "client-truck-1200.webp",
+    "variants": [
+      {
+        "name": "client-truck-480.webp",
+        "width": 480,
+        "height": 640,
+        "avif": "client-truck-480.avif"
+      },
+      {
+        "name": "client-truck-800.webp",
+        "width": 800,
+        "height": 1067,
+        "avif": "client-truck-800.avif"
+      },
+      {
+        "name": "client-truck-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "avif": "client-truck-1200.avif"
+      }
+    ]
+  },
+  "client-leaf-cleanup.webp": {
+    "default": "client-leaf-cleanup-1024.webp",
+    "variants": [
+      {
+        "name": "client-leaf-cleanup-480.webp",
+        "width": 480,
+        "height": 480,
+        "avif": "client-leaf-cleanup-480.avif"
+      },
+      {
+        "name": "client-leaf-cleanup-800.webp",
+        "width": 800,
+        "height": 800,
+        "avif": "client-leaf-cleanup-800.avif"
+      },
+      {
+        "name": "client-leaf-cleanup-1024.webp",
+        "width": 1024,
+        "height": 1024,
+        "avif": "client-leaf-cleanup-1024.avif"
+      }
+    ]
+  },
+  "client-backyard.webp": {
+    "default": "client-backyard-1024.webp",
+    "variants": [
+      {
+        "name": "client-backyard-480.webp",
+        "width": 480,
+        "height": 480,
+        "avif": "client-backyard-480.avif"
+      },
+      {
+        "name": "client-backyard-800.webp",
+        "width": 800,
+        "height": 800,
+        "avif": "client-backyard-800.avif"
+      },
+      {
+        "name": "client-backyard-1024.webp",
+        "width": 1024,
+        "height": 1024,
+        "avif": "client-backyard-1024.avif"
+      }
+    ]
   }
 }

@@ -353,5 +353,190 @@
     "width": 500,
     "height": 500,
     "bytes": 22756
+  },
+  "client-striped-lawn-480.webp": {
+    "width": 480,
+    "height": 640,
+    "bytes": 127372
+  },
+  "client-striped-lawn-480.avif": {
+    "width": 480,
+    "height": 640,
+    "bytes": 46984
+  },
+  "client-striped-lawn-800.webp": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 375534
+  },
+  "client-striped-lawn-800.avif": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 141954
+  },
+  "client-striped-lawn-1200.webp": {
+    "width": 1200,
+    "height": 1600,
+    "bytes": 818062
+  },
+  "client-striped-lawn-1200.avif": {
+    "width": 1200,
+    "height": 1600,
+    "bytes": 308085
+  },
+  "client-rock-bed-480.webp": {
+    "width": 480,
+    "height": 640,
+    "bytes": 88794
+  },
+  "client-rock-bed-480.avif": {
+    "width": 480,
+    "height": 640,
+    "bytes": 32269
+  },
+  "client-rock-bed-800.webp": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 248138
+  },
+  "client-rock-bed-800.avif": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 91564
+  },
+  "client-rock-bed-1200.webp": {
+    "width": 1200,
+    "height": 1600,
+    "bytes": 523348
+  },
+  "client-rock-bed-1200.avif": {
+    "width": 1200,
+    "height": 1600,
+    "bytes": 195047
+  },
+  "client-crew-customer-480.webp": {
+    "width": 480,
+    "height": 640,
+    "bytes": 131684
+  },
+  "client-crew-customer-480.avif": {
+    "width": 480,
+    "height": 640,
+    "bytes": 49556
+  },
+  "client-crew-customer-800.webp": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 349490
+  },
+  "client-crew-customer-800.avif": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 135639
+  },
+  "client-crew-customer-1200.webp": {
+    "width": 1200,
+    "height": 1600,
+    "bytes": 730980
+  },
+  "client-crew-customer-1200.avif": {
+    "width": 1200,
+    "height": 1600,
+    "bytes": 288856
+  },
+  "client-truck-480.webp": {
+    "width": 480,
+    "height": 640,
+    "bytes": 36230
+  },
+  "client-truck-480.avif": {
+    "width": 480,
+    "height": 640,
+    "bytes": 14836
+  },
+  "client-truck-800.webp": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 111272
+  },
+  "client-truck-800.avif": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 40518
+  },
+  "client-truck-1200.webp": {
+    "width": 1200,
+    "height": 1600,
+    "bytes": 276780
+  },
+  "client-truck-1200.avif": {
+    "width": 1200,
+    "height": 1600,
+    "bytes": 96190
+  },
+  "client-leaf-cleanup-480.webp": {
+    "width": 480,
+    "height": 480,
+    "bytes": 84270
+  },
+  "client-leaf-cleanup-480.avif": {
+    "width": 480,
+    "height": 480,
+    "bytes": 30547
+  },
+  "client-leaf-cleanup-800.webp": {
+    "width": 800,
+    "height": 800,
+    "bytes": 168370
+  },
+  "client-leaf-cleanup-800.avif": {
+    "width": 800,
+    "height": 800,
+    "bytes": 64959
+  },
+  "client-leaf-cleanup-1024.webp": {
+    "width": 1024,
+    "height": 1024,
+    "bytes": 221444
+  },
+  "client-leaf-cleanup-1024.avif": {
+    "width": 1024,
+    "height": 1024,
+    "bytes": 83775
+  },
+  "client-backyard-480.webp": {
+    "width": 480,
+    "height": 480,
+    "bytes": 40630
+  },
+  "client-backyard-480.avif": {
+    "width": 480,
+    "height": 480,
+    "bytes": 16086
+  },
+  "client-backyard-800.webp": {
+    "width": 800,
+    "height": 800,
+    "bytes": 73460
+  },
+  "client-backyard-800.avif": {
+    "width": 800,
+    "height": 800,
+    "bytes": 33893
+  },
+  "client-backyard-1024.webp": {
+    "width": 1024,
+    "height": 1024,
+    "bytes": 94976
+  },
+  "client-backyard-1024.avif": {
+    "width": 1024,
+    "height": 1024,
+    "bytes": 45043
+  },
+  "dj-burns-yardu.webp": {
+    "width": 480,
+    "height": 606,
+    "bytes": 44390
   }
 }

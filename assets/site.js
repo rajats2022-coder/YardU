@@ -37,6 +37,21 @@ document.addEventListener('keydown',event=>{
   }
 });
 window.addEventListener('resize',()=>{if(innerWidth>1000)setMenu(false);});
+// Keep fixed mobile controls clear of the keyboard without assuming browser-toolbar heights.
+const syncVisualViewport=()=>{
+ const focused=document.activeElement;
+ const editing=focused instanceof HTMLInputElement||focused instanceof HTMLTextAreaElement||focused instanceof HTMLSelectElement;
+ document.body.classList.toggle('has-editable-focus',editing);
+ const viewport=window.visualViewport;
+ document.documentElement.style.setProperty('--visual-viewport-height',`${viewport?.height||innerHeight}px`);
+ document.documentElement.style.setProperty('--keyboard-inset',`${editing&&viewport?Math.max(0,innerHeight-viewport.height-viewport.offsetTop):0}px`);
+};
+window.visualViewport?.addEventListener('resize',syncVisualViewport);
+window.visualViewport?.addEventListener('scroll',syncVisualViewport);
+window.addEventListener('resize',syncVisualViewport);
+document.addEventListener('focusin',syncVisualViewport);
+document.addEventListener('focusout',()=>requestAnimationFrame(syncVisualViewport));
+syncVisualViewport();
 document.querySelectorAll('[data-accordion]').forEach(accordion=>accordion.querySelectorAll('details').forEach(item=>item.addEventListener('toggle',()=>{if(item.open)accordion.querySelectorAll('details').forEach(other=>{if(other!==item)other.open=false;});})));
 document.querySelectorAll('[data-area]').forEach(button=>button.addEventListener('click',()=>{
   document.querySelectorAll('[data-area]').forEach(other=>other.setAttribute('aria-pressed',String(other===button)));

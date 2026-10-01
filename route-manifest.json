@@ -21,7 +21,7 @@
     {
       "path": "/services-2/",
       "title": "Lawn & Landscaping Services | YardU",
-      "description": "Explore the YardU Special lawn package plus mulch, straw and rock, leaf and debris removal, hardscaping, and pressure washing.",
+      "description": "Explore the YardU Special lawn package plus mulch, straw and rock, leaf and debris removal, hardscaping, pressure washing, property cleanups, and sod.",
       "canonical": "https://hireyardu.com/services-2/",
       "indexable": false,
       "type": "service-hub",
@@ -58,6 +58,23 @@
       "title": "Our Mission | YardU Landscaping with a Purpose",
       "description": "YardU gives young people opportunities to develop work ethic, communication, professionalism, and responsibility through lawn care.",
       "canonical": "https://hireyardu.com/our-mission/",
+      "indexable": false,
+      "type": "company",
+      "parent": "/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+    },
+    {
+      "path": "/meet-the-founders/",
+      "title": "Meet Jackson DeSilva | YardU Founder",
+      "description": "Meet YardU Founder Jackson DeSilva, MBA, an NC State football alum bringing real work and purpose to lawn care and landscaping.",
+      "canonical": "https://hireyardu.com/meet-the-founders/",
       "indexable": false,
       "type": "company",
       "parent": "/",
@@ -186,8 +203,8 @@
     },
     {
       "path": "/service-areas/wake-forest/",
-      "title": "Lawn Care in Wake Forest, NC | YardU Area Guide",
-      "description": "Discuss YardU’s core lawn package for your Wake Forest property. Prepare access and scope details, and find official municipal yard waste resources.",
+      "title": "Landscaping in Wake Forest, NC | YardU Area Guide",
+      "description": "Discuss landscaping and property projects in Wake Forest with YardU. Confirm your property, requested service, project scope, and scheduling availability.",
       "canonical": "https://hireyardu.com/service-areas/wake-forest/",
       "indexable": false,
       "type": "area-guide",
@@ -321,6 +338,42 @@
       "releaseDisposition": "local-review-only; fact and Page Map approval required"
     },
     {
+      "path": "/services/property-cleanups/",
+      "title": "Property Cleanups in Raleigh & the Triangle | YardU",
+      "description": "Tell YardU which outdoor areas need attention and the result you have in mind. Discuss the scope, property, and estimate directly with YardU.",
+      "canonical": "https://hireyardu.com/services/property-cleanups/",
+      "indexable": false,
+      "type": "service",
+      "parent": "/services-2/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+    },
+    {
+      "path": "/services/sod/",
+      "title": "Sod in Raleigh & the Triangle | YardU",
+      "description": "Bring your lawn area, current condition, and sod goals into one conversation. Discuss the scope, property, and estimate directly with YardU.",
+      "canonical": "https://hireyardu.com/services/sod/",
+      "indexable": false,
+      "type": "service",
+      "parent": "/services-2/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+    },
+    {
       "path": "/services/mulch-straw-rock/",
       "title": "Mulch, Straw & Rock Installation in Raleigh & the Triangle | YardU",
       "description": "Refresh the material and finish around your landscape beds. Discuss the scope, property, and estimate directly with YardU.",
@@ -403,7 +456,6 @@
     "/franchising/",
     "/privacy-policy/",
     "/terms-conditions/",
-    "/meet-the-founders/",
     "/watch-yardu-video/"
   ],
   "heldRoutes": [

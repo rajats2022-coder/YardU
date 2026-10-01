@@ -40,7 +40,12 @@ export function createPreviewServer({root=defaultRoot,chat=createChatService()}=
    const clean=path==='/'?'index.html':extname(path)?path.slice(1):`${path.replace(/^\//,'').replace(/\/$/,'')}/index.html`;
    const target=resolve(root,clean);if(!target.startsWith(resolve(root)+'/'))throw new Error('Invalid path');
    let data=await readFile(target);const type=mime[extname(target)]||'application/octet-stream';const headers={'Content-Type':type,'Cache-Control':'no-store','Vary':'Accept-Encoding'};if(data.length>1024&&/html|css|javascript|svg|xml|text/.test(type)&&/\bgzip\b/.test(req.headers['accept-encoding']||'')){data=gzipSync(data);headers['Content-Encoding']='gzip';}headers['Content-Length']=data.length;res.writeHead(200,headers);res.end(req.method==='HEAD'?undefined:data);
-  }catch{res.writeHead(404,{'Content-Type':'text/html'});res.end(req.method==='HEAD'?undefined:await readFile(resolve(root,'404.html')));}
+  }catch{
+   let fallback;
+   try{fallback=await readFile(resolve(root,'404.html'));}
+   catch{res.writeHead(503,{'Content-Type':'text/plain; charset=utf-8','Retry-After':'1'});res.end(req.method==='HEAD'?undefined:'Preview is rebuilding. Please refresh.');return;}
+   res.writeHead(404,{'Content-Type':'text/html'});res.end(req.method==='HEAD'?undefined:fallback);
+  }
  });
  server.requestTimeout=10000;server.headersTimeout=10000;return server;
 }

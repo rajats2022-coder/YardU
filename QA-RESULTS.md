@@ -1,51 +1,46 @@
 # YardU website verification — October 1, 2026
 
-The local website’s technical SEO foundation is ready for review. The final source has 23 pages (22 substantive), verified public YardU offerings and service communities, unique metadata, intentional heading hierarchy, 54 bidirectional service/component–town links, connected entity/breadcrumb/service schema, stable legacy slugs, true 404 handling, and an explicit migration inventory. No thin city×service matrix or invented offices/reviews were added.
+The ZS-inspired YardU redesign is ready for review. It contains 26 routes (25 substantive pages), all six distinct service-area guides, seven service groups and four lawn-package component guides. Confirmed YardU branding, client photos, Jackson's sole-founder credit, contact details, property cleanups, sod and pine straw are incorporated. DJ Burns' existing testimonial is first, with its authentic YardU-site photo and official NC State link. The service-card hover/title defect and inherited card widths are corrected.
 
-The preview deliberately blocks indexing. All Lighthouse SEO failures are solely `is-crawlable`: noindex meta/header and review robots block. Other applicable Lighthouse SEO audits pass. Its raw score is **69**, not an indexable-production SEO score. Indexing, approved permanent redirects/media preservation, live schema/render checks, GSC/GBP permissions and authorized lead delivery remain launch work. There is no ranking or Core Web Vitals guarantee.
+## Actual final Lighthouse results
 
-## Actual Lighthouse results
-
-Lighthouse **13.5.0**, existing isolated Chromium, loopback preview; standard mobile simulated slow-4G/4× CPU, and desktop 1350×940 at 1× CPU/10 Mbps. These are local lab runs; they do not measure production hosting/CDN or field users. Scores vary between runs. Affected home/mission/review templates were rerun after the final review-card fix; desktop/mobile home were rerun again after the final hero-logo refinement.
+Lighthouse 13.5.0 used the existing isolated Chromium browser and loopback preview. Final measurements ran serially after other YardU browser audits closed, on the final built assets. Mobile uses standard simulated slow-4G/4× CPU; desktop uses 1350×940 at 1× CPU/10 Mbps. These are local lab results, not production/CDN or field measurements, and are not a Core Web Vitals or ranking guarantee. Earlier runs with concurrent QA load varied substantially; the table records the final serial run.
 
 | Mobile route | Performance | Accessibility | Best practices | SEO | LCP | CLS |
 | --- | --- | --- | --- | --- | --- | --- |
-| / | 97 | 100 | 100 | 69 | 2.49s | 0.0008 |
-| /getestimate/ | 97 | 100 | 100 | 69 | 2.41s | 0.0009 |
-| /our-mission/ | 99 | 100 | 100 | 69 | 2.11s | 0.0009 |
-| /projects/ | 96 | 100 | 100 | 69 | 2.71s | 0.0009 |
-| /reviews/ | 97 | 100 | 100 | 69 | 2.42s | 0.0009 |
-| /service-areas/ | 97 | 100 | 100 | 69 | 2.42s | 0.0009 |
-| /service-areas/fuquay-varina/ | 97 | 100 | 100 | 69 | 2.41s | 0.0009 |
-| /services-2/ | 92 | 100 | 100 | 69 | 3.25s | 0.0009 |
-| /services/lawn-maintenance/ | 97 | 100 | 100 | 69 | 2.56s | 0.0009 |
-| /services/leaf-debris-removal/ | 97 | 100 | 100 | 69 | 2.41s | 0.0009 |
+| / | 99 | 100 | 100 | 69 | 1.98s | 0.0000 |
+| /services-2/ | 99 | 100 | 100 | 69 | 2.19s | 0.0000 |
+| /services/property-cleanups/ | 98 | 100 | 100 | 69 | 2.35s | 0.0000 |
+| /services/sod/ | 95 | 100 | 100 | 69 | 2.94s | 0.0000 |
+| /meet-the-founders/ | 99 | 100 | 100 | 69 | 1.82s | 0.0000 |
+| /reviews/ | 99 | 100 | 100 | 69 | 2.06s | 0.0000 |
 
-Desktop home, lawn-package and estimate templates score **100 performance, 100 accessibility, 100 best practices, 69 SEO**. Their LCP values are 0.72s, 0.68s and 0.60s. Mobile performance spans **92–99**. Some simulated mobile LCP values remain above 2.5s, especially the hub; a high overall score is not a field CWV pass.
+Desktop homepage: **100 performance, 100 accessibility, 100 best practices, 69 SEO**; LCP 0.70s, CLS 0. Mobile performance is 95–99 on the six measured templates. Sod's simulated LCP remains above 2.5 seconds despite its overall score. Fonts are self-hosted Poppins (five Latin WOFF2 weights, approximately 39KB), images use responsive AVIF/WebP, the hero is discoverable/prioritized, and MapLibre is deferred.
 
-The baseline homepage/lawn mobile scores were 72/63. Fixes: compressed self-hosted WOFF2 fonts (two files, 56.8KB), responsive AVIF with WebP fallback, discoverable priority hero images, gzip text responses, minified CSS, deferred MapLibre CSS/import, and removal of a missing inherited image request. Preview noindex controls were preserved throughout.
+The preview intentionally blocks indexing through meta tags, headers and robots; sitemap.xml is empty. Lighthouse SEO is **69** because `is-crawlable` fails intentionally. Other applicable SEO audits pass. Production canonicals and the candidate sitemap remain hireyardu.com; social metadata uses the public review alias and a readable versioned 1200×630 PNG.
 
-## Final verification
+## Verification
 
 | Check | Result |
 | --- | --- |
-| Build, syntax lint, TypeScript checkJs | Passed |
-| Static routes/assets/metadata/isolation | 2,911 assertions passed |
-| SEO heading/link/schema/URL audit | 793 assertions; 54 bidirectional main-content pairs |
-| HTTP/HEAD checks | 2,984 total assertions passed; real 404, 302 preview aliases, submission blocked, noindex headers |
-| Responsive/interactions | 132 route/width combinations: all 22 pages at 320/390/768/960/1280/1440px; navigation, map, reviews and disconnected fake-form validation passed |
-| Full axe-core 4.13.0 | 58 route/state runs, zero automated violations; 1,080 image/gradient/manual-review observations, which are not automated passes |
-| Review-card regression | 36 real/synthetic geometry states at all six widths; author/quote/actions separated, long names and expanded 160-sentence fixtures fit, keyboard next/previous and expand/collapse passed; zero targeted axe violations or page errors |
-| Logo alignment | Five header/footer/hero desktop/mobile placements: square badge, centered object-fit and visible bounds centered at 249.5/500; original SVG geometry unchanged, only derived viewBox framing |
-| Hero logo and motion | One complete logo, no duplicate adjacent tagline; clipped 12-second shine; reduced-motion disables animation; identical badge geometry in both motion settings |
-| Guide/privacy | 14 mock/HTTP tests passed; fixed tags only, no raw message/contact/draft sent to provider, no lead requests or live Groq calls; credentials/configuration deferred |
+| Build, syntax lint, TypeScript checkJs | Passed on final source |
+| Static routes/assets/metadata/client isolation | 4,980 assertions across 26 routes |
+| SEO headings, unique metadata, links, schema and frozen paths | 1,293 assertions; 66 bidirectional service/component–town pairs |
+| Local HTTP/HEAD | 5,062 total assertions, including real 404, 302 preview aliases, noindex headers and blocked form actions |
+| Responsive/navigation/interactions | All 25 substantive pages at six widths: 150 combinations; desktop/touch/keyboard menus, map, reviews, guide and fake-form validation passed |
+| Full axe-core 4.13.0 | 66 route/state runs; zero automated violations or page errors; 1,926 incomplete observations require judgment and are not automated passes |
+| Card/footer and updated content | All 18 homepage/service-hub cards at 1280/390/320: 54 geometry checks; desktop hover/focus keeps titles fixed and descriptions contained; eight updated-content axe runs passed |
+| Mobile edge bars and editing | Nine touch/safe-area/keyboard states; no lead submissions |
+| Review regression | 36 real/synthetic geometry states at six widths; long names, full 160-sentence fixture, expand/collapse, keyboard next/previous; zero targeted axe violations/errors |
+| Logo | Five desktop/mobile placements; centered authentic SVG; one complete hero logo; 12-second clipped shine disabled for reduced motion |
+| Share metadata | Three tests; readable 1200×630 PNG, factual brand/topic titles and safe HTTPS share-origin selection |
+| Guide/API and rebuild behavior | 16 mocked/local HTTP tests; fixed service tags only; no personal messages/drafts sent to provider; no live provider calls |
+| Visual reference comparison | design-qa.md final result passed; matching desktop/mobile source and local captures reviewed |
 
-The earlier services white-on-white defect and red photo caption are corrected and remain covered by rendered contrast checks/manual evidence. The review-overlap root cause was fixed with normal content flow and auto-sized cards/stage, not hidden author rows. Longer quotes have word-boundary excerpts, labelled as excerpts, with an expand control and original-source link.
+## Remaining review and launch decisions
 
-## Verified Google profile and remaining review input
+The exact Google profile is https://www.google.com/maps?cid=9787269376349729307. Its 5.0/89 aggregate is a dated October 1 screenshot snapshot, separate from the existing website testimonials. Individual Google review quotes were unavailable publicly behind sign-in, so no new quotes were imported, and no Review/AggregateRating schema is added. Jackson's public founder and contact facts are in data/client-confirmed.json. Contact hours are 6 AM–10 PM; days remain unspecified and no opening-hours schema is invented.
 
-[YardU on Google Maps](https://www.google.com/maps?cid=9787269376349729307) is the exact profile, matching `hireyardu.com` and (919) 592-8328. Public local-browser readback confirmed identity; the user’s October 1 Google screenshot verifies **5.0 from 89 reviews**. The hero Google button, per-card generic profile links, section CTA and Organization sameAs use this CID. The aggregate is a dated static snapshot, with no live synchronization and no self-serving Review/AggregateRating schema.
+Lead delivery and optional AI credentials are deferred by the user. The static Vercel configuration does not deploy the loopback chat API; the guide has a verified local fallback. Forms remain visibly disconnected and save/send nothing. Real iPhone Safari toolbar/keyboard and WebKit rendering remain device validation, beyond Chromium emulation.
 
-Google’s public browser view requires sign-in to read individual reviews. No login/account/CAPTCHA bypass was attempted. The existing cards remain explicitly website testimonials; no new Google quotes were invented. Genuine additional Google quote cards need a verified export or user-provided author/text/rating/date and source link. Hours remain omitted because the sources conflict.
-
-Chat credentials and lead routing are deferred at the user’s request. No deployment, DNS change, indexing submission, GBP edit, real form submission, paid service or provider call was performed. The authorized GitHub delivery is a clean public source snapshot on a review branch, excluding private audit notes, local Library metadata, raw evidence, credentials and caches.
+An authorized push to the existing review branch can trigger the user's Vercel workflow. No manual production deployment, merge/main push, DNS changes, index submission, GBP edits, paid services, live forms or provider calls are part of this delivery. Before an authorized production launch, approve entity/GBP facts, migration/media redirects and lead delivery, validate live schema/paths, deliberately change indexing controls, and assess hosted/field performance. Private notes, raw evidence, Library metadata, credentials and caches are excluded from the public checkout.

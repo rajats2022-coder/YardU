@@ -1,0 +1,15 @@
+{
+  "confirmedDate": "2026-10-01",
+  "source": "Client-provided details and subsequent owner instructions",
+  "name": "YardU",
+  "slogan": "Landscaping with a Purpose",
+  "founder": { "name": "Jackson DeSilva", "role": "Founder", "credentials": "MBA; NC State Football Alum" },
+  "telephone": "+19195928328",
+  "email": "jackson@hireyardu.com",
+  "contactHours": "6 AM–10 PM",
+  "contactDays": null,
+  "services": ["Landscaping", "Mowing and lawn care", "Mulch, pine straw and rock installation", "Leaf removal", "Hardscaping", "Pressure washing", "Property cleanups", "Sod"],
+  "areas": ["Raleigh", "Cary", "Apex", "Fuquay-Varina", "Holly Springs", "Wake Forest"],
+  "availability": "Confirm the property, service scope and schedule directly with YardU.",
+  "formDelivery": "Disconnected; recipient and delivery configuration deferred"
+}

@@ -78,6 +78,54 @@
       "localAsset": "/assets/images/property-lawn.jpeg",
       "sha256": "5bbdb9e164956685a510d1622785cd97e855cfa9f47e303ffdf4973987dfad44",
       "approval": "public-source asset for local review; owner publication approval pending"
+    },
+    {
+      "source": "Client-provided October 1, 2026",
+      "sourceFileName": "stripes - Copy.jpg",
+      "sourceSha256": "9693527bc5e12d5d550f3edf78b1ca697b924dad6fb82db37aadbe8556ed2ae6",
+      "localAsset": "/assets/images/client-striped-lawn-1200.webp",
+      "approval": "Provided for this YardU website build; resized only, no invented person identity or before/after claim"
+    },
+    {
+      "source": "Client-provided October 1, 2026",
+      "sourceFileName": "trimnrock - Copy.jpg",
+      "sourceSha256": "35c3d1036d0fdc5e01bc7ee4ad7e908ee9493b0f76e53f66b6be4e28819c728f",
+      "localAsset": "/assets/images/client-rock-bed-1200.webp",
+      "approval": "Provided for this YardU website build; resized only, no invented person identity or before/after claim"
+    },
+    {
+      "source": "Client-provided October 1, 2026",
+      "sourceFileName": "Customer - Copy - Copy.jpeg",
+      "sourceSha256": "645480b6370193b6eb3b34e73435630cbfcaf44ee9db5c01b958047ce451db99",
+      "localAsset": "/assets/images/client-crew-customer-1200.webp",
+      "approval": "Provided for this YardU website build; resized only, no invented person identity or before/after claim"
+    },
+    {
+      "source": "Client-provided October 1, 2026",
+      "sourceFileName": "unnamed.jpg",
+      "sourceSha256": "78e26d8f889d32c4c83255d9b38f0da1d0632e9225abad7f79f4a13dd2866a41",
+      "localAsset": "/assets/images/client-truck-1200.webp",
+      "approval": "Provided for this YardU website build; resized only, no invented person identity or before/after claim"
+    },
+    {
+      "source": "Client-provided October 1, 2026",
+      "sourceFileName": "dc6f06ab-666a-4e33-b2f9-f777b11a04b2.png",
+      "sourceSha256": "1a237ffd2e53d37e757cda7542db76bd01437db7add6beb876c6c4a25db5cbc6",
+      "localAsset": "/assets/images/client-leaf-cleanup-1024.webp",
+      "approval": "Provided for this YardU website build; resized only, no invented person identity or before/after claim"
+    },
+    {
+      "source": "Client-provided October 1, 2026",
+      "sourceFileName": "3fc12aea-2ed4-4fe9-a2ed-0b1eda708017.png",
+      "sourceSha256": "07d709dd8693859aaed6ae2e3848b5ca96e767a793f8939c34a417f4bc00f1c2",
+      "localAsset": "/assets/images/client-backyard-1024.webp",
+      "approval": "Provided for this YardU website build; resized only, no invented person identity or before/after claim"
+    },
+    {
+      "sourceUrl": "https://hireyardu.com/wp-content/uploads/2025/06/DJBurns-713x900.png",
+      "localAsset": "/assets/images/dj-burns-yardu.webp",
+      "sha256": "ae2a4ebb29d20cff8556b14b53ad2bd1dd95bac85e4b1a2e626eb089e58cebda",
+      "approval": "Existing YardU testimonial photo reused for the client-site rebuild at the owner\u2019s request; proportional WebP derivative, face-focused presentation crop only. No NC State headshot copied."
     }
   ],
   "derivatives": [

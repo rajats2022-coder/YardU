@@ -32,16 +32,34 @@ npm run test:chat
 node scripts/verify.mjs --http
 ```
 
-Start the preview for HTTP/browser audits. Lighthouse 13.5.0 and axe-core 4.13.0 are pinned developer tools. `npm run test:lighthouse` uses an existing Chrome/Chromium browser, selected with `YARDU_CHROMIUM_PATH` when needed. Playwright browser checks use an existing installation via `YARDU_PLAYWRIGHT_MODULE` and `YARDU_CHROMIUM_PATH`; this repository does not download a duplicate browser. Available scripts include `test:browser`, `test:accessibility`, `test:reviews` and `test:logo`.
+Start the preview for HTTP/browser audits. Lighthouse 13.5.0 and axe-core 4.13.0 are pinned developer tools. `npm run test:lighthouse` uses an existing Chrome/Chromium browser, selected with `YARDU_CHROMIUM_PATH` when needed. Playwright browser checks use an existing installation via `YARDU_PLAYWRIGHT_MODULE` and `YARDU_CHROMIUM_PATH`; this repository does not download a duplicate browser. Available scripts include `test:browser`, `test:accessibility`, `test:reviews`, `test:logo`, `test:mobile` and `test:content`.
 
-QA-RESULTS.md records actual scores, lab limitations and remaining launch checks. SEO-COVERAGE-AUDIT.md records generated headings, schema and the 54 bidirectional service/component–town links. url-registry.json freezes proposed paths; media-migration-plan.json records original media preservation decisions. Raw reports/screenshots, private audits, local Library records and credentials are excluded.
+QA-RESULTS.md records actual scores, lab limitations and remaining launch checks. SEO-COVERAGE-AUDIT.md records generated headings, schema and the 66 bidirectional service/component–town links. url-registry.json freezes proposed paths; media-migration-plan.json records original media preservation decisions. Raw reports/screenshots, private audits, local Library records and credentials are excluded.
 
 ## Review content and integrations
 
-The exact YardU Google profile is https://www.google.com/maps?cid=9787269376349729307. The user-provided October 1 screenshot verifies aggregate 5.0/89. That dated snapshot is displayed separately from the website testimonials. Google sign-in prevented public individual-review access; no new Google quotes are fabricated or represented as live synchronization. Review cards use normal content flow, adaptive height, labelled expandable excerpts and original-source links. No self-serving rating/review schema is added.
+The exact YardU Google profile is https://www.google.com/maps?cid=9787269376349729307. The user-provided October 1 screenshot verifies aggregate 5.0/89. That dated snapshot is displayed separately from the website testimonials. Google sign-in prevented public individual-review access; no new Google quotes are fabricated or represented as live synchronization. Review cards use normal content flow, adaptive height, labelled expandable excerpts and original-source links. No self-serving rating/review schema is added. DJ Burns’ existing website testimonial appears first, using the photo accompanying it on YardU’s existing website. A CSS crop frames his face and avoids the baked-in video icon. His official NC State basketball profile is linked; Jackson’s profile links his official 2023 and 2022 NC State football biographies. No additional review quotes were imported.
+
+The requested visual reference is ZS Exteriors. Its dual header, truck-led hero, section order, service cards, service-detail sequence and city-page rhythm are adapted to YardU red, black and white. YardU’s working service/area routes and map are retained. No reference business claims, offers, reviews, prose or photo assets are reused. Service-card footers reserve fixed title/accent/description space; hover and keyboard focus reveal descriptions without moving the title. Cards fit their responsive grid tracks.
 
 The original SVG is retained. A presentation derivative shifts only its viewBox to center the visible mark/tagline; paths and shapes are unchanged. The hero uses one complete logo, with a clipped subtle shine disabled for reduced-motion preferences. Responsive AVIF/WebP derivatives preserve the same source photos. Google Fonts and MapLibre licenses remain alongside their assets.
 
+Client-confirmed October 1 facts are in `data/client-confirmed.json`: Jackson DeSilva is the sole Founder; public contact is (919) 592-8328 and jackson@hireyardu.com; contact hours are 6 AM–10 PM, without invented days. Property cleanups, sod and pine straw enhancements are included. All six communities remain, with property-specific availability copy. Unknown people in the team photo are not labelled as Jackson. The existing `/meet-the-founders/` URL now contains Jackson’s profile.
+
 Ask YardU is a verified service guide and local estimate draft. The optional Groq server adapter defaults off and is tested with mocks only. Raw messages and personal/draft details stay in the tab; only fixed service tags reach the local endpoint. Credentials and lead routing are deferred. The estimate form sends and saves nothing.
 
-Before an authorized launch: approve entity/GBP facts and Page Map, preserve and implement approved direct legacy/media redirects, connect and verify lead delivery/consent, validate live schema/rendering, deliberately change noindex headers/meta/robots/sitemap, and verify production/field performance. No public deployment, DNS or index submission is part of this source push.
+Before an authorized launch: approve entity/GBP facts and Page Map, preserve and implement approved direct legacy/media redirects, connect and verify lead delivery/consent, validate live schema/rendering, deliberately change noindex headers/meta/robots/sitemap, and verify production/field performance. No manual production deployment, DNS change or index submission is part of this source push. A push can trigger the user-configured Vercel workflow.
+
+## Social share metadata
+
+The homepage SEO title stays intact. Open Graph and Twitter use **YardU | Landscaping with a Purpose**, factual YardU copy, and the committed 1200×630 `assets/images/yardu-share-v1.png`. The image embeds the complete authentic logo with its slogan once. Other routes retain their topic-specific share titles.
+
+Social URLs use `YARDU_SHARE_ORIGIN` when explicitly set to an HTTPS origin, otherwise Vercel’s `VERCEL_PROJECT_PRODUCTION_URL`, otherwise the verified review alias `https://yardu-navy.vercel.app`. Protected per-deployment Vercel URLs are never chosen automatically. Production canonicals remain `https://hireyardu.com`; indexing stays blocked. When the custom domain is ready, set `YARDU_SHARE_ORIGIN=https://hireyardu.com` and rebuild as an authorized release decision.
+
+The versioned PNG URL gives crawlers a fresh asset. Messaging apps can cache existing previews; previously sent messages may retain the older card. Test a newly sent review URL after the deployment updates. `npm run test:share` verifies dimensions, identity and metadata; `npm run render:share` deterministically regenerates the committed raster using an existing Chromium browser.
+
+## Mobile verification
+
+The mobile hero shows a wide truck photo, then centered copy and stacked CTAs on black. The compact header and solid action bar sit flush to the viewport edges, use safe-area insets, and avoid floating blur/radii. The bar and launcher hide while editing; the guide uses visualViewport height for keyboard placement.
+
+`npm run test:mobile` checks eight portrait/landscape touch sizes, simulated safe areas, and one simulated keyboard state. Native Safari controls are owned by the browser. Chromium emulation does not verify actual iOS Safari toolbar/keyboard or WebKit rendering; a real iPhone check remains a device validation step.

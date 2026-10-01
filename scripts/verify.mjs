@@ -15,8 +15,13 @@ for(const route of manifest.routes){
  const title=html.match(/<title>(.*?)<\/title>/s)?.[1],description=html.match(/name="description" content="([^"]+)"/)?.[1];
  check(Boolean(title)&&!titles.has(title),`${route.path}: distinct title`);titles.add(title);
  check(Boolean(description)&&!descriptions.has(description),`${route.path}: distinct description`);descriptions.add(description);
- check(!/envision|jobber|googletagmanager|gtag\(|jotform|jackson@|localStorage|sessionStorage/i.test(html),`${route.path}: tenant isolation`);
+ check(!/envision|jobber|googletagmanager|gtag\(|jotform|localStorage|sessionStorage/i.test(html),`${route.path}: tenant isolation`);
  check(html.includes('tel:+19195928328'),`${route.path}: YardU phone`);
+ check(html.includes('mailto:jackson@hireyardu.com'),`${route.path}: confirmed public email`);
+ check(html.includes('Contact hours: 6 AM–10 PM'),`${route.path}: confirmed contact hours without invented days`);
+ check(!/Thayer|Thomas|Co-Founder|cofounder|YardU’s founders/i.test(html),`${route.path}: sole Jackson founder credit`);
+ check(!/one.time projects|one.time only|projects only/i.test(html),`${route.path}: general availability presentation`);
+ check(html.includes('viewport-fit=cover'),`${route.path}: safe-area viewport`);
  check([...html.matchAll(/href="(tel:[^"]+)"/g)].every(m=>m[1]==='tel:+19195928328'),`${route.path}: normalized telephone`);
  for(const source of html.matchAll(/<source\b[^>]+>/g)){const set=source[0].match(/srcset="([^"]+)"/)?.[1];if(set)for(const item of set.split(',')){const [path,width]=item.trim().split(' ');check((await stat(resolve(dist,path.slice(1)))).size>0,`${route.path}: picture source exists`);check(imageDimensions[path.split('/').pop()]?.width===Number(width.replace('w','')),`${route.path}: picture width descriptor`);}}
  for(const image of html.matchAll(/<img\b[^>]+>/g)){
@@ -45,6 +50,13 @@ check(!/fetch\(|XMLHttpRequest|sendBeacon|localStorage|sessionStorage|document\.
 check(js.includes('event.preventDefault()'),'Validation does not send requests');
 const chatJS=await readFile(resolve(dist,'assets/yardu-chat.js'),'utf8');check(!/XMLHttpRequest|sendBeacon|localStorage|sessionStorage|document\.cookie|api\.groq/.test(chatJS),'Chat has no persistence or client provider access');check(chatJS.includes("fetch('/api/chat'")&&chatJS.includes('features:featuresFromText(text)'),'Guide transmits only service tags to the local adapter');check(pages.get('/').includes('Nothing has been sent or saved'),'Lead draft visibly disconnected');
 check(pages.get('/').includes('Read our Google reviews')&&!pages.get('/').includes('Real work. A brighter future.'),'Hero uses the requested verified Google button');for(const route of ['/','/reviews/']){check(pages.get(route).includes('cid=9787269376349729307'),'Google links use verified YardU CID');check(pages.get(route).includes('testimonials published on YardU’s website'),'Quote platform attribution remains truthful');}
+const shareImage=await readFile(resolve(dist,'assets/images/yardu-share-v1.png'));
+check(shareImage.subarray(0,8).toString('hex')==='89504e470d0a1a0a'&&shareImage.readUInt32BE(16)===1200&&shareImage.readUInt32BE(20)===630,'Readable share PNG dimensions');
+check(pages.get('/').includes('property="og:title" content="YardU | Landscaping with a Purpose"'),'Home share title is separate from SEO title');
+check(pages.get('/').includes('<title>Lawn Care in Raleigh &amp; the Triangle | YardU</title>'),'Home SEO title unchanged');
+check(pages.get('/service-areas/wake-forest/').includes('Landscaping in'),'Wake Forest property context retained');
+const wfMain=pages.get('/service-areas/wake-forest/').match(/<main\b[^>]*>(.*?)<\/main>/s)[1];check(!/weekly|recurring|ongoing maintenance/.test(wfMain),'Wake Forest makes no recurring-service promise');
+for(const service of ['sod','property-cleanups'])check(pages.has('/services/'+service+'/'),'Confirmed new service route '+service);
 const robots=await readFile(resolve(dist,'robots.txt'),'utf8');check(robots.includes('Disallow: /'),'Review robots');
 const sitemap=await readFile(resolve(dist,'sitemap.xml'),'utf8');check(!sitemap.includes('<loc>'),'No noindex URLs in review sitemap');
 const candidate=await readFile(resolve(dist,'sitemap-candidate.xml'),'utf8');

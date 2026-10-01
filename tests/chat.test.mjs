@@ -39,11 +39,16 @@ test('Unknown services, prices, booking and unverified claims bypass provider',a
   const result=await ask(chat,featuresFromText(q));assert.equal(result.source,'verified-guide');assert.equal(result.reason,'human-confirmation');assert.doesNotMatch(result.answer,/\$|insured|Monday|confirmed appointment/i);
  }assert.equal(calls,0);
 });
-test('Verified answers cover five real services, six towns and the mission',async()=>{
+test('Verified answers cover seven confirmed services, six towns and the mission',async()=>{
  const chat=createChatService();
- for(const [question,path]of [['mowing','lawn-maintenance'],['mulch','mulch-straw-rock'],['leaf removal','leaf-debris-removal'],['patio','hardscaping'],['pressure washing','pressure-washing']])assert.equal((await ask(chat,featuresFromText(question))).link.path,`/services/${path}/`);
+ for(const [question,path]of [['mowing','lawn-maintenance'],['mulch','mulch-straw-rock'],['leaf removal','leaf-debris-removal'],['patio','hardscaping'],['pressure washing','pressure-washing'],['property cleanup','property-cleanups'],['sod for a new lawn','sod']])assert.equal((await ask(chat,featuresFromText(question))).link.path,`/services/${path}/`);
  const areas=await ask(chat,featuresFromText('Do you serve Durham?'));assert.match(areas.answer,/Raleigh, Cary, Apex, Wake Forest, Fuquay-Varina and Holly Springs/);assert.match(areas.answer,/coverage is not confirmed/);
  assert.match((await ask(chat,featuresFromText('What is your mission?'))).answer,/young people/);
+});
+test('Confirmed contact facts and generic Wake Forest availability never call provider',async()=>{
+ let calls=0;const chat=live({fetchImpl:async()=>{calls++;throw new Error('must not call');}});
+ const contact=await ask(chat,featuresFromText('What are your hours and email?'));assert.match(contact.answer,/6 AM–10 PM/);assert.match(contact.answer,/jackson@hireyardu.com/);assert.doesNotMatch(contact.answer,/Monday|every day|24.hours/i);
+ const coverage=await ask(chat,featuresFromText('Can you do weekly mowing in Wake Forest?'));assert.match(coverage.answer,/confirm availability/);assert.doesNotMatch(coverage.answer,/one.time|recurring service|weekly service|not offered/i);assert.equal(coverage.link.path,'/service-areas/wake-forest/');assert.equal(calls,0);
 });
 test('Malformed and unrequested model output falls back to verified facts',async()=>{
  for(const choice of [null,{}, {topic:'service',service:'gutter'},{topic:'service',service:'pressure'}, {topic:'service',service:'lawn',answer:'Free $5 job <script>'},{topic:'<script>',service:'lawn'}]){
@@ -89,5 +94,14 @@ test('Preview API rejects foreign origins, raw messages, oversized bodies and le
   assert.equal((await fetch(base+'/api/chat')).status,405);
   const lead=await fetch(base+'/getestimate/',{method:'POST',body:'fake lead'});assert.equal(lead.status,405);
   const missing=await fetch(base+'/missing-qa-route/');assert.equal(missing.status,404);assert.equal(missing.headers.get('x-robots-tag'),'noindex, nofollow');
+ }finally{await new Promise(resolve=>server.close(resolve));}
+});
+
+test('Preview remains available when rebuilt files temporarily disappear',async()=>{
+ const server=createPreviewServer({root:new URL('../dist/nonexistent-rebuild-fixture/',import.meta.url).pathname});await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const base=`http://127.0.0.1:${server.address().port}`;
+ try{
+  const response=await fetch(base+'/');assert.equal(response.status,503);assert.equal(response.headers.get('retry-after'),'1');assert.match(await response.text(),/rebuilding/);
+  const head=await fetch(base+'/',{method:'HEAD'});assert.equal(head.status,503);assert.equal(await head.text(),'');
+  assert.equal((await fetch(base+'/api/chat-status')).status,200);
  }finally{await new Promise(resolve=>server.close(resolve));}
 });

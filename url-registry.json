@@ -1,11 +1,12 @@
 {
-  "status": "frozen proposed local Page Map; owner release approval pending",
+  "status": "Client-approved extension October 1: property cleanups, sod and local Jackson founder page; existing paths preserved",
   "origin": "https://hireyardu.com",
   "routes": [
     "/",
     "/services-2/",
     "/services/lawn-maintenance/",
     "/our-mission/",
+    "/meet-the-founders/",
     "/projects/",
     "/service-areas/",
     "/getestimate/",
@@ -21,6 +22,8 @@
     "/services/trimming/",
     "/services/blowing/",
     "/reviews/",
+    "/services/property-cleanups/",
+    "/services/sod/",
     "/services/mulch-straw-rock/",
     "/services/leaf-debris-removal/",
     "/services/hardscaping/",
@@ -36,7 +39,6 @@
     "/franchising/",
     "/privacy-policy/",
     "/terms-conditions/",
-    "/meet-the-founders/",
     "/watch-yardu-video/"
   ],
   "heldRoutes": [

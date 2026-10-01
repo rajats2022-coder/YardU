@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node serve.mjs",
     "build": "node scripts/build-pages.mjs",
-    "lint": "node --check scripts/build-pages.mjs && node --check assets/site.js && node --check serve.mjs && node --check assets/area-map.js && node --check scripts/seo.mjs && node --check scripts/local-content.mjs && node --check scripts/component-content.mjs && node --check scripts/secondary-areas.mjs && node --check scripts/additional-services.mjs && node --check scripts/rich-components.mjs && node --check scripts/google-review-data.mjs && node --check scripts/seo-audit.mjs && node --check scripts/browser-qa.mjs && node --check scripts/capture-details.mjs && node --check scripts/contrast-qa.mjs && node --check scripts/contrast-captures.mjs && node --check assets/yardu-chat.js && node --check scripts/chat-markup.mjs && node --check assets/chat-intents.js && node --check server/chat-service.mjs && node --check server/preview-server.mjs && node --check scripts/browser-runtime.mjs && node --check scripts/accessibility-qa.mjs && node --check scripts/lighthouse-qa.mjs && node --check tests/chat.test.mjs && node --check scripts/google-profile.mjs && node --check scripts/logo-qa.mjs && node --check scripts/review-qa.mjs",
+    "lint": "node --check scripts/build-pages.mjs && node --check assets/site.js && node --check serve.mjs && node --check assets/area-map.js && node --check scripts/seo.mjs && node --check scripts/local-content.mjs && node --check scripts/component-content.mjs && node --check scripts/secondary-areas.mjs && node --check scripts/additional-services.mjs && node --check scripts/rich-components.mjs && node --check scripts/google-review-data.mjs && node --check scripts/seo-audit.mjs && node --check scripts/browser-qa.mjs && node --check scripts/capture-details.mjs && node --check scripts/contrast-qa.mjs && node --check scripts/contrast-captures.mjs && node --check assets/yardu-chat.js && node --check scripts/chat-markup.mjs && node --check assets/chat-intents.js && node --check server/chat-service.mjs && node --check server/preview-server.mjs && node --check scripts/browser-runtime.mjs && node --check scripts/accessibility-qa.mjs && node --check scripts/lighthouse-qa.mjs && node --check tests/chat.test.mjs && node --check scripts/google-profile.mjs && node --check scripts/logo-qa.mjs && node --check scripts/review-qa.mjs && node --check scripts/share-metadata.mjs && node --check scripts/render-share-image.mjs && node --check tests/share-metadata.test.mjs && node --check scripts/reference-layout.mjs && node --check scripts/mobile-qa.mjs && node --check scripts/final-content-qa.mjs",
     "typecheck": "tsc --allowJs --checkJs --noEmit --target es2022 --module esnext --moduleResolution bundler --lib dom,es2022 assets/site.js assets/yardu-chat.js assets/chat-intents.js",
     "test": "node scripts/verify.mjs && node scripts/seo-audit.mjs",
     "test:browser": "node scripts/browser-qa.mjs",
@@ -15,7 +15,11 @@
     "test:accessibility": "node scripts/accessibility-qa.mjs",
     "test:lighthouse": "node scripts/lighthouse-qa.mjs",
     "test:logo": "node scripts/logo-qa.mjs",
-    "test:reviews": "node scripts/review-qa.mjs"
+    "test:reviews": "node scripts/review-qa.mjs",
+    "test:share": "node --test tests/share-metadata.test.mjs",
+    "render:share": "node scripts/render-share-image.mjs",
+    "test:mobile": "node scripts/mobile-qa.mjs",
+    "test:content": "node scripts/final-content-qa.mjs"
   },
   "devDependencies": {
     "axe-core": "4.13.0",
