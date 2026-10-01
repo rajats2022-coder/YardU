@@ -1,0 +1,357 @@
+{
+  "hardscaping.png": {
+    "width": 320,
+    "height": 213,
+    "bytes": 128937
+  },
+  "trimming-preview.jpg": {
+    "width": 900,
+    "height": 1200,
+    "bytes": 612466
+  },
+  "trimming.jpeg": {
+    "width": 1536,
+    "height": 2048,
+    "bytes": 951104
+  },
+  "property-lawn-800.jpg": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 151089
+  },
+  "founders.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "bytes": 775723
+  },
+  "property-lawn.jpeg": {
+    "width": 1536,
+    "height": 2048,
+    "bytes": 456776
+  },
+  "edging.png": {
+    "width": 400,
+    "height": 522,
+    "bytes": 417837
+  },
+  "property-lawn-480.jpg": {
+    "width": 480,
+    "height": 640,
+    "bytes": 55474
+  },
+  "customer.jpeg": {
+    "width": 768,
+    "height": 1024,
+    "bytes": 264970
+  },
+  "lawn-stripes.jpeg": {
+    "width": 1024,
+    "height": 768,
+    "bytes": 145781
+  },
+  "outdoor-living.png": {
+    "width": 320,
+    "height": 213,
+    "bytes": 114982
+  },
+  "backyard.jpeg": {
+    "width": 768,
+    "height": 1024,
+    "bytes": 182115
+  },
+  "property-lawn-preview.jpg": {
+    "width": 900,
+    "height": 1200,
+    "bytes": 337953
+  },
+  "mowing.png": {
+    "width": 381,
+    "height": 500,
+    "bytes": 368319
+  },
+  "patio.png": {
+    "width": 320,
+    "height": 213,
+    "bytes": 117393
+  },
+  "mulch.png": {
+    "width": 400,
+    "height": 502,
+    "bytes": 341740
+  },
+  "yardu-logo.svg": {
+    "width": 500,
+    "height": 500,
+    "bytes": 22752
+  },
+  "backyard-480.webp": {
+    "width": 480,
+    "height": 640,
+    "bytes": 62358
+  },
+  "backyard-768.webp": {
+    "width": 768,
+    "height": 1024,
+    "bytes": 154260
+  },
+  "customer-480.webp": {
+    "width": 480,
+    "height": 640,
+    "bytes": 105474
+  },
+  "customer-768.webp": {
+    "width": 768,
+    "height": 1024,
+    "bytes": 246854
+  },
+  "edging-400.webp": {
+    "width": 400,
+    "height": 522,
+    "bytes": 54472
+  },
+  "founders-480.webp": {
+    "width": 480,
+    "height": 270,
+    "bytes": 22128
+  },
+  "founders-800.webp": {
+    "width": 800,
+    "height": 450,
+    "bytes": 45454
+  },
+  "founders-1200.webp": {
+    "width": 1200,
+    "height": 675,
+    "bytes": 74434
+  },
+  "hardscaping-320.webp": {
+    "width": 320,
+    "height": 213,
+    "bytes": 15612
+  },
+  "lawn-stripes-480.webp": {
+    "width": 480,
+    "height": 360,
+    "bytes": 26352
+  },
+  "lawn-stripes-800.webp": {
+    "width": 800,
+    "height": 600,
+    "bytes": 66676
+  },
+  "lawn-stripes-1024.webp": {
+    "width": 1024,
+    "height": 768,
+    "bytes": 111126
+  },
+  "mowing-381.webp": {
+    "width": 381,
+    "height": 500,
+    "bytes": 43704
+  },
+  "mulch-400.webp": {
+    "width": 400,
+    "height": 502,
+    "bytes": 37762
+  },
+  "outdoor-living-320.webp": {
+    "width": 320,
+    "height": 213,
+    "bytes": 12046
+  },
+  "patio-320.webp": {
+    "width": 320,
+    "height": 213,
+    "bytes": 14774
+  },
+  "property-lawn-preview-480.webp": {
+    "width": 480,
+    "height": 640,
+    "bytes": 41250
+  },
+  "property-lawn-preview-800.webp": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 106686
+  },
+  "property-lawn-preview-900.webp": {
+    "width": 900,
+    "height": 1200,
+    "bytes": 148814
+  },
+  "property-lawn-480.webp": {
+    "width": 480,
+    "height": 640,
+    "bytes": 41842
+  },
+  "property-lawn-800.webp": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 117214
+  },
+  "property-lawn-1200.webp": {
+    "width": 1200,
+    "height": 1600,
+    "bytes": 247848
+  },
+  "trimming-preview-480.webp": {
+    "width": 480,
+    "height": 640,
+    "bytes": 101676
+  },
+  "trimming-preview-800.webp": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 272494
+  },
+  "trimming-preview-900.webp": {
+    "width": 900,
+    "height": 1200,
+    "bytes": 368440
+  },
+  "trimming-480.webp": {
+    "width": 480,
+    "height": 640,
+    "bytes": 105034
+  },
+  "trimming-800.webp": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 290618
+  },
+  "trimming-1200.webp": {
+    "width": 1200,
+    "height": 1600,
+    "bytes": 629708
+  },
+  "backyard-480.avif": {
+    "width": 480,
+    "height": 640,
+    "bytes": 26147
+  },
+  "backyard-768.avif": {
+    "width": 768,
+    "height": 1024,
+    "bytes": 62797
+  },
+  "customer-480.avif": {
+    "width": 480,
+    "height": 640,
+    "bytes": 40906
+  },
+  "customer-768.avif": {
+    "width": 768,
+    "height": 1024,
+    "bytes": 93765
+  },
+  "edging-400.avif": {
+    "width": 400,
+    "height": 522,
+    "bytes": 20943
+  },
+  "founders-480.avif": {
+    "width": 480,
+    "height": 270,
+    "bytes": 10216
+  },
+  "founders-800.avif": {
+    "width": 800,
+    "height": 450,
+    "bytes": 21227
+  },
+  "founders-1200.avif": {
+    "width": 1200,
+    "height": 675,
+    "bytes": 36642
+  },
+  "hardscaping-320.avif": {
+    "width": 320,
+    "height": 213,
+    "bytes": 6290
+  },
+  "lawn-stripes-480.avif": {
+    "width": 480,
+    "height": 360,
+    "bytes": 12360
+  },
+  "lawn-stripes-800.avif": {
+    "width": 800,
+    "height": 600,
+    "bytes": 32057
+  },
+  "lawn-stripes-1024.avif": {
+    "width": 1024,
+    "height": 768,
+    "bytes": 50711
+  },
+  "mowing-381.avif": {
+    "width": 381,
+    "height": 500,
+    "bytes": 17242
+  },
+  "mulch-400.avif": {
+    "width": 400,
+    "height": 502,
+    "bytes": 15234
+  },
+  "outdoor-living-320.avif": {
+    "width": 320,
+    "height": 213,
+    "bytes": 5020
+  },
+  "patio-320.avif": {
+    "width": 320,
+    "height": 213,
+    "bytes": 5647
+  },
+  "property-lawn-480.avif": {
+    "width": 480,
+    "height": 640,
+    "bytes": 17800
+  },
+  "property-lawn-800.avif": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 49984
+  },
+  "property-lawn-1200.avif": {
+    "width": 1200,
+    "height": 1600,
+    "bytes": 111304
+  },
+  "trimming-preview-480.avif": {
+    "width": 480,
+    "height": 640,
+    "bytes": 40685
+  },
+  "trimming-preview-800.avif": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 109318
+  },
+  "trimming-preview-900.avif": {
+    "width": 900,
+    "height": 1200,
+    "bytes": 140438
+  },
+  "trimming-480.avif": {
+    "width": 480,
+    "height": 640,
+    "bytes": 41133
+  },
+  "trimming-800.avif": {
+    "width": 800,
+    "height": 1067,
+    "bytes": 118723
+  },
+  "trimming-1200.avif": {
+    "width": 1200,
+    "height": 1600,
+    "bytes": 260395
+  },
+  "yardu-logo-centered.svg": {
+    "width": 500,
+    "height": 500,
+    "bytes": 22756
+  }
+}

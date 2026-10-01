@@ -1,0 +1,176 @@
+{
+  "status": "frozen proposed local Page Map; owner release approval pending",
+  "origin": "https://hireyardu.com",
+  "routes": [
+    "/",
+    "/services-2/",
+    "/services/lawn-maintenance/",
+    "/our-mission/",
+    "/projects/",
+    "/service-areas/",
+    "/getestimate/",
+    "/404/",
+    "/service-areas/raleigh/",
+    "/service-areas/cary/",
+    "/service-areas/apex/",
+    "/service-areas/wake-forest/",
+    "/service-areas/fuquay-varina/",
+    "/service-areas/holly-springs/",
+    "/services/mowing/",
+    "/services/edging/",
+    "/services/trimming/",
+    "/services/blowing/",
+    "/reviews/",
+    "/services/mulch-straw-rock/",
+    "/services/leaf-debris-removal/",
+    "/services/hardscaping/",
+    "/services/pressure-washing/"
+  ],
+  "localAliases": {
+    "/services/": "/services-2/",
+    "/about/": "/our-mission/",
+    "/gallery/": "/projects/",
+    "/contact/": "/getestimate/"
+  },
+  "preservedExternal": [
+    "/franchising/",
+    "/privacy-policy/",
+    "/terms-conditions/",
+    "/meet-the-founders/",
+    "/watch-yardu-video/"
+  ],
+  "heldRoutes": [
+    "/join-the-movement/"
+  ],
+  "mediaPreservation": {
+    "status": "proposed, not deployed",
+    "preferredAction": "retain original /wp-content/uploads paths and original media bytes on migration; if moving, approve direct closest-equivalent 301/308 redirects and retain at least one year",
+    "knownMedia": [
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2026/05/hardscaping.png",
+        "localAsset": "/assets/images/hardscaping.png",
+        "sha256": "b8b8b53e6b195ba0efd404b5a8446c5fe62077457da1f50b2fa5dd20ce3bf51a",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2026/05/hardscaping.png",
+        "proposedEquivalent": "/assets/images/hardscaping.png",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      },
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2026/05/mulch-e1779826101762.png",
+        "localAsset": "/assets/images/mulch.png",
+        "sha256": "1bab59ffaec3e47a65565824f4efb0aa8f8c606a3cfbef08740dbff186237c12",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2026/05/mulch-e1779826101762.png",
+        "proposedEquivalent": "/assets/images/mulch.png",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      },
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2025/06/Customer-768x1024.jpeg",
+        "localAsset": "/assets/images/customer.jpeg",
+        "sha256": "cd0d75be24753c1dbf8d879be209761e1a1b84ac3e78b2e908c8a606e889241a",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2025/06/Customer-768x1024.jpeg",
+        "proposedEquivalent": "/assets/images/customer.jpeg",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      },
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2025/06/Backyard-lawn3-768x1024.jpeg",
+        "localAsset": "/assets/images/backyard.jpeg",
+        "sha256": "e5313fcf636956306d46d472b9eded29e4a8b099eb58e47afd63c38707112a08",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2025/06/Backyard-lawn3-768x1024.jpeg",
+        "proposedEquivalent": "/assets/images/backyard.jpeg",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      },
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2025/06/House-lawn-stripes-1024x768.jpeg",
+        "localAsset": "/assets/images/lawn-stripes.jpeg",
+        "sha256": "acba50a66fad07f9af42d7dae33550238cbff093073358ce402a996c1909cd62",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2025/06/House-lawn-stripes-1024x768.jpeg",
+        "proposedEquivalent": "/assets/images/lawn-stripes.jpeg",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      },
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2026/05/PaverPatio01.png",
+        "localAsset": "/assets/images/patio.png",
+        "sha256": "ecfdf8fd60e09963d34e0daad65da397d89f7ab463bfff898647b807e8bb19d3",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2026/05/PaverPatio01.png",
+        "proposedEquivalent": "/assets/images/patio.png",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      },
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2026/05/Outdoor-Living01.png",
+        "localAsset": "/assets/images/outdoor-living.png",
+        "sha256": "a7b5d37393d521acf2ae0f8cd56ed030a74b4f3f724d14401cb35e45ef3b2dd9",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2026/05/Outdoor-Living01.png",
+        "proposedEquivalent": "/assets/images/outdoor-living.png",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      },
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2025/06/Yard-U-Logo-with-Tagline.svg",
+        "localAsset": "/assets/images/yardu-logo.svg",
+        "sha256": "5db28ef6d40bc125c76879034e429d4965f88d55bc456ab9c67b1d9645db032c",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2025/06/Yard-U-Logo-with-Tagline.svg",
+        "proposedEquivalent": "/assets/images/yardu-logo.svg",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      },
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2026/05/mowing-e1779825780492.png",
+        "localAsset": "/assets/images/mowing.png",
+        "sha256": "3f7d1c762dd768e0b0aee66c71a4c4cea8a7811660da631eb9b59a4313ee733f",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2026/05/mowing-e1779825780492.png",
+        "proposedEquivalent": "/assets/images/mowing.png",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      },
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2026/05/Edging-e1779826490999.png",
+        "localAsset": "/assets/images/edging.png",
+        "sha256": "f75b02112bb7f2ddf49c663c9660e059f99796ad7bd9272bd60c0cec936afb26",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2026/05/Edging-e1779826490999.png",
+        "proposedEquivalent": "/assets/images/edging.png",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      },
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2025/06/Trimmer.jpeg",
+        "localAsset": "/assets/images/trimming.jpeg",
+        "sha256": "9fc5eed136ec1e21eb8cc29d53467604eb11fee709f54170737aef718bfa9f82",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2025/06/Trimmer.jpeg",
+        "proposedEquivalent": "/assets/images/trimming.jpeg",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      },
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2025/06/SLX.00_08_16_06.Still013-1.jpg",
+        "localAsset": "/assets/images/founders.jpg",
+        "sha256": "2191c24eb74a1889313a6e07ab907dc6c7ea9140680712d55cbfbc4328bad6c6",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2025/06/SLX.00_08_16_06.Still013-1.jpg",
+        "proposedEquivalent": "/assets/images/founders.jpg",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      },
+      {
+        "sourceUrl": "https://hireyardu.com/wp-content/uploads/2026/05/House2-lawn.jpeg",
+        "localAsset": "/assets/images/property-lawn.jpeg",
+        "sha256": "5bbdb9e164956685a510d1622785cd97e855cfa9f47e303ffdf4973987dfad44",
+        "approval": "public-source asset for local review; owner publication approval pending",
+        "sourcePath": "/wp-content/uploads/2026/05/House2-lawn.jpeg",
+        "proposedEquivalent": "/assets/images/property-lawn.jpeg",
+        "disposition": "preserve original path preferred; direct equivalent redirect requires approval"
+      }
+    ],
+    "videoHold": "Inventory and preserve existing video/MP4 URLs and the /watch-yardu-video/ page before launch. Original video bytes/source paths not copied in this local build. Do not map video URLs to images or the homepage.",
+    "releaseChecks": [
+      "Preserve Search Console and analytics/baseline evidence",
+      "Inventory all old media and inbound links, not only assets used by the new UI",
+      "Verify direct redirect or retained-URL HTTP200 and content type",
+      "Keep original media URLs out of blanket homepage redirect rules"
+    ]
+  },
+  "policy": "No slug changes without explicit Page Map revision and matching audit/tests. Existing known live page URLs are retained; aliases are local 302 only. Proposed production redirects require full old URL inventory and approval."
+}

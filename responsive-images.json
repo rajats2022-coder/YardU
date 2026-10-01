@@ -1,0 +1,240 @@
+{
+  "backyard.jpeg": {
+    "default": "backyard-768.webp",
+    "variants": [
+      {
+        "name": "backyard-480.webp",
+        "width": 480,
+        "height": 640,
+        "avif": "backyard-480.avif"
+      },
+      {
+        "name": "backyard-768.webp",
+        "width": 768,
+        "height": 1024,
+        "avif": "backyard-768.avif"
+      }
+    ]
+  },
+  "customer.jpeg": {
+    "default": "customer-768.webp",
+    "variants": [
+      {
+        "name": "customer-480.webp",
+        "width": 480,
+        "height": 640,
+        "avif": "customer-480.avif"
+      },
+      {
+        "name": "customer-768.webp",
+        "width": 768,
+        "height": 1024,
+        "avif": "customer-768.avif"
+      }
+    ]
+  },
+  "edging.png": {
+    "default": "edging-400.webp",
+    "variants": [
+      {
+        "name": "edging-400.webp",
+        "width": 400,
+        "height": 522,
+        "avif": "edging-400.avif"
+      }
+    ]
+  },
+  "founders.jpg": {
+    "default": "founders-1200.webp",
+    "variants": [
+      {
+        "name": "founders-480.webp",
+        "width": 480,
+        "height": 270,
+        "avif": "founders-480.avif"
+      },
+      {
+        "name": "founders-800.webp",
+        "width": 800,
+        "height": 450,
+        "avif": "founders-800.avif"
+      },
+      {
+        "name": "founders-1200.webp",
+        "width": 1200,
+        "height": 675,
+        "avif": "founders-1200.avif"
+      }
+    ]
+  },
+  "hardscaping.png": {
+    "default": "hardscaping-320.webp",
+    "variants": [
+      {
+        "name": "hardscaping-320.webp",
+        "width": 320,
+        "height": 213,
+        "avif": "hardscaping-320.avif"
+      }
+    ]
+  },
+  "lawn-stripes.jpeg": {
+    "default": "lawn-stripes-1024.webp",
+    "variants": [
+      {
+        "name": "lawn-stripes-480.webp",
+        "width": 480,
+        "height": 360,
+        "avif": "lawn-stripes-480.avif"
+      },
+      {
+        "name": "lawn-stripes-800.webp",
+        "width": 800,
+        "height": 600,
+        "avif": "lawn-stripes-800.avif"
+      },
+      {
+        "name": "lawn-stripes-1024.webp",
+        "width": 1024,
+        "height": 768,
+        "avif": "lawn-stripes-1024.avif"
+      }
+    ]
+  },
+  "mowing.png": {
+    "default": "mowing-381.webp",
+    "variants": [
+      {
+        "name": "mowing-381.webp",
+        "width": 381,
+        "height": 500,
+        "avif": "mowing-381.avif"
+      }
+    ]
+  },
+  "mulch.png": {
+    "default": "mulch-400.webp",
+    "variants": [
+      {
+        "name": "mulch-400.webp",
+        "width": 400,
+        "height": 502,
+        "avif": "mulch-400.avif"
+      }
+    ]
+  },
+  "outdoor-living.png": {
+    "default": "outdoor-living-320.webp",
+    "variants": [
+      {
+        "name": "outdoor-living-320.webp",
+        "width": 320,
+        "height": 213,
+        "avif": "outdoor-living-320.avif"
+      }
+    ]
+  },
+  "patio.png": {
+    "default": "patio-320.webp",
+    "variants": [
+      {
+        "name": "patio-320.webp",
+        "width": 320,
+        "height": 213,
+        "avif": "patio-320.avif"
+      }
+    ]
+  },
+  "property-lawn-preview.jpg": {
+    "default": "property-lawn-1200.webp",
+    "variants": [
+      {
+        "name": "property-lawn-480.webp",
+        "width": 480,
+        "height": 640,
+        "avif": "property-lawn-480.avif"
+      },
+      {
+        "name": "property-lawn-800.webp",
+        "width": 800,
+        "height": 1067,
+        "avif": "property-lawn-800.avif"
+      },
+      {
+        "name": "property-lawn-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "avif": "property-lawn-1200.avif"
+      }
+    ]
+  },
+  "property-lawn.jpeg": {
+    "default": "property-lawn-1200.webp",
+    "variants": [
+      {
+        "name": "property-lawn-480.webp",
+        "width": 480,
+        "height": 640,
+        "avif": "property-lawn-480.avif"
+      },
+      {
+        "name": "property-lawn-800.webp",
+        "width": 800,
+        "height": 1067,
+        "avif": "property-lawn-800.avif"
+      },
+      {
+        "name": "property-lawn-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "avif": "property-lawn-1200.avif"
+      }
+    ]
+  },
+  "trimming-preview.jpg": {
+    "default": "trimming-preview-900.webp",
+    "variants": [
+      {
+        "name": "trimming-preview-480.webp",
+        "width": 480,
+        "height": 640,
+        "avif": "trimming-preview-480.avif"
+      },
+      {
+        "name": "trimming-preview-800.webp",
+        "width": 800,
+        "height": 1067,
+        "avif": "trimming-preview-800.avif"
+      },
+      {
+        "name": "trimming-preview-900.webp",
+        "width": 900,
+        "height": 1200,
+        "avif": "trimming-preview-900.avif"
+      }
+    ]
+  },
+  "trimming.jpeg": {
+    "default": "trimming-1200.webp",
+    "variants": [
+      {
+        "name": "trimming-480.webp",
+        "width": 480,
+        "height": 640,
+        "avif": "trimming-480.avif"
+      },
+      {
+        "name": "trimming-800.webp",
+        "width": 800,
+        "height": 1067,
+        "avif": "trimming-800.avif"
+      },
+      {
+        "name": "trimming-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "avif": "trimming-1200.avif"
+      }
+    ]
+  }
+}

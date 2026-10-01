@@ -1,0 +1,8 @@
+node_modules
+dist/
+.env
+.env.*
+.DS_Store
+qa/*
+!qa/.gitkeep
+seo-audit-results.json
