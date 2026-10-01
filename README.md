@@ -60,6 +60,8 @@ The versioned PNG URL gives crawlers a fresh asset. Messaging apps can cache exi
 
 ## Mobile verification
 
-The mobile hero shows a wide truck photo, then centered copy and stacked CTAs on black. The compact header and solid action bar sit flush to the viewport edges, use safe-area insets, and avoid floating blur/radii. The bar and launcher hide while editing; the guide uses visualViewport height for keyboard placement.
+The mobile hero shows a wide truck photo, then centered copy and stacked CTAs on black. The compact header and both bottom actions are pure black, sit flush to the viewport edges, use black safe-area backing, and avoid floating blur/radii. Mobile page texture is disabled; theme-color hints black to supporting browsers. Native Safari chrome is browser-owned. The bar and launcher hide while editing; the guide uses visualViewport height for keyboard placement.
 
 `npm run test:mobile` checks eight portrait/landscape touch sizes, simulated safe areas, and one simulated keyboard state. Native Safari controls are owned by the browser. Chromium emulation does not verify actual iOS Safari toolbar/keyboard or WebKit rendering; a real iPhone check remains a device validation step.
+
+The first two trust cards are full-card CTAs: “85+ reviews / 5.0 on Google” → verified Google profile (dated October 1, 2026 snapshot), and “Get a quote” → /getestimate/. The aggregate rating is not a claim that every individual review is five-star.

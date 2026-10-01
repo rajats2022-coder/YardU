@@ -22,6 +22,8 @@ Poppins is self-hosted. Red, black and white replace the reference palette. Resp
 
 ## Intentional differences and limits
 
-Client-specific text is factual YardU copy, so heading length and content height differ from the reference. Trust tiles describe verified purpose/package/communities/contact instead of unsupported source claims. YardU's working service hub, six distinct city pages, breadcrumbs, map and local estimate guide are preserved. Forms remain visibly disconnected. A dated Google 5.0/89 snapshot remains separate from website testimonials.
+Client-specific text is factual YardU copy, so heading length and content height differ from the reference. Trust tiles use dated verified Google proof, an estimate CTA, communities and contact instead of unsupported source claims. YardU's working service hub, six distinct city pages, breadcrumbs, map and local estimate guide are preserved. Forms remain visibly disconnected. A dated Google 5.0/89 snapshot remains separate from website testimonials.
 
 Automated axe checks reported zero violations across 66 route/state runs; incomplete image/gradient observations received visual review and are not certification. Chromium touch/safe-area/keyboard emulation does not certify native iOS Safari toolbar/keyboard or WebKit behavior. A real iPhone check remains a device validation step. Performance measurements are local lab results, not production/field measurements.
+
+The focused mobile-bar/trust-card refinement also passed: pure-black page bars/safe-area backing and readable white actions; prominent Google proof and estimate cards; all 150 responsive combinations, nine mobile states and four focused axe/keyboard checks. Screenshot pixels verify synthetic safe-area bands are #000. Native Safari controls are not claimed to be page-controlled or device-verified.
