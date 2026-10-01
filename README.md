@@ -14,6 +14,14 @@ npm run dev
 
 Open http://localhost:4319/. Generated files are in `dist/`, excluded from Git. The server binds loopback only and retains preview noindex/robots controls.
 
+## Vercel build settings
+
+The root `vercel.json` sets Framework Preset **Other**, Build Command **npm run build**, and Output Directory **dist**. Select the repository root (leave Root Directory empty), use **npm ci --ignore-scripts** if overriding the install command, and use Node.js **22.x** or newer. If the dashboard still shows an Output Directory override of `public`, change it to `dist` or remove the override. Redeploy the commit containing `vercel.json`, rather than rerunning the older commit.
+
+This is a static multi-page build. Vercel uses the generated directory `index.html` files and `404.html`; there is no homepage catch-all rewrite. The configuration includes the four temporary 302 aliases (with and without trailing slash), trailing-slash normalization, and the existing noindex/nosniff/CSP headers. These rules are Vercel configuration, not Netlify `_redirects` or `_headers` files. Verify actual statuses, headers and paths on the user's deployment; local build checks do not prove a live Vercel deployment.
+
+The loopback Node server and its `/api/chat` endpoint are not deployed by this static configuration. If the endpoint is unavailable, the guide shows its services/phone fallback; the estimate draft still works in the tab. No provider credentials, API functions or lead delivery are enabled. The estimate form remains disconnected. Preview robots/meta/header indexing blocks also remain in force.
+
 ## Verify
 
 ```sh

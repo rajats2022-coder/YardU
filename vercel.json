@@ -1,0 +1,30 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/services", "destination": "/services-2/", "statusCode": 302 },
+    { "source": "/services/", "destination": "/services-2/", "statusCode": 302 },
+    { "source": "/about", "destination": "/our-mission/", "statusCode": 302 },
+    { "source": "/about/", "destination": "/our-mission/", "statusCode": 302 },
+    { "source": "/gallery", "destination": "/projects/", "statusCode": 302 },
+    { "source": "/gallery/", "destination": "/projects/", "statusCode": 302 },
+    { "source": "/contact", "destination": "/getestimate/", "statusCode": 302 },
+    { "source": "/contact/", "destination": "/getestimate/", "statusCode": 302 }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self' https://*.cartocdn.com https://basemaps.cartocdn.com; worker-src 'self' blob:; form-action 'none'; frame-src 'none'; base-uri 'self'"
+        }
+      ]
+    }
+  ]
+}
