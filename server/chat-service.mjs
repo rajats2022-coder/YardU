@@ -10,7 +10,12 @@ const answers={
  hardscape:{name:'Hardscaping',text:'YardU lists patios, walkways, retaining walls and firepits. Describe the space and intended use, then confirm design, materials, relevant permits, timing and the estimate.',path:'/services/hardscaping/'},
  cleanup:{name:'Property cleanups',text:'YardU offers property cleanups. Describe the outdoor areas, current condition, access, and finish you want; confirm the included work, material handling, estimate, and timing with the team.',path:'/services/property-cleanups/'},
  sod:{name:'Sod',text:'YardU offers sod. Share the lawn areas, current condition, access, and goals; confirm suitable materials, preparation, care instructions, estimate, and scheduling directly with the team.',path:'/services/sod/'},
- pressure:{name:'Pressure washing',text:'YardU lists pressure washing for siding, driveways, decks and other surfaces. Share the material, condition and areas to clean; confirm a suitable method and expected finish.',path:'/services/pressure-washing/'}
+ pressure:{name:'Pressure washing',text:'YardU lists pressure washing for siding, driveways, decks and other surfaces. Share the material, condition and areas to clean; confirm a suitable method and expected finish.',path:'/services/pressure-washing/'},
+ plant:{name:"Plant Installs",text:"YardU offers plant installs. Share the planting areas, preferences, current conditions and access; confirm plants, preparation, estimate and timing with the team.",path:'/services/plant-installs/'},
+ aeration:{name:"Aeration & Overseeding",text:"YardU offers aeration and overseeding. Describe the lawn areas, current condition and goals; confirm the approach, materials, preparation, aftercare and timing directly with the team.",path:'/services/aeration-overseeding/'},
+ drainage:{name:"Drainage",text:"YardU offers drainage services. Share affected areas and your observations; confirm assessment, proposed work, materials, estimate and scheduling for the property.",path:'/services/drainage/'},
+ lights:{name:"Christmas Light Installs",text:"YardU offers Christmas light installs. Share the desired layout and timing; confirm lights, included work, access and any removal or storage arrangements directly with the team.",path:'/services/christmas-light-installs/'},
+ snow:{name:"Snow Removal",text:"YardU offers snow removal. Identify the areas to clear, surfaces, current conditions and access; confirm the scope, estimate and current availability directly with the team.",path:'/services/snow-removal/'}
 };
 const schema={type:'object',properties:{topic:{type:'string',enum:topics},service:{type:'string',enum:['none',...SERVICE_IDS]}},required:['topic','service'],additionalProperties:false};
 export function validFeatures(value){
@@ -18,7 +23,7 @@ export function validFeatures(value){
  const allowed={services:SERVICE_IDS,questions:QUESTION_IDS,cities:CITY_IDS,qualifiers:QUALIFIER_IDS};
  return Object.keys(value).length===4&&Object.entries(allowed).every(([key,options])=>Array.isArray(value[key])&&value[key].length<=options.length&&new Set(value[key]).size===value[key].length&&value[key].every(item=>typeof item==='string'&&options.includes(item)));
 }
-const classifyLocally=f=>({topic:f.questions.includes('unknown-service')||f.questions.includes('unverified')?'unknown':f.questions.includes('pricing')?'pricing':f.questions.includes('booking')?'booking':f.questions.includes('contact')?'contact':f.questions.includes('mission')?'mission':f.questions.includes('areas')||f.cities.length?'areas':f.services.length?'service':'unknown',service:f.services.includes('sod')?'sod':f.services.includes('cleanup')?'cleanup':f.services[0]||'none'});
+const classifyLocally=f=>({topic:f.questions.includes('unknown-service')||f.questions.includes('unverified')?'unknown':f.questions.includes('pricing')?'pricing':f.questions.includes('booking')?'booking':f.questions.includes('contact')?'contact':f.questions.includes('mission')?'mission':f.questions.includes('areas')||f.cities.length?'areas':f.services.length?'service':'unknown',service:['plant','aeration','drainage','lights','snow'].find(id=>f.services.includes(id))|| (f.services.includes('sod')?'sod':f.services.includes('cleanup')?'cleanup':f.services[0]||'none')});
 function factualResponse(choice,features){
  // Hard boundaries override model routing: no model-generated prices or availability.
  if(features.questions.includes('unknown-service')||features.questions.includes('unverified'))choice={topic:'unknown',service:'none'};
@@ -28,11 +33,11 @@ function factualResponse(choice,features){
  let answer,path='/getestimate/',label='Prepare your estimate';
  if(choice.topic==='service'&&answers[choice.service]){answer=answers[choice.service].text;path=answers[choice.service].path;label='Explore '+answers[choice.service].name;}
  else if(choice.topic==='areas'){answer='YardU lists Raleigh, Cary, Apex, Wake Forest, Fuquay-Varina and Holly Springs. Confirm your exact property and current availability with the team.';path='/service-areas/';label='See the area guides';if(features.cities.includes('other'))answer+=' For another town, ask the team directly; coverage is not confirmed here.';}
- else if(choice.topic==='contact')answer='Call or text YardU at (919) 592-8328. Contact hours are 6 AM–10 PM. Email jackson@hireyardu.com.';
+ else if(choice.topic==='contact')answer='Call or text YardU at (919) 592-8328. Contact hours are 7 AM–7 PM every day. Email jackson@hireyardu.com.';
  else if(choice.topic==='pricing')answer='An estimate depends on the actual property and agreed scope. Share the service, lawn or project condition, and access details with YardU to discuss price. This guide does not quote a rate or offer a discount.';
  else if(choice.topic==='booking')answer='YardU confirms address availability, scope, timing and visit frequency directly. This guide cannot reserve an appointment or promise a date. Call (919) 592-8328 or prepare an estimate request.';
  else if(choice.topic==='mission'){answer='YardU combines lawn care with opportunities for young people to learn responsibility, communication, professionalism and work ethic. Founded by Jackson DeSilva, its mission is training tomorrow’s youth, one yard at a time.';path='/our-mission/';label='Explore the mission';}
- else{answer='YardU lists the lawn package, mulch/straw/rock, leaf/debris removal, hardscaping, pressure washing, property cleanups and sod. The team can confirm other work and project-specific details. Call (919) 592-8328 or include your question in an estimate request.';path='/services-2/';label='Explore verified services';}
+ else{answer='YardU lists the lawn package, mulch/straw/rock, leaf/debris removal, hardscaping, pressure washing, property cleanups, sod, plant installs, aeration and overseeding, drainage, Christmas light installs and snow removal. The team can confirm other work and project-specific details. Call (919) 592-8328 or include your question in an estimate request.';path='/services-2/';label='Explore verified services';}
  return {answer,link:{path,label},followUp:'Would you like to prepare an estimate draft?',leadConnected:false};
 }
 export class FreeBudget{

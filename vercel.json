@@ -5,24 +5,123 @@
   "outputDirectory": "dist",
   "trailingSlash": true,
   "redirects": [
-    { "source": "/services", "destination": "/services-2/", "statusCode": 302 },
-    { "source": "/services/", "destination": "/services-2/", "statusCode": 302 },
-    { "source": "/about", "destination": "/our-mission/", "statusCode": 302 },
-    { "source": "/about/", "destination": "/our-mission/", "statusCode": 302 },
-    { "source": "/gallery", "destination": "/projects/", "statusCode": 302 },
-    { "source": "/gallery/", "destination": "/projects/", "statusCode": 302 },
-    { "source": "/contact", "destination": "/getestimate/", "statusCode": 302 },
-    { "source": "/contact/", "destination": "/getestimate/", "statusCode": 302 }
+    {
+      "source": "/services",
+      "destination": "/services-2/",
+      "statusCode": 308
+    },
+    {
+      "source": "/services/",
+      "destination": "/services-2/",
+      "statusCode": 308
+    },
+    {
+      "source": "/about",
+      "destination": "/our-mission/",
+      "statusCode": 308
+    },
+    {
+      "source": "/about/",
+      "destination": "/our-mission/",
+      "statusCode": 308
+    },
+    {
+      "source": "/gallery",
+      "destination": "/projects/",
+      "statusCode": 308
+    },
+    {
+      "source": "/gallery/",
+      "destination": "/projects/",
+      "statusCode": 308
+    },
+    {
+      "source": "/contact",
+      "destination": "/getestimate/",
+      "statusCode": 308
+    },
+    {
+      "source": "/contact/",
+      "destination": "/getestimate/",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/hardscaping.png",
+      "destination": "/assets/images/hardscaping.png",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/mulch-e1779826101762.png",
+      "destination": "/assets/images/mulch.png",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2025/06/Customer-768x1024.jpeg",
+      "destination": "/assets/images/customer.jpeg",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2025/06/Backyard-lawn3-768x1024.jpeg",
+      "destination": "/assets/images/backyard.jpeg",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2025/06/House-lawn-stripes-1024x768.jpeg",
+      "destination": "/assets/images/lawn-stripes.jpeg",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/PaverPatio01.png",
+      "destination": "/assets/images/patio.png",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/Outdoor-Living01.png",
+      "destination": "/assets/images/outdoor-living.png",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2025/06/Yard-U-Logo-with-Tagline.svg",
+      "destination": "/assets/images/yardu-logo.svg",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/mowing-e1779825780492.png",
+      "destination": "/assets/images/mowing.png",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/Edging-e1779826490999.png",
+      "destination": "/assets/images/edging.png",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2025/06/Trimmer.jpeg",
+      "destination": "/assets/images/trimming.jpeg",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2025/06/SLX.00_08_16_06.Still013-1.jpg",
+      "destination": "/assets/images/founders.jpg",
+      "statusCode": 308
+    },
+    {
+      "source": "/wp-content/uploads/2026/05/House2-lawn.jpeg",
+      "destination": "/assets/images/property-lawn.jpeg",
+      "statusCode": 308
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self' https://*.cartocdn.com https://basemaps.cartocdn.com; worker-src 'self' blob:; form-action 'none'; frame-src 'none'; base-uri 'self'"
+          "value": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self' https://*.cartocdn.com https://basemaps.cartocdn.com; worker-src 'self' blob:; form-action 'none'; frame-src https://secure.copilotcrm.com; base-uri 'self'"
         }
       ]
     }

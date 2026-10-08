@@ -1,5 +1,5 @@
 {
-  "status": "Client-approved extension October 1: property cleanups, sod and local Jackson founder page; existing paths preserved",
+  "status": "Client-approved extension October 1: property cleanups, sod and local Jackson founder page; existing paths preserved; client-confirmed five-service extension requested October 8",
   "origin": "https://hireyardu.com",
   "routes": [
     "/",
@@ -27,7 +27,12 @@
     "/services/mulch-straw-rock/",
     "/services/leaf-debris-removal/",
     "/services/hardscaping/",
-    "/services/pressure-washing/"
+    "/services/pressure-washing/",
+    "/services/plant-installs/",
+    "/services/aeration-overseeding/",
+    "/services/drainage/",
+    "/services/christmas-light-installs/",
+    "/services/snow-removal/"
   ],
   "localAliases": {
     "/services/": "/services-2/",

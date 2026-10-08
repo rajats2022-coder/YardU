@@ -1,4 +1,4 @@
-// Local-only UI. No integrations, storage, tracking, or outgoing form requests.
+// Site interactions; Homeworks securely handles estimate requests in its own frame.
 const menuButton = document.querySelector('.menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
 const scrim = document.querySelector('[data-menu-scrim]');
@@ -58,35 +58,14 @@ document.querySelectorAll('[data-area]').forEach(button=>button.addEventListener
   const title = document.querySelector('[data-area-title]');
   if(title && button instanceof HTMLElement) title.textContent=`${button.dataset.area}, NC`;
 }));
-const form=document.querySelector('#estimate-form');
-if(form instanceof HTMLFormElement){
-  // The server CSP blocks form submission even if JavaScript is unavailable.
-  form.addEventListener('submit',event=>{
-    event.preventDefault();
-    const fields=['name','phone','email','city','service'];
-    /** @type {HTMLElement[]} */
-const invalidFields=[];
-    fields.forEach(id=>{
-      const field=document.getElementById(id),error=document.getElementById(`${id}-error`);
-      if(!(field instanceof HTMLInputElement || field instanceof HTMLSelectElement))return;
-      let message='';
-      if(!field.value.trim())message='Please complete this field.';
-      else if(id==='phone' && field.value.replace(/\D/g,'').length<10)message='Enter a phone number with at least 10 digits.';
-      else if(!field.validity.valid)message=id==='email'?'Enter a valid email address.':'Please check this field.';
-      field.setAttribute('aria-invalid',String(Boolean(message)));
-      if(error)error.textContent=message;
-      if(message) invalidFields.push(field);
-    });
-    const status=document.getElementById('form-status');
-    const firstInvalid=invalidFields[0];
-    if(firstInvalid instanceof HTMLElement){if(status)status.textContent='Check the highlighted fields. Nothing has been sent.';firstInvalid.focus();return;}
-    if(status instanceof HTMLElement){status.textContent='Your preview request is complete. Nothing has been sent or saved. Call (919) 592-8328 to request a live estimate.';status.focus();}
-  });
-  form.addEventListener('input',event=>{
-    if(!(event.target instanceof HTMLInputElement || event.target instanceof HTMLSelectElement))return;
-    event.target.removeAttribute('aria-invalid');
-    const error=document.getElementById(`${event.target.id}-error`);if(error)error.textContent='';
-    const status=document.getElementById('form-status');if(status)status.textContent='';
+// Homeworks owns validation and delivery inside its cross-origin frame.
+const requestFrame=document.getElementById('homeworks-request-form');
+if(requestFrame instanceof HTMLIFrameElement){
+  window.addEventListener('message',event=>{
+    if(event.origin!=='https://secure.copilotcrm.com'||event.source!==requestFrame.contentWindow)return;
+    if(!Array.isArray(event.data)||event.data[0]!=='setHeight')return;
+    const height=Number(event.data[1]);
+    if(Number.isFinite(height)&&height>=80&&height<=10000)requestFrame.style.height=`${Math.ceil(height)}px`;
   });
 }
 // The same stacked-card interaction as the agency reference, using YardU quotes.

@@ -26,7 +26,7 @@ chatClose?.addEventListener('click',()=>setChatOpen(false));
 chatPanel?.addEventListener('keydown',event=>{if(event instanceof KeyboardEvent&&event.key==='Escape'){event.preventDefault();setChatOpen(false);}});
 chatPanel?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setChatOpen(false)));
 window.addEventListener('pageshow',()=>{if(chatPanel instanceof HTMLElement)chatPanel.hidden=true;chatLauncher?.setAttribute('aria-expanded','false');});
-const paths=new Set(['/services-2/','/services/lawn-maintenance/','/services/mulch-straw-rock/','/services/leaf-debris-removal/','/services/hardscaping/','/services/pressure-washing/','/services/property-cleanups/','/services/sod/','/service-areas/wake-forest/','/service-areas/','/our-mission/','/getestimate/']);
+const paths=new Set(['/services-2/','/services/lawn-maintenance/','/services/mulch-straw-rock/','/services/leaf-debris-removal/','/services/hardscaping/','/services/pressure-washing/','/services/property-cleanups/','/services/sod/','/services/plant-installs/','/services/aeration-overseeding/','/services/drainage/','/services/christmas-light-installs/','/services/snow-removal/','/service-areas/wake-forest/','/service-areas/','/our-mission/','/getestimate/']);
 async function askGuide(){
  if(pending||!(question instanceof HTMLInputElement)||!(submit instanceof HTMLButtonElement)||!(answer instanceof HTMLElement))return;
  const text=question.value.trim();
