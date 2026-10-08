@@ -2,7 +2,7 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from html.parser import HTMLParser
 import urllib.request,json,difflib
-root=Path('/tmp/yardu-push-oct8');out=root/'qa/live-baseline';out.mkdir(parents=True,exist_ok=True)
+root=Path(__file__).resolve().parents[1];out=root/'qa/live-baseline';out.mkdir(parents=True,exist_ok=True)
 manifest=json.loads((root/'route-manifest.json').read_text())
 new={'/services/'+s+'/' for s in ['plant-installs','aeration-overseeding','drainage','christmas-light-installs','snow-removal']}
 class Text(HTMLParser):
