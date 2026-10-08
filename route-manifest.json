@@ -16,7 +16,7 @@
         "WebPage"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services-2/",
@@ -33,7 +33,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/lawn-maintenance/",
@@ -51,7 +51,7 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/our-mission/",
@@ -68,7 +68,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/meet-the-founders/",
@@ -85,7 +85,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/projects/",
@@ -102,7 +102,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/",
@@ -119,7 +119,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/getestimate/",
@@ -136,7 +136,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/404/",
@@ -148,7 +148,7 @@
       "parent": "/",
       "schema": [],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/raleigh/",
@@ -165,7 +165,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/cary/",
@@ -182,7 +182,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/apex/",
@@ -199,7 +199,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/wake-forest/",
@@ -216,7 +216,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/fuquay-varina/",
@@ -233,7 +233,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/holly-springs/",
@@ -250,7 +250,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/mowing/",
@@ -267,7 +267,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/edging/",
@@ -284,7 +284,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/trimming/",
@@ -301,7 +301,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/blowing/",
@@ -318,7 +318,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/reviews/",
@@ -335,7 +335,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/property-cleanups/",
@@ -353,7 +353,7 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/sod/",
@@ -371,7 +371,7 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/mulch-straw-rock/",
@@ -389,7 +389,7 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/leaf-debris-removal/",
@@ -407,7 +407,7 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/hardscaping/",
@@ -425,7 +425,7 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/pressure-washing/",
@@ -443,7 +443,7 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/plant-installs/",
@@ -461,7 +461,7 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/aeration-overseeding/",
@@ -479,7 +479,7 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/drainage/",
@@ -497,7 +497,7 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/christmas-light-installs/",
@@ -515,7 +515,7 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/snow-removal/",
@@ -533,7 +533,7 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     }
   ],
   "redirects": {
