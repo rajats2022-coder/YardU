@@ -21,7 +21,7 @@
     {
       "path": "/services-2/",
       "title": "Lawn & Landscaping Services | YardU",
-      "description": "Explore the YardU Special lawn package plus mulch, straw and rock, leaf and debris removal, hardscaping, pressure washing, property cleanups, and sod.",
+      "description": "Explore YardU’s lawn package, landscaping, plant installs, aeration and overseeding, drainage, Christmas light installs, and snow removal.",
       "canonical": "https://hireyardu.com/services-2/",
       "indexable": false,
       "type": "service-hub",
@@ -124,7 +124,7 @@
     {
       "path": "/getestimate/",
       "title": "Request an Estimate | YardU",
-      "description": "Discuss your lawn care needs with YardU at (919) 592-8328. This local preview form does not send or save a lead.",
+      "description": "Discuss your lawn care needs with YardU at (919) 592-8328. Send your property and service details securely to YardU through Homeworks.",
       "canonical": "https://hireyardu.com/getestimate/",
       "indexable": false,
       "type": "conversion",
@@ -340,7 +340,7 @@
     {
       "path": "/services/property-cleanups/",
       "title": "Property Cleanups in Raleigh & the Triangle | YardU",
-      "description": "Tell YardU which outdoor areas need attention and the result you have in mind. Discuss the scope, property, and estimate directly with YardU.",
+      "description": "Property Cleanups from YardU in Raleigh and the Triangle, NC. A defined cleanup scope for your outdoor property. Confirm your property, scope, and availability with the team.",
       "canonical": "https://hireyardu.com/services/property-cleanups/",
       "indexable": false,
       "type": "service",
@@ -358,7 +358,7 @@
     {
       "path": "/services/sod/",
       "title": "Sod in Raleigh & the Triangle | YardU",
-      "description": "Bring your lawn area, current condition, and sod goals into one conversation. Discuss the scope, property, and estimate directly with YardU.",
+      "description": "Sod from YardU in Raleigh and the Triangle, NC. Discuss sod for the areas you want established or refreshed. Confirm your property, scope, and availability with the team.",
       "canonical": "https://hireyardu.com/services/sod/",
       "indexable": false,
       "type": "service",
@@ -376,7 +376,7 @@
     {
       "path": "/services/mulch-straw-rock/",
       "title": "Mulch, Straw & Rock Installation in Raleigh & the Triangle | YardU",
-      "description": "Refresh the material and finish around your landscape beds. Discuss the scope, property, and estimate directly with YardU.",
+      "description": "Mulch, Straw & Rock Installation from YardU in Raleigh and the Triangle, NC. Material selection, even coverage, and a finished bed edge. Confirm your property, scope, and availability with the team.",
       "canonical": "https://hireyardu.com/services/mulch-straw-rock/",
       "indexable": false,
       "type": "service",
@@ -394,7 +394,7 @@
     {
       "path": "/services/leaf-debris-removal/",
       "title": "Leaf & Debris Removal in Raleigh & the Triangle | YardU",
-      "description": "A separate cleanup scope for leaves, twigs, and fallen limbs. Discuss the scope, property, and estimate directly with YardU.",
+      "description": "Leaf & Debris Removal from YardU in Raleigh and the Triangle, NC. Discuss collection, clearing, and hauling for your property. Confirm your property, scope, and availability with the team.",
       "canonical": "https://hireyardu.com/services/leaf-debris-removal/",
       "indexable": false,
       "type": "service",
@@ -412,7 +412,7 @@
     {
       "path": "/services/hardscaping/",
       "title": "Hardscaping in Raleigh & the Triangle | YardU",
-      "description": "Shape an outdoor project around how you use the property. Discuss the scope, property, and estimate directly with YardU.",
+      "description": "Hardscaping from YardU in Raleigh and the Triangle, NC. Patios, walkways, retaining walls, and firepit project discussions. Confirm your property, scope, and availability with the team.",
       "canonical": "https://hireyardu.com/services/hardscaping/",
       "indexable": false,
       "type": "service",
@@ -430,8 +430,98 @@
     {
       "path": "/services/pressure-washing/",
       "title": "Pressure Washing in Raleigh & the Triangle | YardU",
-      "description": "Start with the surface, condition, and cleaning goal. Discuss the scope, property, and estimate directly with YardU.",
+      "description": "Pressure Washing from YardU in Raleigh and the Triangle, NC. Discuss cleaning needs for siding, driveways, decks, and more. Confirm your property, scope, and availability with the team.",
       "canonical": "https://hireyardu.com/services/pressure-washing/",
+      "indexable": false,
+      "type": "service",
+      "parent": "/services-2/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+    },
+    {
+      "path": "/services/plant-installs/",
+      "title": "Plant Installs in Raleigh & the Triangle | YardU",
+      "description": "Plant Installs from YardU in Raleigh and the Triangle, NC. Discuss new plants for the areas you want to refresh. Confirm your property, scope, and availability with the team.",
+      "canonical": "https://hireyardu.com/services/plant-installs/",
+      "indexable": false,
+      "type": "service",
+      "parent": "/services-2/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+    },
+    {
+      "path": "/services/aeration-overseeding/",
+      "title": "Aeration & Overseeding in Raleigh & the Triangle | YardU",
+      "description": "Aeration & Overseeding from YardU in Raleigh and the Triangle, NC. Discuss aeration and overseeding for your lawn. Confirm your property, scope, and availability with the team.",
+      "canonical": "https://hireyardu.com/services/aeration-overseeding/",
+      "indexable": false,
+      "type": "service",
+      "parent": "/services-2/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+    },
+    {
+      "path": "/services/drainage/",
+      "title": "Drainage in Raleigh & the Triangle | YardU",
+      "description": "Drainage from YardU in Raleigh and the Triangle, NC. Start with the water concerns you see on your property. Confirm your property, scope, and availability with the team.",
+      "canonical": "https://hireyardu.com/services/drainage/",
+      "indexable": false,
+      "type": "service",
+      "parent": "/services-2/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+    },
+    {
+      "path": "/services/christmas-light-installs/",
+      "title": "Christmas Light Installs in Raleigh & the Triangle | YardU",
+      "description": "Christmas Light Installs from YardU in Raleigh and the Triangle, NC. Discuss your holiday lighting layout and preferred timing. Confirm your property, scope, and availability with the team.",
+      "canonical": "https://hireyardu.com/services/christmas-light-installs/",
+      "indexable": false,
+      "type": "service",
+      "parent": "/services-2/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+    },
+    {
+      "path": "/services/snow-removal/",
+      "title": "Snow Removal in Raleigh & the Triangle | YardU",
+      "description": "Snow Removal from YardU in Raleigh and the Triangle, NC. Discuss the areas to clear and current availability. Confirm your property, scope, and availability with the team.",
+      "canonical": "https://hireyardu.com/services/snow-removal/",
       "indexable": false,
       "type": "service",
       "parent": "/services-2/",

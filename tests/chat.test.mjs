@@ -47,7 +47,7 @@ test('Verified answers cover seven confirmed services, six towns and the mission
 });
 test('Confirmed contact facts and generic Wake Forest availability never call provider',async()=>{
  let calls=0;const chat=live({fetchImpl:async()=>{calls++;throw new Error('must not call');}});
- const contact=await ask(chat,featuresFromText('What are your hours and email?'));assert.match(contact.answer,/6 AM–10 PM/);assert.match(contact.answer,/jackson@hireyardu.com/);assert.doesNotMatch(contact.answer,/Monday|every day|24.hours/i);
+ const contact=await ask(chat,featuresFromText('What are your hours and email?'));assert.match(contact.answer,/7 AM–7 PM every day/);assert.match(contact.answer,/jackson@hireyardu.com/);assert.doesNotMatch(contact.answer,/Monday|24.hours/i);
  const coverage=await ask(chat,featuresFromText('Can you do weekly mowing in Wake Forest?'));assert.match(coverage.answer,/confirm availability/);assert.doesNotMatch(coverage.answer,/one.time|recurring service|weekly service|not offered/i);assert.equal(coverage.link.path,'/service-areas/wake-forest/');assert.equal(calls,0);
 });
 test('Malformed and unrequested model output falls back to verified facts',async()=>{

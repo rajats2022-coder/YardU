@@ -18,7 +18,7 @@ for(const route of manifest.routes){
  check(!/envision|jobber|googletagmanager|gtag\(|jotform|localStorage|sessionStorage/i.test(html),`${route.path}: tenant isolation`);
  check(html.includes('tel:+19195928328'),`${route.path}: YardU phone`);
  check(html.includes('mailto:jackson@hireyardu.com'),`${route.path}: confirmed public email`);
- check(html.includes('Contact hours: 6 AM–10 PM'),`${route.path}: confirmed contact hours without invented days`);
+ check(html.includes('Contact hours: 7 AM–7 PM every day'),`${route.path}: confirmed contact hours without invented days`);
  check(!/Thayer|Thomas|Co-Founder|cofounder|YardU’s founders/i.test(html),`${route.path}: sole Jackson founder credit`);
  check(!/one.time projects|one.time only|projects only/i.test(html),`${route.path}: general availability presentation`);
  check(html.includes('viewport-fit=cover'),`${route.path}: safe-area viewport`);
@@ -47,7 +47,8 @@ for(const [route,html] of pages){
 }
 const js=await readFile(resolve(dist,'assets/site.js'),'utf8');
 check(!/fetch\(|XMLHttpRequest|sendBeacon|localStorage|sessionStorage|document\.cookie/.test(js),'No outbound JS or persistence');
-check(js.includes('event.preventDefault()'),'Validation does not send requests');
+check(js.includes("event.origin!=='https://secure.copilotcrm.com'"),'Existing CRM frame message origin remains restricted');
+for(const route of ['/', '/getestimate/'])check(pages.get(route).includes('embedNew/93604580-7d65-4275-8638-95088dcb20c6'),route+': existing CRM embed preserved');
 const chatJS=await readFile(resolve(dist,'assets/yardu-chat.js'),'utf8');check(!/XMLHttpRequest|sendBeacon|localStorage|sessionStorage|document\.cookie|api\.groq/.test(chatJS),'Chat has no persistence or client provider access');check(chatJS.includes("fetch('/api/chat'")&&chatJS.includes('features:featuresFromText(text)'),'Guide transmits only service tags to the local adapter');check(pages.get('/').includes('Nothing has been sent or saved'),'Lead draft visibly disconnected');
 check(pages.get('/').includes('Read our Google reviews')&&!pages.get('/').includes('Real work. A brighter future.'),'Hero uses the requested verified Google button');for(const route of ['/','/reviews/']){check(pages.get(route).includes('cid=9787269376349729307'),'Google links use verified YardU CID');check(pages.get(route).includes('testimonials published on YardU’s website'),'Quote platform attribution remains truthful');}
 const shareImage=await readFile(resolve(dist,'assets/images/yardu-share-v1.png'));
