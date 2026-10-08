@@ -86,3 +86,6 @@ html{background:#171919}
 
 @media(min-width:1001px){.home-hero-image{object-position:50% 25%}}
 .contact-direct{display:grid;gap:16px}.contact-direct>a:not(.contact-phone){color:#fff;text-decoration:underline;overflow-wrap:anywhere}
+
+/* Preserve the current public Homeworks frame layout. */
+.yardu-form-card{min-width:0}.homeworks-fallback{font-size:.875rem;margin-top:1rem}.homeworks-fallback a{text-decoration:underline}.yardu-form-card iframe{display:block;max-width:100%}
