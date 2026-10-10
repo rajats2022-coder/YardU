@@ -1,6 +1,6 @@
 # Generated SEO coverage audit
 
-Status: passed 1724 assertions across 31 pages. This checks generated HTML, not assumed generator intent.
+Status: passed 1744 assertions across 31 pages. This checks generated HTML, not assumed generator intent.
 
 Six town guides × 16 service/component guides = **96 bidirectional coverage pairs**. 12 are service groups; four are components of the YardU Special. Coverage links do not guarantee address-level availability.
 
@@ -23,10 +23,10 @@ Intent priorities are based on verified offerings and useful user decisions. Sea
 | --- | --- | --- |
 | / | Lawn Care in Raleigh & the Triangle \| YardU | Lawn care & landscaping in Raleigh & the Triangle. |
 | /services-2/ | Lawn & Landscaping Services \| YardU | Lawn & landscaping services in Raleigh. |
-| /services/lawn-maintenance/ | The YardU Special Lawn Mowing Package \| YardU | Lawn mowing & maintenance in Raleigh. |
+| /services/lawn-maintenance/ | Lawn Care / Mowing in Raleigh & the Triangle \| YardU | Lawn mowing & maintenance in Raleigh. |
 | /our-mission/ | Our Mission \| YardU Landscaping with a Purpose | A yard today. A future tomorrow. |
 | /meet-the-founders/ | Meet Jackson DeSilva \| YardU Founder | Meet Jackson DeSilva. |
-| /projects/ | Lawn Care Gallery \| YardU | The details make the difference. |
+| /projects/ | Landscaping & Hardscape Project Photos \| YardU | The details make the difference. |
 | /service-areas/ | Service Areas \| YardU in Raleigh, Cary & Nearby Communities | Close to home. Built on purpose. |
 | /getestimate/ | Request an Estimate \| YardU | Tell us what you have in mind. |
 | /service-areas/raleigh/ | Lawn Care in Raleigh, NC \| YardU Service Area Guide | Lawn care in Raleigh. |
@@ -35,10 +35,10 @@ Intent priorities are based on verified offerings and useful user decisions. Sea
 | /service-areas/wake-forest/ | Landscaping in Wake Forest, NC \| YardU Area Guide | Landscaping in Wake Forest. |
 | /service-areas/fuquay-varina/ | Lawn Care in Fuquay-Varina, NC \| YardU Area Guide | Lawn care in Fuquay-Varina. |
 | /service-areas/holly-springs/ | Lawn Care in Holly Springs, NC \| YardU Area Guide | Lawn care in Holly Springs. |
-| /services/mowing/ | Mowing \| Part of the YardU Special Lawn Package | Mowing in Raleigh & the Triangle. |
-| /services/edging/ | Edging \| Part of the YardU Special Lawn Package | Edging in Raleigh & the Triangle. |
-| /services/trimming/ | Trimming \| Part of the YardU Special Lawn Package | Trimming in Raleigh & the Triangle. |
-| /services/blowing/ | Blowing off surfaces \| Part of the YardU Special Lawn Package | Blowing off surfaces in Raleigh & the Triangle. |
+| /services/mowing/ | Mowing \| Part of lawn care / mowing Lawn Package | Mowing in Raleigh & the Triangle. |
+| /services/edging/ | Edging \| Part of lawn care / mowing Lawn Package | Edging in Raleigh & the Triangle. |
+| /services/trimming/ | Trimming \| Part of lawn care / mowing Lawn Package | Trimming in Raleigh & the Triangle. |
+| /services/blowing/ | Blowing off surfaces \| Part of lawn care / mowing Lawn Package | Blowing off surfaces in Raleigh & the Triangle. |
 | /reviews/ | YardU Testimonials \| Landscaping with a Purpose | Purpose people can get behind. |
 | /services/property-cleanups/ | Property Cleanups in Raleigh & the Triangle \| YardU | Property Cleanups in Raleigh & the Triangle. |
 | /services/sod/ | Sod in Raleigh & the Triangle \| YardU | Sod in Raleigh & the Triangle. |

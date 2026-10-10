@@ -5,7 +5,7 @@
     {
       "path": "/",
       "title": "Lawn Care in Raleigh & the Triangle | YardU",
-      "description": "YardU’s core lawn care package includes mowing, edging, trimming, and blowing off surfaces. Serving Raleigh, Cary, and neighboring NC communities.",
+      "description": "YardU’s core lawn care package includes mowing, edging, weed eating, and blowing off surfaces. Serving Raleigh, Cary, and neighboring NC communities.",
       "canonical": "https://hireyardu.com/",
       "indexable": true,
       "type": "homepage",
@@ -37,8 +37,8 @@
     },
     {
       "path": "/services/lawn-maintenance/",
-      "title": "The YardU Special Lawn Mowing Package | YardU",
-      "description": "Four lawn care details in one core package: mowing, edging, trimming, and blowing off surfaces. Discuss your property with YardU.",
+      "title": "Lawn Care / Mowing in Raleigh & the Triangle | YardU",
+      "description": "Four lawn care details in one core package: mowing, edging, weed eating, and blowing off surfaces. Discuss your property with YardU.",
       "canonical": "https://hireyardu.com/services/lawn-maintenance/",
       "indexable": true,
       "type": "service",
@@ -254,8 +254,8 @@
     },
     {
       "path": "/services/mowing/",
-      "title": "Mowing | Part of the YardU Special Lawn Package",
-      "description": "The foundation of the YardU Special: an even cut suited to your lawn. Explore scope, property questions, and the other parts of the package.",
+      "title": "Mowing | Part of lawn care / mowing Lawn Package",
+      "description": "The foundation of lawn care / mowing: an even cut suited to your lawn. Explore scope, property questions, and the other parts of the package.",
       "canonical": "https://hireyardu.com/services/mowing/",
       "indexable": true,
       "type": "package-component-guide",
@@ -271,7 +271,7 @@
     },
     {
       "path": "/services/edging/",
-      "title": "Edging | Part of the YardU Special Lawn Package",
+      "title": "Edging | Part of lawn care / mowing Lawn Package",
       "description": "The clean boundary between the lawn and the surfaces around it. Explore scope, property questions, and the other parts of the package.",
       "canonical": "https://hireyardu.com/services/edging/",
       "indexable": true,
@@ -288,7 +288,7 @@
     },
     {
       "path": "/services/trimming/",
-      "title": "Trimming | Part of the YardU Special Lawn Package",
+      "title": "Trimming | Part of lawn care / mowing Lawn Package",
       "description": "Attention to grass and weeds where the main cut cannot reach. Explore scope, property questions, and the other parts of the package.",
       "canonical": "https://hireyardu.com/services/trimming/",
       "indexable": true,
@@ -305,8 +305,8 @@
     },
     {
       "path": "/services/blowing/",
-      "title": "Blowing off surfaces | Part of the YardU Special Lawn Package",
-      "description": "The final step in the YardU Special: leaving the worked surfaces clear. Explore scope, property questions, and the other parts of the package.",
+      "title": "Blowing off surfaces | Part of lawn care / mowing Lawn Package",
+      "description": "The final step in lawn care / mowing: leaving the worked surfaces clear. Explore scope, property questions, and the other parts of the package.",
       "canonical": "https://hireyardu.com/services/blowing/",
       "indexable": true,
       "type": "package-component-guide",

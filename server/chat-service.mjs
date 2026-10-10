@@ -4,7 +4,7 @@ const endpoint='https://api.groq.com/openai/v1/chat/completions';
 const topics=['service','areas','contact','pricing','booking','mission','unknown'];
 const cities={raleigh:'Raleigh',cary:'Cary',apex:'Apex','wake-forest':'Wake Forest','fuquay-varina':'Fuquay-Varina','holly-springs':'Holly Springs'};
 const answers={
- lawn:{name:'The YardU Special',text:'The YardU Special combines mowing, edging, trimming and blowing off finished surfaces. Discuss the lawn condition, access and visit frequency with the team.',path:'/services/lawn-maintenance/'},
+ lawn:{name:'Lawn Care / Mowing',text:'Lawn Care / Mowing combines mowing, edging, trimming and blowing off finished surfaces. Discuss the lawn condition, access and visit frequency with the team.',path:'/services/lawn-maintenance/'},
  mulch:{name:'Mulch, straw & rock',text:'YardU offers mulch, straw and rock installation for landscape beds. Share the beds, existing material, preferred finish and access so the team can discuss the scope.',path:'/services/mulch-straw-rock/'},
  leaf:{name:'Leaf & debris removal',text:'YardU offers collection and hauling of leaves, twigs and fallen limbs. Discuss the areas, material, access and removal arrangement separately from routine mowing.',path:'/services/leaf-debris-removal/'},
  hardscape:{name:'Hardscaping',text:'YardU lists patios, walkways, retaining walls and firepits. Describe the space and intended use, then confirm design, materials, relevant permits, timing and the estimate.',path:'/services/hardscaping/'},
