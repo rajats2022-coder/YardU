@@ -538,5 +538,101 @@
     "width": 480,
     "height": 606,
     "bytes": 44390
+  },
+  "yardu-tiered-retaining-wall.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "yardu-front-yard-retaining-wall.webp": {
+    "width": 1320,
+    "height": 1298
+  },
+  "yardu-open-lawn-mowing.webp": {
+    "width": 1320,
+    "height": 1586
+  },
+  "yardu-striped-residential-lawn.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "yardu-tree-rock-bed.webp": {
+    "width": 1536,
+    "height": 1152
+  },
+  "yardu-lawn-landscape-bed.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "yardu-side-yard-bed.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "yardu-backyard-lawn.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "yardu-backyard-paver-patio.webp": {
+    "width": 1320,
+    "height": 664
+  },
+  "yardu-paver-entry-walkway.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "yardu-raised-front-garden-bed.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "yardu-white-stone-tree-border.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "yardu-retaining-wall-wide-view.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "yardu-poolside-pavers.webp": {
+    "width": 1221,
+    "height": 1600
+  },
+  "yardu-circular-tree-wall.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "yardu-porch-garden-wall.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "yardu-tree-lined-striped-lawn.webp": {
+    "width": 1320,
+    "height": 1575
+  },
+  "yardu-lawn-around-trees.webp": {
+    "width": 1283,
+    "height": 1600
+  },
+  "yardu-front-bed-pine-straw.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "yardu-driveway-pine-straw-bed.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "yardu-play-area-mulch-bed.webp": {
+    "width": 1200,
+    "height": 1600
+  },
+  "yardu-curved-pine-straw-border.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "yardu-front-shrub-bed-border.webp": {
+    "width": 1320,
+    "height": 1373
+  },
+  "yardu-side-bed-stone-edge.webp": {
+    "width": 1320,
+    "height": 1419
   }
 }
