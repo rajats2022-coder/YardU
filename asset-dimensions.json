@@ -634,5 +634,17 @@
   "yardu-side-bed-stone-edge.webp": {
     "width": 1320,
     "height": 1419
+  },
+  "yardu-retaining-wall-before.webp": {
+    "width": 1320,
+    "height": 1667
+  },
+  "yardu-retaining-wall-after.webp": {
+    "width": 856,
+    "height": 1199
+  },
+  "yardu-patio-before-after.webp": {
+    "width": 1588,
+    "height": 990
   }
 }
