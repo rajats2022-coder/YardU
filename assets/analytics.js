@@ -26,6 +26,18 @@
     if (!name) {
       try { const url = new URL(href, location.origin); if (url.origin === location.origin && url.pathname === '/getestimate/' && location.pathname !== '/getestimate/') name = 'estimate_click'; } catch {}
     }
-    if (name) window.gtag('event', name, {page_location: cleanLocation, page_path: location.pathname, transport_type: 'beacon'});
+    if (!name) return;
+    const payload = {page_location: cleanLocation, page_path: location.pathname, transport_type: 'beacon'};
+    // Give the estimate event time to leave before replacing the current page.
+    // The fallback keeps navigation working if the Google tag cannot load.
+    if (name === 'estimate_click' && event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey && link.target !== '_blank' && !event.defaultPrevented) {
+      event.preventDefault();
+      let navigated = false;
+      const navigate = () => { if (!navigated) { navigated = true; location.assign(href); } };
+      payload.event_callback = navigate;
+      payload.event_timeout = 800;
+      setTimeout(navigate, 800);
+    }
+    window.gtag('event', name, payload);
   });
 })();
