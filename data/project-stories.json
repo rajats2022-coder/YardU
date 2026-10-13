@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "stories": [
+    {
+      "id": "north-hills-retaining-wall",
+      "heading": "Block retaining walls frame a North Hills front entry",
+      "location": "North Hills · Raleigh, NC",
+      "intro": "A sloping front lawn and planting beds became a more defined entrance, with red block retaining walls on both sides of the porch steps.",
+      "detail": "The photos show staggered rows of blocks following the changing height of the yard. The walls trace the planting beds beside the existing walk and steps, giving the lawn and front garden a clear boundary. The red blocks also pick up the color of the porch’s brickwork.",
+      "planning_heading": "Plan the entrance as a whole",
+      "planning": "For a similar front-yard project, share photos of the slope, planting beds, driveway, and entry steps. Discuss wall placement, access, drainage needs, material options, and any site-specific requirements with YardU before agreeing on the scope.",
+      "images": [
+        {
+          "file": "yardu-retaining-wall-before.webp",
+          "width": 1320,
+          "height": 1667,
+          "label": "Before",
+          "alt": "Before the North Hills retaining-wall project: a sloping lawn meets planting beds beside a brick porch and front steps.",
+          "caption": "The original front yard, with planting beds beside the porch and entry steps."
+        },
+        {
+          "file": "yardu-retaining-wall-after.webp",
+          "width": 857,
+          "height": 1199,
+          "label": "After",
+          "alt": "After the North Hills retaining-wall project: red block retaining walls follow the front planting beds on both sides of the steps.",
+          "caption": "Staggered rows of red blocks define the beds along the sloping lawn and existing entry walk."
+        }
+      ],
+      "visible_facts": [
+        "Sloping front lawn",
+        "Existing porch, planting beds, entry steps and walk",
+        "Red block retaining walls in after image",
+        "Staggered block rows and wall heights that vary with the slope"
+      ],
+      "provenance": {
+        "location": {
+          "value": "North Hills, Raleigh, North Carolina",
+          "status": "user-confirmed",
+          "confirmed_on": "2026-10-13",
+          "source": "Rajat confirmed that the retaining-wall and patio before/after projects were in Raleigh's North Hills area during the October 13 website/SEO conversation."
+        },
+        "images": {
+          "source": "Existing YardU shared-album assets in the website repository",
+          "reviewed_on": "2026-10-13",
+          "basis": "Visual inspection of the before/after images; existing generator captions and data/album-gallery.json establish album context."
+        },
+        "unconfirmed": [
+          "completion date",
+          "project duration",
+          "material manufacturer",
+          "material grade",
+          "dimensions",
+          "price",
+          "permits",
+          "engineering",
+          "drainage performance",
+          "structural guarantees",
+          "customer testimonial"
+        ]
+      }
+    },
+    {
+      "id": "north-hills-paver-patio",
+      "heading": "From gravel base to patterned pavers in North Hills",
+      "location": "North Hills · Raleigh, NC",
+      "intro": "This YardU before-and-after shows a patio taking shape beside a North Hills home. The gravel-base stage is followed by a finished surface of rectangular pavers in varied gray and warm brown tones.",
+      "detail": "The layout mixes paver sizes and follows the edge of the house, with fitted pieces around the outdoor air-conditioning unit. The finished pattern gives the space a cohesive look—a useful detail to consider when planning the connection between your home and an outdoor living area.",
+      "planning_heading": "Start with how you want to use the space",
+      "planning": "Tell YardU whether you have a seating area, dining space, or a connection to the garden in mind. Share the doors, utilities, access points, and surrounding yard that the layout needs to accommodate. Discuss the footprint, paver choices, preparation, drainage, and finishing details as part of your estimate.",
+      "images": [
+        {
+          "file": "yardu-patio-before-after.webp",
+          "width": 1600,
+          "height": 1000,
+          "label": "Before and after",
+          "alt": "YardU North Hills patio comparison: the left image shows gravel base beside the house; the right shows rectangular gray and brown pavers fitted beside the house and air-conditioning unit.",
+          "caption": "Left: gravel-base preparation. Right: the finished paver surface, with varied sizes and tones. The before image shows a stage of the work, rather than the original yard."
+        }
+      ],
+      "visible_facts": [
+        "Gravel base visible in labeled before image",
+        "Rectangular pavers in varied sizes and gray and warm brown tones",
+        "Patio beside house and screen door",
+        "Outdoor air-conditioning unit with pavers fitted beside it"
+      ],
+      "provenance": {
+        "location": {
+          "value": "North Hills, Raleigh, North Carolina",
+          "status": "user-confirmed",
+          "confirmed_on": "2026-10-13",
+          "source": "Rajat confirmed that the retaining-wall and patio before/after projects were in Raleigh's North Hills area during the October 13 website/SEO conversation."
+        },
+        "images": {
+          "source": "Existing YardU shared-album assets in the website repository",
+          "reviewed_on": "2026-10-13",
+          "basis": "Visual inspection of the before/after images; existing generator captions and data/album-gallery.json establish album context."
+        },
+        "unconfirmed": [
+          "completion date",
+          "project duration",
+          "material manufacturer",
+          "material grade",
+          "dimensions",
+          "price",
+          "permits",
+          "engineering",
+          "drainage performance",
+          "structural guarantees",
+          "customer testimonial"
+        ]
+      }
+    }
+  ]
+}

@@ -121,7 +121,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self' https://*.cartocdn.com https://basemaps.cartocdn.com; worker-src 'self' blob:; form-action 'none'; frame-src https://secure.copilotcrm.com; base-uri 'self'"
+          "value": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://*.google-analytics.com https://*.cartocdn.com https://basemaps.cartocdn.com; worker-src 'self' blob:; form-action 'none'; frame-src https://secure.copilotcrm.com; base-uri 'self'"
         }
       ]
     }
