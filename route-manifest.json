@@ -254,7 +254,7 @@
     },
     {
       "path": "/services/mowing/",
-      "title": "Mowing | Part of lawn care / mowing Lawn Package",
+      "title": "Mowing | YardU Lawn Care Package",
       "description": "The foundation of lawn care / mowing: an even cut suited to your lawn. Explore scope, property questions, and the other parts of the package.",
       "canonical": "https://hireyardu.com/services/mowing/",
       "indexable": true,
@@ -271,7 +271,7 @@
     },
     {
       "path": "/services/edging/",
-      "title": "Edging | Part of lawn care / mowing Lawn Package",
+      "title": "Edging | YardU Lawn Care Package",
       "description": "The clean boundary between the lawn and the surfaces around it. Explore scope, property questions, and the other parts of the package.",
       "canonical": "https://hireyardu.com/services/edging/",
       "indexable": true,
@@ -288,7 +288,7 @@
     },
     {
       "path": "/services/trimming/",
-      "title": "Trimming | Part of lawn care / mowing Lawn Package",
+      "title": "Trimming | YardU Lawn Care Package",
       "description": "Attention to grass and weeds where the main cut cannot reach. Explore scope, property questions, and the other parts of the package.",
       "canonical": "https://hireyardu.com/services/trimming/",
       "indexable": true,
@@ -305,7 +305,7 @@
     },
     {
       "path": "/services/blowing/",
-      "title": "Blowing off surfaces | Part of lawn care / mowing Lawn Package",
+      "title": "Blowing off surfaces | YardU Lawn Care Package",
       "description": "The final step in lawn care / mowing: leaving the worked surfaces clear. Explore scope, property questions, and the other parts of the package.",
       "canonical": "https://hireyardu.com/services/blowing/",
       "indexable": true,

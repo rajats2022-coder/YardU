@@ -35,10 +35,10 @@ Intent priorities are based on verified offerings and useful user decisions. Sea
 | /service-areas/wake-forest/ | Landscaping in Wake Forest, NC \| YardU Area Guide | Landscaping in Wake Forest. |
 | /service-areas/fuquay-varina/ | Lawn Care in Fuquay-Varina, NC \| YardU Area Guide | Lawn care in Fuquay-Varina. |
 | /service-areas/holly-springs/ | Lawn Care in Holly Springs, NC \| YardU Area Guide | Lawn care in Holly Springs. |
-| /services/mowing/ | Mowing \| Part of lawn care / mowing Lawn Package | Mowing in Raleigh & the Triangle. |
-| /services/edging/ | Edging \| Part of lawn care / mowing Lawn Package | Edging in Raleigh & the Triangle. |
-| /services/trimming/ | Trimming \| Part of lawn care / mowing Lawn Package | Trimming in Raleigh & the Triangle. |
-| /services/blowing/ | Blowing off surfaces \| Part of lawn care / mowing Lawn Package | Blowing off surfaces in Raleigh & the Triangle. |
+| /services/mowing/ | Mowing \| YardU Lawn Care Package | Mowing in Raleigh & the Triangle. |
+| /services/edging/ | Edging \| YardU Lawn Care Package | Edging in Raleigh & the Triangle. |
+| /services/trimming/ | Trimming \| YardU Lawn Care Package | Trimming in Raleigh & the Triangle. |
+| /services/blowing/ | Blowing off surfaces \| YardU Lawn Care Package | Blowing off surfaces in Raleigh & the Triangle. |
 | /reviews/ | YardU Testimonials \| Landscaping with a Purpose | Purpose people can get behind. |
 | /services/property-cleanups/ | Property Cleanups in Raleigh & the Triangle \| YardU | Property Cleanups in Raleigh & the Triangle. |
 | /services/sod/ | Sod in Raleigh & the Triangle \| YardU | Sod in Raleigh & the Triangle. |

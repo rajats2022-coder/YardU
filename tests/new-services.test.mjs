@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import test from 'node:test';
-import {additionalServices} from '../scripts/additional-services.mjs';
+import {additionalServices, listedServices} from '../scripts/additional-services.mjs';
 import {newlyConfirmedServices} from '../scripts/new-services.mjs';
 import {featuresFromText} from '../assets/chat-intents.js';
 import {createChatService} from '../server/chat-service.mjs';
@@ -26,8 +26,8 @@ test('All existing services/routes and the CRM integration survive the extension
 test('Every new service has the existing page structure, metadata, navigation and coverage',async()=>{
  const areas=['raleigh','cary','apex','wake-forest','fuquay-varina','holly-springs'];
  const home=await read('dist/index.html'),hub=await read('dist/services-2/index.html');
- assert.equal((home.match(/class="service-card"/g)||[]).length,12);
- assert.equal((hub.match(/class="service-card"/g)||[]).length,16);
+ assert.equal((home.match(/class="service-card"/g)||[]).length,listedServices.length+1);
+ assert.equal((hub.match(/class="service-card"/g)||[]).length,listedServices.length+1);
  for(const service of newlyConfirmedServices){
   const html=await page(service.slug),path=`/services/${service.slug}/`;
   assert.equal((html.match(/<h1>/g)||[]).length,1);
