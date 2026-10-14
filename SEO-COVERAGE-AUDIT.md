@@ -1,17 +1,17 @@
 # Generated SEO coverage audit
 
-Status: passed 1782 assertions across 31 pages. This checks generated HTML, not assumed generator intent.
+Status: passed 1936 assertions across 33 pages. This checks generated HTML, not assumed generator intent.
 
-Six town guides × 16 service/component guides = **96 bidirectional coverage pairs**. 12 are service groups; four are components of the YardU Special. Coverage links do not guarantee address-level availability.
+Six town guides × 18 service/component guides = **108 bidirectional coverage pairs**. 14 are service groups; four are components of the YardU Special. Coverage links do not guarantee address-level availability.
 
-| Town | lawn-maintenance | mowing | edging | trimming | blowing | property-cleanups | sod | mulch-straw-rock | leaf-debris-removal | hardscaping | pressure-washing | plant-installs | aeration-overseeding | drainage | christmas-light-installs | snow-removal |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Raleigh | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
-| Cary | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
-| Apex | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
-| Wake Forest | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
-| Fuquay-Varina | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
-| Holly Springs | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
+| Town | lawn-maintenance | mowing | edging | trimming | blowing | property-cleanups | sod | mulch-straw-rock | leaf-debris-removal | hardscaping | pressure-washing | plant-installs | aeration-overseeding | drainage | christmas-light-installs | snow-removal | retaining-walls | paver-patios |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Raleigh | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
+| Cary | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
+| Apex | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
+| Wake Forest | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
+| Fuquay-Varina | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
+| Holly Springs | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
 
 ↔ means the town content links to the service route and that service content links back to the town. Header/footer links alone do not satisfy this check. See seo-audit-results.json for every URL pair.
 
@@ -40,17 +40,19 @@ Intent priorities are based on verified offerings and useful user decisions. Sea
 | /services/trimming/ | Trimming \| YardU Lawn Care Package | Trimming in Raleigh & the Triangle. |
 | /services/blowing/ | Blowing off surfaces \| YardU Lawn Care Package | Blowing off surfaces in Raleigh & the Triangle. |
 | /reviews/ | YardU Testimonials \| Landscaping with a Purpose | Purpose people can get behind. |
-| /services/property-cleanups/ | Property Cleanups in Raleigh & the Triangle \| YardU | Property Cleanups in Raleigh & the Triangle. |
+| /services/property-cleanups/ | Fall Yard Cleanup in Raleigh & Cary \| YardU | Fall yard cleanup in Raleigh & Cary. |
 | /services/sod/ | Sod in Raleigh & the Triangle \| YardU | Sod in Raleigh & the Triangle. |
 | /services/mulch-straw-rock/ | Mulch, Straw & Rock Installation in Raleigh & the Triangle \| YardU | Mulch, Straw & Rock Installation in Raleigh & the Triangle. |
-| /services/leaf-debris-removal/ | Leaf & Debris Removal in Raleigh & the Triangle \| YardU | Leaf & Debris Removal in Raleigh & the Triangle. |
-| /services/hardscaping/ | Hardscaping in Raleigh & the Triangle \| YardU | Hardscaping in Raleigh & the Triangle. |
+| /services/leaf-debris-removal/ | Leaf Removal in Raleigh & Cary \| YardU | Leaf removal in Raleigh & Cary. |
+| /services/hardscaping/ | Hardscaping in Raleigh & Cary: Patios & Walls \| YardU | Hardscaping in Raleigh & Cary. |
 | /services/pressure-washing/ | Pressure Washing in Raleigh & the Triangle \| YardU | Pressure Washing in Raleigh & the Triangle. |
 | /services/plant-installs/ | Plant Installs in Raleigh & the Triangle \| YardU | Plant Installs in Raleigh & the Triangle. |
-| /services/aeration-overseeding/ | Aeration & Overseeding in Raleigh & the Triangle \| YardU | Aeration & Overseeding in Raleigh & the Triangle. |
-| /services/drainage/ | Drainage in Raleigh & the Triangle \| YardU | Drainage in Raleigh & the Triangle. |
-| /services/christmas-light-installs/ | Christmas Light Installs in Raleigh & the Triangle \| YardU | Christmas Light Installs in Raleigh & the Triangle. |
+| /services/aeration-overseeding/ | Lawn Aeration & Overseeding in Raleigh & Cary \| YardU | Lawn aeration & overseeding in Raleigh & Cary. |
+| /services/drainage/ | Yard Drainage Services in Raleigh & Cary \| YardU | Yard drainage services in Raleigh & Cary. |
+| /services/christmas-light-installs/ | Christmas Light Installation in Raleigh & Cary \| YardU | Christmas light installation in Raleigh & Cary. |
 | /services/snow-removal/ | Snow Removal in Raleigh & the Triangle \| YardU | Snow Removal in Raleigh & the Triangle. |
+| /services/retaining-walls/ | Retaining Wall Installation in Raleigh & Cary \| YardU | Retaining wall installation in Raleigh & Cary. |
+| /services/paver-patios/ | Paver Patio Installation in Cary & Raleigh \| YardU | Paver patio installation in Cary & Raleigh. |
 
 ## Fuquay leaf-removal intent
 
@@ -58,6 +60,6 @@ Intent priorities are based on verified offerings and useful user decisions. Sea
 
 ## Actual schema and URL state
 
-Organization, WebSite and WebPage on 30 substantive pages; matching BreadcrumbList on 29 inner pages; Service on the core package and 11 additional-service pages. Service provider/mainEntity references are connected and six public town names are represented as City areas served. Component guides remain WebPage, rather than independently bookable Services. No private address, office coordinates, hours, LocalBusiness, AggregateRating, Review or FAQ rich-result claims. 404 has no entity graph.
+Organization, WebSite and WebPage on 32 substantive pages; matching BreadcrumbList on 31 inner pages; Service on the core package and 13 additional-service pages. Service provider/mainEntity references are connected and six public town names are represented as City areas served. Component guides remain WebPage, rather than independently bookable Services. No private address, office coordinates, hours, LocalBusiness, AggregateRating, Review or FAQ rich-result claims. 404 has no entity graph.
 
-url-registry.json freezes all 31 proposed paths, four local aliases, four preserved external legacy pages; the existing /meet-the-founders/ path now contains Jackson’s sole-founder profile, held routes and 13 original media paths. Tests compare this independent registry against the generated manifest. Local aliases are 302 only; production one-to-one 301/308 decisions and a complete old media/video inventory remain pending. Local/preview indexing is locked off; sitemap-candidate.xml contains 30 proposed production canonicals. Launch requires an explicit authorized configuration change across meta tags, headers, robots and sitemap; production is selected explicitly by --production or Vercel production environment, while previews remain blocked. External validation and live verification remain pending.
+url-registry.json freezes all 33 proposed paths, four local aliases, four preserved external legacy pages; the existing /meet-the-founders/ path now contains Jackson’s sole-founder profile, held routes and 13 original media paths. Tests compare this independent registry against the generated manifest. Local aliases are 302 only; production one-to-one 301/308 decisions and a complete old media/video inventory remain pending. Local/preview indexing is locked off; sitemap-candidate.xml contains 32 proposed production canonicals. Launch requires an explicit authorized configuration change across meta tags, headers, robots and sitemap; production is selected explicitly by --production or Vercel production environment, while previews remain blocked. External validation and live verification remain pending.

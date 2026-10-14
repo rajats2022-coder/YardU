@@ -20,7 +20,7 @@ for(const route of manifest.routes){
  check(html.includes('mailto:jackson@hireyardu.com'),`${route.path}: confirmed public email`);
  check(html.includes('Contact hours: 7 AM–7 PM every day'),`${route.path}: confirmed contact hours without invented days`);
  check(!/Thayer|Thomas|Co-Founder|cofounder|YardU’s founders/i.test(html),`${route.path}: sole Jackson founder credit`);
- check(!/one.time projects|one.time only|projects only/i.test(html),`${route.path}: general availability presentation`);
+ if(html.includes('one-time projects'))check(html.includes('Wake Forest'),`${route.path}: one-time limitation identifies confirmed community`);
  check(html.includes('viewport-fit=cover'),`${route.path}: safe-area viewport`);
  check([...html.matchAll(/href="(tel:[^"]+)"/g)].every(m=>m[1]==='tel:+19195928328'),`${route.path}: normalized telephone`);
  for(const source of html.matchAll(/<source\b[^>]+>/g)){const set=source[0].match(/srcset="([^"]+)"/)?.[1];if(set)for(const item of set.split(',')){const [path,width]=item.trim().split(' ');check((await stat(resolve(dist,path.slice(1)))).size>0,`${route.path}: picture source exists`);check(imageDimensions[path.split('/').pop()]?.width===Number(width.replace('w','')),`${route.path}: picture width descriptor`);}}

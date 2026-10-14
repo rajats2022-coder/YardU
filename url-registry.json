@@ -1,5 +1,5 @@
 {
-  "status": "Client-approved extension October 1: property cleanups, sod and local Jackson founder page; existing paths preserved; client-confirmed five-service extension requested October 8",
+  "status": "Client-authorized October 14 keyword-led update: distinct retaining-wall and paver-patio intents with real North Hills proof; existing routes preserved.",
   "origin": "https://hireyardu.com",
   "routes": [
     "/",
@@ -32,7 +32,9 @@
     "/services/aeration-overseeding/",
     "/services/drainage/",
     "/services/christmas-light-installs/",
-    "/services/snow-removal/"
+    "/services/snow-removal/",
+    "/services/retaining-walls/",
+    "/services/paver-patios/"
   ],
   "localAliases": {
     "/services/": "/services-2/",

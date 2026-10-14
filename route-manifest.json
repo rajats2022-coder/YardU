@@ -339,8 +339,8 @@
     },
     {
       "path": "/services/property-cleanups/",
-      "title": "Property Cleanups in Raleigh & the Triangle | YardU",
-      "description": "Property Cleanups from YardU in Raleigh and the Triangle, NC. A defined cleanup scope for your outdoor property. Confirm your property, scope, and availability with the team.",
+      "title": "Fall Yard Cleanup in Raleigh & Cary | YardU",
+      "description": "Prepare your yard for the season with YardU property cleanup in Raleigh and Cary. Discuss lawns, landscape beds, paths and leaf buildup for a free estimate.",
       "canonical": "https://hireyardu.com/services/property-cleanups/",
       "indexable": true,
       "type": "service",
@@ -393,8 +393,8 @@
     },
     {
       "path": "/services/leaf-debris-removal/",
-      "title": "Leaf & Debris Removal in Raleigh & the Triangle | YardU",
-      "description": "Leaf & Debris Removal from YardU in Raleigh and the Triangle, NC. Discuss collection, clearing, and hauling for your property. Confirm your property, scope, and availability with the team.",
+      "title": "Leaf Removal in Raleigh & Cary | YardU",
+      "description": "Book a property-specific leaf removal estimate in Raleigh or Cary. YardU clears accumulated leaves and debris from lawns, beds, driveways and patios.",
       "canonical": "https://hireyardu.com/services/leaf-debris-removal/",
       "indexable": true,
       "type": "service",
@@ -411,8 +411,8 @@
     },
     {
       "path": "/services/hardscaping/",
-      "title": "Hardscaping in Raleigh & the Triangle | YardU",
-      "description": "Hardscaping from YardU in Raleigh and the Triangle, NC. Patios, walkways, retaining walls, and firepit project discussions. Confirm your property, scope, and availability with the team.",
+      "title": "Hardscaping in Raleigh & Cary: Patios & Walls | YardU",
+      "description": "Explore YardU hardscaping in Raleigh and Cary: paver patios, retaining walls, walkways and fire pits. See real project photos and request a free estimate.",
       "canonical": "https://hireyardu.com/services/hardscaping/",
       "indexable": true,
       "type": "service",
@@ -465,8 +465,8 @@
     },
     {
       "path": "/services/aeration-overseeding/",
-      "title": "Aeration & Overseeding in Raleigh & the Triangle | YardU",
-      "description": "Aeration & Overseeding from YardU in Raleigh and the Triangle, NC. Discuss aeration and overseeding for your lawn. Confirm your property, scope, and availability with the team.",
+      "title": "Lawn Aeration & Overseeding in Raleigh & Cary | YardU",
+      "description": "Discuss lawn aeration and overseeding in Raleigh and Cary with YardU. Grass type, seasonal timing, seed choice and aftercare shape your property’s plan.",
       "canonical": "https://hireyardu.com/services/aeration-overseeding/",
       "indexable": true,
       "type": "service",
@@ -483,8 +483,8 @@
     },
     {
       "path": "/services/drainage/",
-      "title": "Drainage in Raleigh & the Triangle | YardU",
-      "description": "Drainage from YardU in Raleigh and the Triangle, NC. Start with the water concerns you see on your property. Confirm your property, scope, and availability with the team.",
+      "title": "Yard Drainage Services in Raleigh & Cary | YardU",
+      "description": "Standing water after rain? Discuss yard drainage in Raleigh or Cary with YardU. Share photos of your lawn, beds or patio and request a free estimate.",
       "canonical": "https://hireyardu.com/services/drainage/",
       "indexable": true,
       "type": "service",
@@ -501,8 +501,8 @@
     },
     {
       "path": "/services/christmas-light-installs/",
-      "title": "Christmas Light Installs in Raleigh & the Triangle | YardU",
-      "description": "Christmas Light Installs from YardU in Raleigh and the Triangle, NC. Discuss your holiday lighting layout and preferred timing. Confirm your property, scope, and availability with the team.",
+      "title": "Christmas Light Installation in Raleigh & Cary | YardU",
+      "description": "Plan Christmas light installation in Raleigh and Cary with YardU. Discuss your holiday lighting layout, materials, preferred dates and a free estimate.",
       "canonical": "https://hireyardu.com/services/christmas-light-installs/",
       "indexable": true,
       "type": "service",
@@ -522,6 +522,42 @@
       "title": "Snow Removal in Raleigh & the Triangle | YardU",
       "description": "Snow Removal from YardU in Raleigh and the Triangle, NC. Discuss the areas to clear and current availability. Confirm your property, scope, and availability with the team.",
       "canonical": "https://hireyardu.com/services/snow-removal/",
+      "indexable": true,
+      "type": "service",
+      "parent": "/services-2/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "published candidate; provider indexing checked separately"
+    },
+    {
+      "path": "/services/retaining-walls/",
+      "title": "Retaining Wall Installation in Raleigh & Cary | YardU",
+      "description": "Plan retaining wall installation in Raleigh or Cary with YardU. See a real North Hills before-and-after project and request a free property-specific estimate.",
+      "canonical": "https://hireyardu.com/services/retaining-walls/",
+      "indexable": true,
+      "type": "service",
+      "parent": "/services-2/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "published candidate; provider indexing checked separately"
+    },
+    {
+      "path": "/services/paver-patios/",
+      "title": "Paver Patio Installation in Cary & Raleigh | YardU",
+      "description": "Explore paver patio installation in Cary and Raleigh with YardU. See real North Hills project photos, plan your outdoor space and request a free estimate.",
+      "canonical": "https://hireyardu.com/services/paver-patios/",
       "indexable": true,
       "type": "service",
       "parent": "/services-2/",

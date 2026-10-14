@@ -11,14 +11,34 @@ const read=path=>readFile(new URL(path,root),'utf8');
 const routes=['plant-installs','aeration-overseeding','drainage','christmas-light-installs','snow-removal'];
 const page=slug=>read(`dist/services/${slug}/index.html`);
 
+test('Distinct hardscape pages keep the right project proof and canonical service intent',async()=>{
+ for(const [slug,name,story,otherStory] of [
+  ['retaining-walls','Retaining Wall Installation','north-hills-retaining-wall','north-hills-paver-patio'],
+  ['paver-patios','Paver Patio Installation','north-hills-paver-patio','north-hills-retaining-wall']
+ ]){
+  const html=await page(slug);
+  assert.ok(html.includes(`id="${story}"`));
+  assert.ok(!html.includes(`id="${otherStory}"`));
+  assert.ok(html.includes(`rel="canonical" href="https://hireyardu.com/services/${slug}/"`));
+  const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+  assert.equal(graph.find(n=>n['@type']==='Service').name,name);
+  assert.ok(html.includes('href="/getestimate/"'));
+  assert.ok(html.includes('Wake Forest is currently available for one-time projects'));
+ }
+ const hub=await page('hardscaping');
+ for(const slug of ['retaining-walls','paver-patios'])assert.ok(hub.includes(`href="/services/${slug}/"`));
+ assert.ok((await page('leaf-debris-removal')).includes('weekly yard-waste pickup starting September 8, 2026'));
+ assert.ok((await page('aeration-overseeding')).includes('Fall overseeding is not a universal recommendation for every lawn'));
+});
+
 test('All existing services/routes and the CRM integration survive the extension',async()=>{
  assert.deepEqual(additionalServices.slice(0,6).map(s=>s.slug),['property-cleanups','sod','mulch-straw-rock','leaf-debris-removal','hardscaping','pressure-washing']);
  assert.deepEqual(newlyConfirmedServices.map(s=>s.slug),routes);
  const manifest=JSON.parse(await read('route-manifest.json'));
  const registry=JSON.parse(await read('url-registry.json'));
- const originalRoutes=registry.routes.filter(path=>!routes.some(slug=>path===`/services/${slug}/`));
+ const originalRoutes=registry.routes.filter(path=>!routes.some(slug=>path===`/services/${slug}/`)&&!['/services/retaining-walls/','/services/paver-patios/'].includes(path));
  assert.deepEqual(manifest.routes.slice(0,originalRoutes.length).map(r=>r.path),originalRoutes);
- assert.equal(manifest.routes.length,originalRoutes.length+5);
+ assert.equal(manifest.routes.length,originalRoutes.length+7);
  for(const path of ['dist/index.html','dist/getestimate/index.html'])assert.ok((await read(path)).includes('embedNew/93604580-7d65-4275-8638-95088dcb20c6'));
  for(const path of ['vercel.json','server/preview-server.mjs'])assert.ok((await read(path)).length);
 });
