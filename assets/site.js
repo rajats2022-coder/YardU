@@ -123,3 +123,29 @@ window.addEventListener('pageshow',()=>{
  setMenu(false);
  document.querySelectorAll('.service-disclosure').forEach(menu=>{if(menu instanceof HTMLDetailsElement){menu.open=false;menu.querySelector('summary')?.setAttribute('aria-expanded','false');}});
 });
+
+document.querySelectorAll('[data-photo-comparison]').forEach(comparison=>{
+ if(!(comparison instanceof HTMLElement))return;
+ const range=comparison.querySelector('.comparison-range');
+ if(!(range instanceof HTMLInputElement))return;
+ const update=()=>{
+  const value=Math.min(100,Math.max(0,Number(range.value)));
+  comparison.style.setProperty('--reveal',`${value}%`);
+  range.setAttribute('aria-valuetext',`${value}% before photo, ${100-value}% after photo`);
+  comparison.classList.toggle('showing-after',value<15);
+  comparison.classList.toggle('showing-before',value>85);
+ };
+ range.hidden=false;
+ comparison.querySelectorAll('.comparison-controls,.comparison-hint').forEach(element=>{
+  if(element instanceof HTMLElement)element.hidden=false;
+ });
+ range.addEventListener('input',update);
+ comparison.querySelectorAll('[data-comparison-view]').forEach(button=>{
+  if(!(button instanceof HTMLButtonElement))return;
+  button.addEventListener('click',()=>{
+   range.value=button.dataset.comparisonView||'50';
+   update();
+  });
+ });
+ update();
+});

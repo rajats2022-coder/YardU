@@ -4,9 +4,9 @@
     {
       "id": "north-hills-retaining-wall",
       "heading": "Block retaining walls frame a North Hills front entry",
-      "location": "North Hills · Raleigh, NC",
+      "location": "North Hills \u00b7 Raleigh, NC",
       "intro": "A sloping front lawn and planting beds became a more defined entrance, with red block retaining walls on both sides of the porch steps.",
-      "detail": "The photos show staggered rows of blocks following the changing height of the yard. The walls trace the planting beds beside the existing walk and steps, giving the lawn and front garden a clear boundary. The red blocks also pick up the color of the porch’s brickwork.",
+      "detail": "The photos show staggered rows of blocks following the changing height of the yard. The walls trace the planting beds beside the existing walk and steps, giving the lawn and front garden a clear boundary. The red blocks also pick up the color of the porch\u2019s brickwork.",
       "planning_heading": "Plan the entrance as a whole",
       "planning": "For a similar front-yard project, share photos of the slope, planting beds, driveway, and entry steps. Discuss wall placement, access, drainage needs, material options, and any site-specific requirements with YardU before agreeing on the scope.",
       "images": [
@@ -58,14 +58,15 @@
           "structural guarantees",
           "customer testimonial"
         ]
-      }
+      },
+      "comparison_caption": "Before: the original front yard. After: block retaining walls along the planting beds."
     },
     {
       "id": "north-hills-paver-patio",
       "heading": "From gravel base to patterned pavers in North Hills",
-      "location": "North Hills · Raleigh, NC",
+      "location": "North Hills \u00b7 Raleigh, NC",
       "intro": "This YardU before-and-after shows a patio taking shape beside a North Hills home. The gravel-base stage is followed by a finished surface of rectangular pavers in varied gray and warm brown tones.",
-      "detail": "The layout mixes paver sizes and follows the edge of the house, with fitted pieces around the outdoor air-conditioning unit. The finished pattern gives the space a cohesive look—a useful detail to consider when planning the connection between your home and an outdoor living area.",
+      "detail": "The layout mixes paver sizes and follows the edge of the house, with fitted pieces around the outdoor air-conditioning unit. The finished pattern gives the space a cohesive look\u2014a useful detail to consider when planning the connection between your home and an outdoor living area.",
       "planning_heading": "Start with how you want to use the space",
       "planning": "Tell YardU whether you have a seating area, dining space, or a connection to the garden in mind. Share the doors, utilities, access points, and surrounding yard that the layout needs to accommodate. Discuss the footprint, paver choices, preparation, drainage, and finishing details as part of your estimate.",
       "images": [
@@ -108,6 +109,89 @@
           "drainage performance",
           "structural guarantees",
           "customer testimonial"
+        ]
+      },
+      "comparison_caption": "Before: gravel-base preparation. After: the finished paver surface.",
+      "comparison_alts": {
+        "before": "North Hills patio before installation: gravel-base preparation beside the house.",
+        "after": "North Hills patio after installation: finished rectangular pavers beside the house."
+      }
+    },
+    {
+      "id": "gravel-driveway",
+      "heading": "A gravel driveway with a defined edge",
+      "location": "From the YardU project album",
+      "intro": "This YardU comparison shows a worn driveway with grass between the wheel tracks transformed into a continuous gravel surface.",
+      "detail": "The finished driveway follows the existing approach and has dark timber edging along its sides. The photos show the visible change in the surface and boundaries.",
+      "planning_heading": "Plan the approach to your home",
+      "planning": "Share photos of your existing entrance, access needs, and preferred layout. Discuss materials, preparation, drainage, and the project scope with YardU as part of your estimate.",
+      "comparison_portrait": true,
+      "comparison_caption": "Before: The original worn driveway with grass between the wheel tracks. After: A continuous gravel driveway with timber edging.",
+      "comparison_alts": {
+        "before": "The original worn driveway with grass between the wheel tracks.",
+        "after": "A continuous gravel driveway with timber edging."
+      },
+      "images": [
+        {
+          "file": "yardu-gravel-driveway-before-after.jpg",
+          "width": 1080,
+          "height": 1350,
+          "label": "Before and after",
+          "alt": "YardU before-and-after project comparison: The original worn driveway with grass between the wheel tracks. A continuous gravel driveway with timber edging.",
+          "caption": "The original worn driveway with grass between the wheel tracks. A continuous gravel driveway with timber edging."
+        }
+      ],
+      "provenance": {
+        "images": {
+          "source": "Project photos supplied by Rajat from Jackson on October 14, 2026",
+          "reviewed_on": "2026-10-14"
+        },
+        "unconfirmed": [
+          "project location",
+          "completion date",
+          "dimensions",
+          "price",
+          "material manufacturer",
+          "drainage performance"
+        ]
+      }
+    },
+    {
+      "id": "paver-walkway",
+      "heading": "A curved paver walkway connects the driveway and front entry",
+      "location": "From the YardU project album",
+      "intro": "This YardU comparison shows a walkway taking shape between a gravel driveway and the front entrance.",
+      "detail": "The preparation photo shows the excavated path. The completed walkway has light rectangular pavers in a diagonal pattern, framed by a darker border and following a curve toward the house.",
+      "planning_heading": "Plan the approach to your home",
+      "planning": "Share photos of your existing entrance, access needs, and preferred layout. Discuss materials, preparation, drainage, and the project scope with YardU as part of your estimate.",
+      "comparison_portrait": true,
+      "comparison_caption": "Before: An excavated walkway during preparation. After: The completed curved paver walkway with a darker border.",
+      "comparison_alts": {
+        "before": "An excavated walkway during preparation.",
+        "after": "The completed curved paver walkway with a darker border."
+      },
+      "images": [
+        {
+          "file": "yardu-paver-walkway-before-after.jpg",
+          "width": 1080,
+          "height": 1350,
+          "label": "Before and after",
+          "alt": "YardU before-and-after project comparison: An excavated walkway during preparation. The completed curved paver walkway with a darker border.",
+          "caption": "An excavated walkway during preparation. The completed curved paver walkway with a darker border."
+        }
+      ],
+      "provenance": {
+        "images": {
+          "source": "Project photos supplied by Rajat from Jackson on October 14, 2026",
+          "reviewed_on": "2026-10-14"
+        },
+        "unconfirmed": [
+          "project location",
+          "completion date",
+          "dimensions",
+          "price",
+          "material manufacturer",
+          "drainage performance"
         ]
       }
     }

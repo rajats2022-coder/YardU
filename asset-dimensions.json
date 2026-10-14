@@ -646,5 +646,15 @@
   "yardu-patio-before-after.webp": {
     "width": 1588,
     "height": 990
+  },
+  "yardu-gravel-driveway-before-after.jpg": {
+    "width": 1080,
+    "height": 1350,
+    "bytes": 803002
+  },
+  "yardu-paver-walkway-before-after.jpg": {
+    "width": 1080,
+    "height": 1350,
+    "bytes": 789472
   }
 }
