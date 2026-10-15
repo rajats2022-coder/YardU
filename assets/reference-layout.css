@@ -117,3 +117,6 @@ html{background:#000}
 @media(max-width:760px){.photo-comparison{margin:22px 0 36px}.comparison-stage{aspect-ratio:4/3}.photo-comparison figcaption{padding:18px}.comparison-label{top:12px;font-size:10px;padding:6px 9px}.comparison-label-before{left:12px}.comparison-label-after{right:12px}.comparison-controls button{padding:10px 12px}}
 
 .comparison-portrait{max-width:600px}.comparison-portrait .comparison-stage{aspect-ratio:2/3}.comparison-portrait .comparison-composite-before{background-position:left 20%}.comparison-portrait .comparison-composite-after{background-position:right 20%}
+
+/* Directory badge in the shared footer. */
+.footer-bottom .footer-links,.footer-bottom .footer-identity{align-items:center;flex-wrap:wrap}.storeboard-badge{display:inline-flex;flex:0 0 auto;border-radius:10px}.storeboard-badge img{display:block;width:200px;height:56px;max-width:100%}.storeboard-badge:focus-visible{outline:2px solid #fff;outline-offset:4px}
