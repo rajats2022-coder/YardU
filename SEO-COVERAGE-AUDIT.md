@@ -1,14 +1,14 @@
 # Generated SEO coverage audit
 
-Status: passed 1938 assertions across 33 pages. This checks generated HTML, not assumed generator intent.
+Status: passed 1908 assertions across 33 pages. This checks generated HTML, not assumed generator intent.
 
 Six town guides × 18 service/component guides = **108 bidirectional coverage pairs**. 14 are service groups; four are components of the YardU Special. Coverage links do not guarantee address-level availability.
 
 | Town | lawn-maintenance | mowing | edging | trimming | blowing | property-cleanups | sod | mulch-straw-rock | leaf-debris-removal | hardscaping | pressure-washing | plant-installs | aeration-overseeding | drainage | christmas-light-installs | snow-removal | retaining-walls | paver-patios |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Raleigh | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
+| Lawn care & landscaping in Raleigh, NC | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
 | Lawn care & landscaping in Cary, NC | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
-| Apex | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
+| Lawn care & landscaping in Apex, NC | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
 | Wake Forest | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
 | Fuquay-Varina | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
 | Holly Springs | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ | ↔ |
@@ -29,9 +29,9 @@ Intent priorities are based on verified offerings and useful user decisions. Sea
 | /projects/ | Landscaping & Hardscape Project Photos \| YardU | The details make the difference. |
 | /service-areas/ | Service Areas \| YardU in Raleigh, Cary & Nearby Communities | Close to home. Built on purpose. |
 | /getestimate/ | Request an Estimate \| YardU | Tell us what you have in mind. |
-| /service-areas/raleigh/ | Lawn Care in Raleigh, NC \| YardU Service Area Guide | Lawn care in Raleigh. |
+| /service-areas/raleigh/ | Lawn Care, Mowing & Landscaping in Raleigh, NC \| YardU | Lawn care & landscaping in Raleigh, NC. |
 | /service-areas/cary/ | Lawn Care, Mowing & Landscaping in Cary, NC \| YardU | Lawn care & landscaping in Cary, NC. |
-| /service-areas/apex/ | Lawn Care in Apex, NC \| YardU Area Guide | Lawn care in Apex. |
+| /service-areas/apex/ | Lawn Care, Mowing & Landscaping in Apex, NC \| YardU | Lawn care & landscaping in Apex, NC. |
 | /service-areas/wake-forest/ | Landscaping in Wake Forest, NC \| YardU Area Guide | Landscaping in Wake Forest. |
 | /service-areas/fuquay-varina/ | Lawn Care in Fuquay-Varina, NC \| YardU Area Guide | Lawn care in Fuquay-Varina. |
 | /service-areas/holly-springs/ | Lawn Care in Holly Springs, NC \| YardU Area Guide | Lawn care in Holly Springs. |
