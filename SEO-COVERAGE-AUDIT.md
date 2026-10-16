@@ -1,6 +1,6 @@
 # Generated SEO coverage audit
 
-Status: passed 1952 assertions across 33 pages. This checks generated HTML, not assumed generator intent.
+Status: passed 1960 assertions across 33 pages. This checks generated HTML, not assumed generator intent.
 
 Six town guides × 18 service/component guides = **108 bidirectional coverage pairs**. 14 are service groups; four are components of the YardU Special. Coverage links do not guarantee address-level availability.
 
