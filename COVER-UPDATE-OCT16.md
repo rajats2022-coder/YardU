@@ -1,6 +1,6 @@
 # YardU homepage cover and Facebook consistency
 
-Prepared locally from production branch a6e0baa. Not deployed.
+Prepared from production branch a6e0baa; original cover and Facebook changes approved and pushed as fc18a7d.
 
 - User supplied IMG_5653.HEIC: branded YardU truck in a residential driveway.
 - Added 960px and 1920px WebP derivatives; original unchanged.
@@ -17,4 +17,4 @@ Directory readback this session:
 - Hotfrog, Storeboard, Houzz: no YardU Facebook link visible on inspected public profile; authenticated editor checks remain.
 - Alignable: Edit Profile requires emailed six-digit verification; user asked to complete it.
 
-Awaiting user approval to publish homepage cover and footer/schema changes.
+User approved publishing both changes, then approved compositing only AI grass patches onto the original. A lossless pixel check verifies original pixels outside the two small lawn masks remain unchanged. Final responsive derivatives use the grass-only composite; the complete AI redraw is not used. Live verification is recorded separately after deployment.

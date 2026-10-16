@@ -668,5 +668,13 @@
   "storeboard-badge.svg": {
     "width": 200,
     "height": 56
+  },
+  "yardu-branded-truck-home-grass-960.webp": {
+    "width": 960,
+    "height": 720
+  },
+  "yardu-branded-truck-home-grass-1920.webp": {
+    "width": 1920,
+    "height": 1440
   }
 }
