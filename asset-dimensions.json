@@ -656,5 +656,17 @@
     "width": 1080,
     "height": 1350,
     "bytes": 789472
+  },
+  "yardu-branded-truck-home-1920.webp": {
+    "width": 1920,
+    "height": 1440
+  },
+  "yardu-branded-truck-home-960.webp": {
+    "width": 960,
+    "height": 720
+  },
+  "storeboard-badge.svg": {
+    "width": 200,
+    "height": 56
   }
 }
