@@ -12,7 +12,7 @@ test('each guide has its own article identity, canonical page, and actual Organi
  for(const guide of guides){const graph=graphFor(guide),article=graph.find(n=>n['@type']==='BlogPosting'),page=graph.find(n=>n['@type']==='WebPage');
   assert.equal(article['@id'],origin+guide.path+'#article');assert.equal(article.url,page.url);assert.equal(article.mainEntityOfPage['@id'],page['@id']);assert.equal(page.mainEntity['@id'],article['@id']);
   assert.equal(article.author['@id'],origin+'/#organization');assert.equal(article.publisher['@id'],article.author['@id']);assert.ok(!graph.some(n=>n['@type']==='Person'&&n.name==='YardU Team'));assert.ok(!graph.some(n=>n['@type']==='FAQPage'));
-  assert.equal(article.datePublished,guide.publishedAt||undefined);assert.equal(article.dateModified,guide.modifiedAt||undefined);
+  assert.equal(article.image,origin+'/assets/images/yardu-striped-residential-lawn.webp');assert.equal(article.datePublished,guide.publishedAt||undefined);assert.equal(article.dateModified,guide.modifiedAt||undefined);
   assert.deepEqual(breadcrumbsFor({path:guide.path,breadcrumbName:guide.heading}).map(n=>n.path),['/','/guides/',guide.path]);
  }
 });
