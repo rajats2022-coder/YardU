@@ -1,6 +1,6 @@
 # Generated SEO coverage audit
 
-Status: passed 1908 assertions across 33 pages. This checks generated HTML, not assumed generator intent.
+Status: passed 1989 assertions across 36 pages. This checks generated HTML, not assumed generator intent.
 
 Six town guides × 18 service/component guides = **108 bidirectional coverage pairs**. 14 are service groups; four are components of the YardU Special. Coverage links do not guarantee address-level availability.
 
@@ -53,6 +53,9 @@ Intent priorities are based on verified offerings and useful user decisions. Sea
 | /services/snow-removal/ | Snow Removal in Raleigh & the Triangle \| YardU | Snow Removal in Raleigh & the Triangle. |
 | /services/retaining-walls/ | Retaining Wall Installation in Raleigh & Cary \| YardU | Retaining wall installation in Raleigh & Cary. |
 | /services/paver-patios/ | Paver Patio Installation in Cary & Raleigh \| YardU | Paver patio installation in Cary & Raleigh. |
+| /guides/ | Lawn Care Guides \| YardU | Good questions. Clear answers. |
+| /guides/lawn-care-costs-raleigh/ | Lawn Care Cost Factors in Raleigh, NC \| YardU | What Affects Lawn Care Costs in Raleigh, NC? |
+| /guides/choosing-mowing-service-raleigh/ | Choosing a Mowing Service in Raleigh, NC \| YardU | How to Choose a Mowing Service in Raleigh, NC |
 
 ## Fuquay leaf-removal intent
 
@@ -60,6 +63,6 @@ Intent priorities are based on verified offerings and useful user decisions. Sea
 
 ## Actual schema and URL state
 
-Organization, WebSite and WebPage on 32 substantive pages; matching BreadcrumbList on 31 inner pages; Service on the core package and 13 additional-service pages. Service provider/mainEntity references are connected and six public town names are represented as City areas served. Component guides remain WebPage, rather than independently bookable Services. No private address, office coordinates, hours, LocalBusiness, AggregateRating, Review or FAQ rich-result claims. 404 has no entity graph.
+Organization, WebSite and WebPage on 35 substantive pages; matching BreadcrumbList on 34 inner pages; Service on the core package and 13 additional-service pages. Service provider/mainEntity references are connected and six public town names are represented as City areas served. Component guides remain WebPage, rather than independently bookable Services. No private address, office coordinates, hours, LocalBusiness, AggregateRating, Review or FAQ rich-result claims. 404 has no entity graph.
 
-url-registry.json freezes all 33 proposed paths, four local aliases, four preserved external legacy pages; the existing /meet-the-founders/ path now contains Jackson’s sole-founder profile, held routes and 13 original media paths. Tests compare this independent registry against the generated manifest. Local aliases are 302 only; production one-to-one 301/308 decisions and a complete old media/video inventory remain pending. Local/preview indexing is locked off; sitemap-candidate.xml contains 32 proposed production canonicals. Launch requires an explicit authorized configuration change across meta tags, headers, robots and sitemap; production is selected explicitly by --production or Vercel production environment, while previews remain blocked. External validation and live verification remain pending.
+url-registry.json freezes all 36 proposed paths, four local aliases, four preserved external legacy pages; the existing /meet-the-founders/ path now contains Jackson’s sole-founder profile, held routes and 13 original media paths. Tests compare this independent registry against the generated manifest. Local aliases are 302 only; production one-to-one 301/308 decisions and a complete old media/video inventory remain pending. Local/preview indexing is locked off; sitemap-candidate.xml contains 35 proposed production canonicals. Launch requires an explicit authorized configuration change across meta tags, headers, robots and sitemap; production is selected explicitly by --production or Vercel production environment, while previews remain blocked. External validation and live verification remain pending.
