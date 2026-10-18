@@ -23,7 +23,7 @@ export const structuredData=(page)=>{
  if(breadcrumbs.length){const breadcrumb=graph.find(node=>node['@type']==='BreadcrumbList');breadcrumb['@id']=origin+page.path+'#breadcrumb';webPage.breadcrumb={'@id':breadcrumb['@id']};}
  const service=graph.find(node=>node['@type']==='Service');if(service)webPage.mainEntity={'@id':service['@id']};
  if(page.guide){
-  const article={'@type':'BlogPosting','@id':origin+page.path+'#article',url:origin+page.path,headline:page.guide.heading,description:page.description,inLanguage:'en-US',mainEntityOfPage:{'@id':webPage['@id']},isPartOf:{'@id':origin+'/#website'},author:{'@id':origin+'/#organization'},publisher:{'@id':origin+'/#organization'},citation:page.guide.sources};
+  const article={'@type':'BlogPosting','@id':origin+page.path+'#article',url:origin+page.path,headline:page.guide.heading,description:page.description,inLanguage:'en-US',mainEntityOfPage:{'@id':webPage['@id']},isPartOf:{'@id':origin+'/#website'},author:{'@id':origin+'/#organization'},publisher:{'@id':origin+'/#organization'},citation:page.guide.sources,image:origin+'/assets/images/yardu-striped-residential-lawn.webp'};
   if(page.guide.publishedAt)article.datePublished=page.guide.publishedAt;
   if(page.guide.modifiedAt)article.dateModified=page.guide.modifiedAt;
   graph.push(article);webPage.mainEntity={'@id':article['@id']};
