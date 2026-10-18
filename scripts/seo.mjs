@@ -1,3 +1,4 @@
+import {guides} from './guides.mjs';
 import {googleProfile} from './google-profile.mjs';
 const origin='https://hireyardu.com';
 const serviceAreas=['Raleigh','Cary','Apex','Wake Forest','Fuquay-Varina','Holly Springs'].map(name=>({'@type':'City',name:name+', North Carolina'}));
@@ -5,8 +6,9 @@ export const breadcrumbsFor=(page)=>{
  const items=[{name:'Home',path:'/'}];
  if(page.path==='/')return [];
  if(page.path.startsWith('/services/'))items.push({name:'Services',path:'/services-2/'});
+ if(page.path.startsWith('/guides/')&&page.path!=='/guides/')items.push({name:'Lawn Care Guides',path:'/guides/'});
  if(page.path.startsWith('/service-areas/'))items.push({name:'Service Areas',path:'/service-areas/'});
- if(!items.some(item=>item.path===page.path))items.push({name:page.city||page.component||({'/services-2/':'Services','/services/lawn-maintenance/':'Lawn Care / Mowing','/our-mission/':'Our Mission','/meet-the-founders/':'Meet Jackson','/projects/':'Gallery','/reviews/':'Testimonials','/getestimate/':'Estimate','/404/':'Page Not Found'}[page.path]),path:page.path});
+ if(!items.some(item=>item.path===page.path))items.push({name:page.breadcrumbName||page.city||page.component||({'/services-2/':'Services','/services/lawn-maintenance/':'Lawn Care / Mowing','/our-mission/':'Our Mission','/meet-the-founders/':'Meet Jackson','/projects/':'Gallery','/reviews/':'Testimonials','/getestimate/':'Estimate','/404/':'Page Not Found'}[page.path]),path:page.path});
  return items;
 };
 export const breadcrumbHTML=(page)=>{
@@ -20,6 +22,16 @@ export const structuredData=(page)=>{
  if(page.city)webPage.about={'@type':'City',name:page.city+', North Carolina'};
  if(breadcrumbs.length){const breadcrumb=graph.find(node=>node['@type']==='BreadcrumbList');breadcrumb['@id']=origin+page.path+'#breadcrumb';webPage.breadcrumb={'@id':breadcrumb['@id']};}
  const service=graph.find(node=>node['@type']==='Service');if(service)webPage.mainEntity={'@id':service['@id']};
- // Contact hours are plain text only: weekdays are unconfirmed. No address or rating claims.
+ if(page.guide){
+  const article={'@type':'BlogPosting','@id':origin+page.path+'#article',url:origin+page.path,headline:page.guide.heading,description:page.description,inLanguage:'en-US',mainEntityOfPage:{'@id':webPage['@id']},isPartOf:{'@id':origin+'/#website'},author:{'@id':origin+'/#organization'},publisher:{'@id':origin+'/#organization'},citation:page.guide.sources};
+  if(page.guide.publishedAt)article.datePublished=page.guide.publishedAt;
+  if(page.guide.modifiedAt)article.dateModified=page.guide.modifiedAt;
+  graph.push(article);webPage.mainEntity={'@id':article['@id']};
+ }
+ if(page.guideHub){
+  const list={'@type':'ItemList','@id':origin+page.path+'#guides',itemListElement:guides.map((item,index)=>({'@type':'ListItem',position:index+1,name:item.heading,url:origin+item.path}))};
+  graph.push(list);webPage.mainEntity={'@id':list['@id']};
+ }
+ // Contact hours remain plain text. No invented address or rating claims.
  return `<script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@graph':graph}).replaceAll('<','\\u003c')}</script>`;
 };

@@ -36,9 +36,9 @@ test('All existing services/routes and the CRM integration survive the extension
  assert.deepEqual(newlyConfirmedServices.map(s=>s.slug),routes);
  const manifest=JSON.parse(await read('route-manifest.json'));
  const registry=JSON.parse(await read('url-registry.json'));
- const originalRoutes=registry.routes.filter(path=>!routes.some(slug=>path===`/services/${slug}/`)&&!['/services/retaining-walls/','/services/paver-patios/'].includes(path));
+ const originalRoutes=registry.routes.filter(path=>!path.startsWith('/guides/')&&!routes.some(slug=>path===`/services/${slug}/`)&&!['/services/retaining-walls/','/services/paver-patios/'].includes(path));
  assert.deepEqual(manifest.routes.slice(0,originalRoutes.length).map(r=>r.path),originalRoutes);
- assert.equal(manifest.routes.length,originalRoutes.length+7);
+ assert.equal(manifest.routes.length,originalRoutes.length+7+3);
  for(const path of ['dist/index.html','dist/getestimate/index.html'])assert.ok((await read(path)).includes('embedNew/93604580-7d65-4275-8638-95088dcb20c6'));
  for(const path of ['vercel.json','server/preview-server.mjs'])assert.ok((await read(path)).length);
 });

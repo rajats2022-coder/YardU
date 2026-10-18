@@ -570,6 +570,60 @@
       ],
       "cta": "/getestimate/",
       "releaseDisposition": "published candidate; provider indexing checked separately"
+    },
+    {
+      "path": "/guides/",
+      "title": "Lawn Care Guides | YardU",
+      "description": "Practical guides to lawn care estimates and choosing a mowing service in Raleigh, NC. Explore the YardU package and plan your request.",
+      "canonical": "https://hireyardu.com/guides/",
+      "indexable": true,
+      "type": "guide-hub",
+      "parent": "/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "ItemList"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "published candidate; provider indexing checked separately"
+    },
+    {
+      "path": "/guides/lawn-care-costs-raleigh/",
+      "title": "Lawn Care Cost Factors in Raleigh, NC | YardU",
+      "description": "Compare lawn care estimates by included work, property access and visit frequency. See what to ask and request a free YardU estimate.",
+      "canonical": "https://hireyardu.com/guides/lawn-care-costs-raleigh/",
+      "indexable": true,
+      "type": "article",
+      "parent": "/guides/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "BlogPosting"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "published candidate; provider indexing checked separately"
+    },
+    {
+      "path": "/guides/choosing-mowing-service-raleigh/",
+      "title": "Choosing a Mowing Service in Raleigh, NC | YardU",
+      "description": "Questions to ask about mowing, scheduling, grass care and written terms before choosing a Raleigh mowing service. Explore YardU’s lawn care package.",
+      "canonical": "https://hireyardu.com/guides/choosing-mowing-service-raleigh/",
+      "indexable": true,
+      "type": "article",
+      "parent": "/guides/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "BlogPosting"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     }
   ],
   "redirects": {

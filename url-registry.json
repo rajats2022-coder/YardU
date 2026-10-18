@@ -34,7 +34,10 @@
     "/services/christmas-light-installs/",
     "/services/snow-removal/",
     "/services/retaining-walls/",
-    "/services/paver-patios/"
+    "/services/paver-patios/",
+    "/guides/",
+    "/guides/lawn-care-costs-raleigh/",
+    "/guides/choosing-mowing-service-raleigh/"
   ],
   "localAliases": {
     "/services/": "/services-2/",
