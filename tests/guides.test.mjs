@@ -33,11 +33,11 @@ test('guides, their parent services, and index provide reciprocal editorial path
  }
 });
 
-test('unpublished leaf guide omits publication dates and distinguishes contractor disposal',async()=>{
+test('released leaf guide dates match reviewed metadata and distinguish contractor disposal',async()=>{
  const guide=guides.find(g=>g.slug==='raleigh-leaf-collection-fall-2026');
  const article=graphFor(guide).find(n=>n['@type']==='BlogPosting'),html=await htmlFor(guide.path);
- assert.equal(article.datePublished,undefined);assert.equal(article.dateModified,undefined);
- assert.doesNotMatch(html,/<time /);assert.match(html,/exclude yard waste produced by contracted jobs/);assert.match(html,/commercial vendors cannot drop off/);
+ assert.equal(article.datePublished,guide.publishedAt);assert.equal(article.dateModified,guide.modifiedAt);
+ assert.ok(html.includes(`<time datetime="${guide.publishedAt}">`));assert.match(html,/exclude yard waste produced by contracted jobs/);assert.match(html,/commercial vendors cannot drop off/);
 });
 
 test('candidate sitemap includes new routes; local previews stay out of search',async()=>{

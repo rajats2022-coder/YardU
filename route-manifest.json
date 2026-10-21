@@ -1,5 +1,5 @@
 {
-  "mode": "local-review-only",
+  "mode": "production",
   "origin": "https://hireyardu.com",
   "routes": [
     {
@@ -7,7 +7,7 @@
       "title": "Lawn Care in Raleigh & the Triangle | YardU",
       "description": "YardU’s core lawn care package includes mowing, edging, weed eating, and blowing off surfaces. Serving Raleigh, Cary, and neighboring NC communities.",
       "canonical": "https://hireyardu.com/",
-      "indexable": false,
+      "indexable": true,
       "type": "homepage",
       "parent": "/",
       "schema": [
@@ -16,14 +16,14 @@
         "WebPage"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services-2/",
       "title": "Lawn & Landscaping Services | YardU",
       "description": "Explore YardU’s lawn package, landscaping, plant installs, aeration and overseeding, drainage, Christmas light installs, and snow removal.",
       "canonical": "https://hireyardu.com/services-2/",
-      "indexable": false,
+      "indexable": true,
       "type": "service-hub",
       "parent": "/",
       "schema": [
@@ -33,14 +33,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/lawn-maintenance/",
       "title": "Lawn Care / Mowing in Raleigh & the Triangle | YardU",
       "description": "Four lawn care details in one core package: mowing, edging, weed eating, and blowing off surfaces. Discuss your property with YardU.",
       "canonical": "https://hireyardu.com/services/lawn-maintenance/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -51,14 +51,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/our-mission/",
       "title": "Our Mission | YardU Landscaping with a Purpose",
       "description": "YardU gives young people opportunities to develop work ethic, communication, professionalism, and responsibility through lawn care.",
       "canonical": "https://hireyardu.com/our-mission/",
-      "indexable": false,
+      "indexable": true,
       "type": "company",
       "parent": "/",
       "schema": [
@@ -68,14 +68,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/meet-the-founders/",
       "title": "Meet Jackson DeSilva | YardU Founder",
       "description": "Meet YardU Founder Jackson DeSilva, MBA, an NC State football alum bringing real work and purpose to lawn care and landscaping.",
       "canonical": "https://hireyardu.com/meet-the-founders/",
-      "indexable": false,
+      "indexable": true,
       "type": "company",
       "parent": "/",
       "schema": [
@@ -85,14 +85,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/projects/",
       "title": "Landscaping & Hardscape Project Photos | YardU",
       "description": "See YardU project photos of paver patios, retaining walls, lawn mowing, mulch beds, and landscaping. Call to discuss a free estimate for your property.",
       "canonical": "https://hireyardu.com/projects/",
-      "indexable": false,
+      "indexable": true,
       "type": "company",
       "parent": "/",
       "schema": [
@@ -102,14 +102,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/",
       "title": "Service Areas | YardU in Raleigh, Cary & Nearby Communities",
       "description": "YardU lists Raleigh, Cary, Apex, Wake Forest, Fuquay-Varina, and Holly Springs, NC. Confirm your exact property and availability with the team.",
       "canonical": "https://hireyardu.com/service-areas/",
-      "indexable": false,
+      "indexable": true,
       "type": "company",
       "parent": "/",
       "schema": [
@@ -119,14 +119,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/getestimate/",
       "title": "Request an Estimate | YardU",
       "description": "Discuss your lawn care needs with YardU at (919) 592-8328. Send your property and service details securely to YardU through Homeworks.",
       "canonical": "https://hireyardu.com/getestimate/",
-      "indexable": false,
+      "indexable": true,
       "type": "conversion",
       "parent": "/",
       "schema": [
@@ -136,7 +136,7 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/404/",
@@ -148,14 +148,14 @@
       "parent": "/",
       "schema": [],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/raleigh/",
       "title": "Lawn Care, Mowing & Landscaping in Raleigh, NC | YardU",
       "description": "Raleigh lawn care, mowing, landscaping and leaf removal from YardU. See confirmed North Hills patio and retaining-wall work and request a free estimate.",
       "canonical": "https://hireyardu.com/service-areas/raleigh/",
-      "indexable": false,
+      "indexable": true,
       "type": "area-guide",
       "parent": "/service-areas/",
       "schema": [
@@ -165,14 +165,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/cary/",
       "title": "Lawn Care, Mowing & Landscaping in Cary, NC | YardU",
       "description": "Lawn care and landscaping in Cary, NC: mowing, edging, mulching, leaf removal and property cleanups from YardU. Request a free property estimate.",
       "canonical": "https://hireyardu.com/service-areas/cary/",
-      "indexable": false,
+      "indexable": true,
       "type": "area-guide",
       "parent": "/service-areas/",
       "schema": [
@@ -182,14 +182,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/apex/",
       "title": "Lawn Care, Mowing & Landscaping in Apex, NC | YardU",
       "description": "Lawn mowing, landscaping, mulch installation and fall leaf cleanup in Apex, NC. Explore YardU’s services and request a free estimate for your property.",
       "canonical": "https://hireyardu.com/service-areas/apex/",
-      "indexable": false,
+      "indexable": true,
       "type": "area-guide",
       "parent": "/service-areas/",
       "schema": [
@@ -199,14 +199,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/wake-forest/",
       "title": "Landscaping in Wake Forest, NC | YardU Area Guide",
       "description": "Discuss landscaping and property projects in Wake Forest with YardU. Confirm your property, requested service, project scope, and scheduling availability.",
       "canonical": "https://hireyardu.com/service-areas/wake-forest/",
-      "indexable": false,
+      "indexable": true,
       "type": "area-guide",
       "parent": "/service-areas/",
       "schema": [
@@ -216,14 +216,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/fuquay-varina/",
       "title": "Lawn Care in Fuquay-Varina, NC | YardU Area Guide",
       "description": "Discuss YardU’s core lawn package for your Fuquay-Varina property. Prepare access and scope details, and find official municipal yard waste resources.",
       "canonical": "https://hireyardu.com/service-areas/fuquay-varina/",
-      "indexable": false,
+      "indexable": true,
       "type": "area-guide",
       "parent": "/service-areas/",
       "schema": [
@@ -233,14 +233,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/service-areas/holly-springs/",
       "title": "Lawn Care in Holly Springs, NC | YardU Area Guide",
       "description": "Discuss YardU’s core lawn package for your Holly Springs property. Prepare access and scope details, and find official municipal yard waste resources.",
       "canonical": "https://hireyardu.com/service-areas/holly-springs/",
-      "indexable": false,
+      "indexable": true,
       "type": "area-guide",
       "parent": "/service-areas/",
       "schema": [
@@ -250,14 +250,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/mowing/",
       "title": "Mowing | YardU Lawn Care Package",
       "description": "The foundation of lawn care / mowing: an even cut suited to your lawn. Explore scope, property questions, and the other parts of the package.",
       "canonical": "https://hireyardu.com/services/mowing/",
-      "indexable": false,
+      "indexable": true,
       "type": "package-component-guide",
       "parent": "/services-2/",
       "schema": [
@@ -267,14 +267,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/edging/",
       "title": "Edging | YardU Lawn Care Package",
       "description": "The clean boundary between the lawn and the surfaces around it. Explore scope, property questions, and the other parts of the package.",
       "canonical": "https://hireyardu.com/services/edging/",
-      "indexable": false,
+      "indexable": true,
       "type": "package-component-guide",
       "parent": "/services-2/",
       "schema": [
@@ -284,14 +284,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/trimming/",
       "title": "Trimming | YardU Lawn Care Package",
       "description": "Attention to grass and weeds where the main cut cannot reach. Explore scope, property questions, and the other parts of the package.",
       "canonical": "https://hireyardu.com/services/trimming/",
-      "indexable": false,
+      "indexable": true,
       "type": "package-component-guide",
       "parent": "/services-2/",
       "schema": [
@@ -301,14 +301,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/blowing/",
       "title": "Blowing off surfaces | YardU Lawn Care Package",
       "description": "The final step in lawn care / mowing: leaving the worked surfaces clear. Explore scope, property questions, and the other parts of the package.",
       "canonical": "https://hireyardu.com/services/blowing/",
-      "indexable": false,
+      "indexable": true,
       "type": "package-component-guide",
       "parent": "/services-2/",
       "schema": [
@@ -318,14 +318,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/reviews/",
       "title": "YardU Testimonials | Landscaping with a Purpose",
       "description": "Read customer and community testimonials shared by YardU.",
       "canonical": "https://hireyardu.com/reviews/",
-      "indexable": false,
+      "indexable": true,
       "type": "testimonials",
       "parent": "/",
       "schema": [
@@ -335,14 +335,14 @@
         "BreadcrumbList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/property-cleanups/",
       "title": "Fall Yard Cleanup in Raleigh & Cary | YardU",
       "description": "Prepare your yard for the season with YardU property cleanup in Raleigh and Cary. Discuss lawns, landscape beds, paths and leaf buildup for a free estimate.",
       "canonical": "https://hireyardu.com/services/property-cleanups/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -353,14 +353,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/sod/",
       "title": "Sod in Raleigh & the Triangle | YardU",
       "description": "Sod from YardU in Raleigh and the Triangle, NC. Discuss sod for the areas you want established or refreshed. Confirm your property, scope, and availability with the team.",
       "canonical": "https://hireyardu.com/services/sod/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -371,14 +371,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/mulch-straw-rock/",
       "title": "Mulch, Straw & Rock Installation in Raleigh & the Triangle | YardU",
       "description": "Mulch, Straw & Rock Installation from YardU in Raleigh and the Triangle, NC. Material selection, even coverage, and a finished bed edge. Confirm your property, scope, and availability with the team.",
       "canonical": "https://hireyardu.com/services/mulch-straw-rock/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -389,14 +389,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/leaf-debris-removal/",
       "title": "Leaf Removal in Raleigh & Cary | YardU",
       "description": "Book a property-specific leaf removal estimate in Raleigh or Cary. YardU clears accumulated leaves and debris from lawns, beds, driveways and patios.",
       "canonical": "https://hireyardu.com/services/leaf-debris-removal/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -407,14 +407,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/hardscaping/",
       "title": "Hardscaping in Raleigh & Cary: Patios & Walls | YardU",
       "description": "Explore YardU hardscaping in Raleigh and Cary: paver patios, retaining walls, walkways and fire pits. See real project photos and request a free estimate.",
       "canonical": "https://hireyardu.com/services/hardscaping/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -425,14 +425,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/pressure-washing/",
       "title": "Pressure Washing in Raleigh & the Triangle | YardU",
       "description": "Pressure Washing from YardU in Raleigh and the Triangle, NC. Discuss cleaning needs for siding, driveways, decks, and more. Confirm your property, scope, and availability with the team.",
       "canonical": "https://hireyardu.com/services/pressure-washing/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -443,14 +443,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/plant-installs/",
       "title": "Plant Installs in Raleigh & the Triangle | YardU",
       "description": "Plant Installs from YardU in Raleigh and the Triangle, NC. Discuss new plants for the areas you want to refresh. Confirm your property, scope, and availability with the team.",
       "canonical": "https://hireyardu.com/services/plant-installs/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -461,14 +461,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/aeration-overseeding/",
       "title": "Lawn Aeration & Overseeding in Raleigh & Cary | YardU",
       "description": "Discuss lawn aeration and overseeding in Raleigh and Cary with YardU. Grass type, seasonal timing, seed choice and aftercare shape your property’s plan.",
       "canonical": "https://hireyardu.com/services/aeration-overseeding/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -479,14 +479,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/drainage/",
       "title": "Yard Drainage Services in Raleigh & Cary | YardU",
       "description": "Standing water after rain? Discuss yard drainage in Raleigh or Cary with YardU. Share photos of your lawn, beds or patio and request a free estimate.",
       "canonical": "https://hireyardu.com/services/drainage/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -497,14 +497,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/christmas-light-installs/",
       "title": "Christmas Light Installation in Raleigh & Cary | YardU",
       "description": "Plan Christmas light installation in Raleigh and Cary with YardU. Discuss your holiday lighting layout, materials, preferred dates and a free estimate.",
       "canonical": "https://hireyardu.com/services/christmas-light-installs/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -515,14 +515,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/snow-removal/",
       "title": "Snow Removal in Raleigh & the Triangle | YardU",
       "description": "Snow Removal from YardU in Raleigh and the Triangle, NC. Discuss the areas to clear and current availability. Confirm your property, scope, and availability with the team.",
       "canonical": "https://hireyardu.com/services/snow-removal/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -533,14 +533,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/retaining-walls/",
       "title": "Retaining Wall Installation in Raleigh & Cary | YardU",
       "description": "Plan retaining wall installation in Raleigh or Cary with YardU. See a real North Hills before-and-after project and request a free property-specific estimate.",
       "canonical": "https://hireyardu.com/services/retaining-walls/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -551,14 +551,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/services/paver-patios/",
       "title": "Paver Patio Installation in Cary & Raleigh | YardU",
       "description": "Explore paver patio installation in Cary and Raleigh with YardU. See real North Hills project photos, plan your outdoor space and request a free estimate.",
       "canonical": "https://hireyardu.com/services/paver-patios/",
-      "indexable": false,
+      "indexable": true,
       "type": "service",
       "parent": "/services-2/",
       "schema": [
@@ -569,14 +569,14 @@
         "Service"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/guides/",
       "title": "Lawn Care Guides | YardU",
       "description": "Practical Raleigh guides to lawn care estimates, choosing a mowing service and fall leaf collection. Plan your YardU service request.",
       "canonical": "https://hireyardu.com/guides/",
-      "indexable": false,
+      "indexable": true,
       "type": "guide-hub",
       "parent": "/",
       "schema": [
@@ -587,14 +587,14 @@
         "ItemList"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/guides/lawn-care-costs-raleigh/",
       "title": "Lawn Care Cost Factors in Raleigh, NC | YardU",
       "description": "Compare lawn care estimates by included work, property access and visit frequency. See what to ask and request a free YardU estimate.",
       "canonical": "https://hireyardu.com/guides/lawn-care-costs-raleigh/",
-      "indexable": false,
+      "indexable": true,
       "type": "article",
       "parent": "/guides/",
       "schema": [
@@ -605,14 +605,14 @@
         "BlogPosting"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/guides/choosing-mowing-service-raleigh/",
       "title": "Choosing a Mowing Service in Raleigh, NC | YardU",
       "description": "Questions to ask about mowing, scheduling, grass care and written terms before choosing a Raleigh mowing service. Explore YardU’s lawn care package.",
       "canonical": "https://hireyardu.com/guides/choosing-mowing-service-raleigh/",
-      "indexable": false,
+      "indexable": true,
       "type": "article",
       "parent": "/guides/",
       "schema": [
@@ -623,14 +623,14 @@
         "BlogPosting"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     },
     {
       "path": "/guides/raleigh-leaf-collection-fall-2026/",
       "title": "Raleigh Leaf Collection in Fall 2026 | YardU",
       "description": "Understand Raleigh’s 2026 leaf collection changes, residential pickup limits and contractor-debris rules before planning a leaf cleanup estimate.",
       "canonical": "https://hireyardu.com/guides/raleigh-leaf-collection-fall-2026/",
-      "indexable": false,
+      "indexable": true,
       "type": "article",
       "parent": "/guides/",
       "schema": [
@@ -641,7 +641,7 @@
         "BlogPosting"
       ],
       "cta": "/getestimate/",
-      "releaseDisposition": "local-review-only; fact and Page Map approval required"
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     }
   ],
   "redirects": {
