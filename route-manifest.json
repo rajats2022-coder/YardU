@@ -574,7 +574,7 @@
     {
       "path": "/guides/",
       "title": "Lawn Care Guides | YardU",
-      "description": "Practical guides to lawn care estimates and choosing a mowing service in Raleigh, NC. Explore the YardU package and plan your request.",
+      "description": "Practical Raleigh guides to lawn care estimates, choosing a mowing service and fall leaf collection. Plan your YardU service request.",
       "canonical": "https://hireyardu.com/guides/",
       "indexable": true,
       "type": "guide-hub",
@@ -612,6 +612,24 @@
       "title": "Choosing a Mowing Service in Raleigh, NC | YardU",
       "description": "Questions to ask about mowing, scheduling, grass care and written terms before choosing a Raleigh mowing service. Explore YardU’s lawn care package.",
       "canonical": "https://hireyardu.com/guides/choosing-mowing-service-raleigh/",
+      "indexable": true,
+      "type": "article",
+      "parent": "/guides/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "BlogPosting"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "published candidate; provider indexing checked separately"
+    },
+    {
+      "path": "/guides/raleigh-leaf-collection-fall-2026/",
+      "title": "Raleigh Leaf Collection in Fall 2026 | YardU",
+      "description": "Understand Raleigh’s 2026 leaf collection changes, residential pickup limits and contractor-debris rules before planning a leaf cleanup estimate.",
+      "canonical": "https://hireyardu.com/guides/raleigh-leaf-collection-fall-2026/",
       "indexable": true,
       "type": "article",
       "parent": "/guides/",
