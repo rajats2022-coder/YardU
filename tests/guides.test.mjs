@@ -8,7 +8,7 @@ const htmlFor=path=>readFile(new URL(`dist/${path.slice(1)}index.html`,root),'ut
 const graphFor=guide=>JSON.parse(structuredData({path:guide.path,title:guide.title,description:guide.description,guide,breadcrumbName:guide.heading}).match(/<script[^>]*>(.*)<\/script>/s)[1])['@graph'];
 
 test('each guide has its own article identity, canonical page, and actual Organization author',()=>{
- assert.equal(guides.length,2);
+ assert.equal(guides.length,3);
  for(const guide of guides){const graph=graphFor(guide),article=graph.find(n=>n['@type']==='BlogPosting'),page=graph.find(n=>n['@type']==='WebPage');
   assert.equal(article['@id'],origin+guide.path+'#article');assert.equal(article.url,page.url);assert.equal(article.mainEntityOfPage['@id'],page['@id']);assert.equal(page.mainEntity['@id'],article['@id']);
   assert.equal(article.author['@id'],origin+'/#organization');assert.equal(article.publisher['@id'],article.author['@id']);assert.ok(!graph.some(n=>n['@type']==='Person'&&n.name==='YardU Team'));assert.ok(!graph.some(n=>n['@type']==='FAQPage'));
@@ -22,9 +22,22 @@ test('real publication dates are emitted only when explicitly supplied',()=>{
  const article=graphFor(guide).find(n=>n['@type']==='BlogPosting');assert.equal(article.datePublished,guide.publishedAt);assert.equal(article.dateModified,guide.modifiedAt);
 });
 
-test('guides, service page, and index provide reciprocal editorial paths',async()=>{
- const hub=await htmlFor('/guides/'),service=await htmlFor('/services/lawn-maintenance/');
- for(const guide of guides){const html=await htmlFor(guide.path);assert.ok(hub.includes(`href="${guide.path}"`));assert.ok(service.includes(`href="${guide.path}"`));assert.ok(html.includes('href="/services/lawn-maintenance/"'));assert.ok(html.includes('href="/guides/"'));assert.ok(html.includes('href="/getestimate/"'));assert.ok(html.includes('https://content.ces.ncsu.edu/extension-gardener-handbook/9-lawns'));assert.doesNotMatch(html,/2024-06|We see this all the time|years of hands-on|Editorial revision for review|Release notes:/);}
+test('guides, their parent services, and index provide reciprocal editorial paths',async()=>{
+ const hub=await htmlFor('/guides/');
+ for(const guide of guides){
+  const html=await htmlFor(guide.path),service=await htmlFor(guide.parent);
+  assert.ok(hub.includes(`href="${guide.path}"`));assert.ok(service.includes(`href="${guide.path}"`));
+  assert.ok(html.includes(`href="${guide.parent}"`));assert.ok(html.includes('href="/guides/"'));assert.ok(html.includes('href="/getestimate/"'));
+  for(const source of guide.sources)assert.ok(html.includes(source));
+  assert.doesNotMatch(html,/2024-06|We see this all the time|years of hands-on|Editorial revision for review|Release notes:/);
+ }
+});
+
+test('unpublished leaf guide omits publication dates and distinguishes contractor disposal',async()=>{
+ const guide=guides.find(g=>g.slug==='raleigh-leaf-collection-fall-2026');
+ const article=graphFor(guide).find(n=>n['@type']==='BlogPosting'),html=await htmlFor(guide.path);
+ assert.equal(article.datePublished,undefined);assert.equal(article.dateModified,undefined);
+ assert.doesNotMatch(html,/<time /);assert.match(html,/exclude yard waste produced by contracted jobs/);assert.match(html,/commercial vendors cannot drop off/);
 });
 
 test('candidate sitemap includes new routes; local previews stay out of search',async()=>{

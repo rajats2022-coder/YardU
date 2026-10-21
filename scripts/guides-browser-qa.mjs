@@ -5,7 +5,7 @@ import {chromium,browserPath,requireBrowserQA} from './browser-runtime.mjs';
 requireBrowserQA();
 const base=process.env.YARDU_QA_BASE||'http://localhost:4321';
 const out=resolve('qa/guides');await mkdir(out,{recursive:true});
-const paths=['/guides/','/guides/lawn-care-costs-raleigh/','/guides/choosing-mowing-service-raleigh/','/services/lawn-maintenance/'];
+const paths=['/guides/','/guides/lawn-care-costs-raleigh/','/guides/choosing-mowing-service-raleigh/','/services/lawn-maintenance/','/guides/raleigh-leaf-collection-fall-2026/','/services/leaf-debris-removal/'];
 const browser=await chromium.launch({executablePath:browserPath});
 const results=[],errors=[],outbound=[];
 try{

@@ -22,5 +22,17 @@
     "sources": [
       "https://content.ces.ncsu.edu/extension-gardener-handbook/9-lawns"
     ]
+  },
+  {
+    "slug": "raleigh-leaf-collection-fall-2026",
+    "title": "Raleigh Leaf Collection in Fall 2026 | YardU",
+    "description": "Understand Raleigh’s 2026 leaf collection changes, residential pickup limits and contractor-debris rules before planning a leaf cleanup estimate.",
+    "label": "Fall cleanup planning",
+    "parent": "/services/leaf-debris-removal/",
+    "sources": [
+      "https://raleighnc.gov/landfill-and-reuse/services/leaf-collection-options",
+      "https://raleighnc.gov/landfill-and-reuse/services/garbage-recycling-and-yard-waste-preparation",
+      "https://raleighnc.gov/landfill-and-reuse/places/yard-waste-center"
+    ]
   }
 ]
