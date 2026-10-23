@@ -1,0 +1,58 @@
+{
+  "status": "verified",
+  "businessName": "YardU",
+  "businessUrl": "https://hireyardu.com",
+  "phone": "+19195928328",
+  "googleReviewsUrl": "https://www.google.com/maps?cid=9787269376349729307",
+  "cid": "9787269376349729307",
+  "observedAt": "2026-10-23",
+  "rating": 5.0,
+  "reviewCount": 95,
+  "aggregateSource": "Exact-CID public Google Maps readback October 23, 2026",
+  "identityVerification": "Public Google Maps readback confirmed business name, hireyardu.com and (919) 592-8328. Exact CID matched earlier public profile observation.",
+  "refresh": "Static verified snapshot; no live sync",
+  "source": "google-business-profile",
+  "googleWriteReviewUrl": "https://www.google.com/maps?cid=9787269376349729307",
+  "reviews": [
+    {
+      "name": "Lily Fogleman",
+      "rating": 5,
+      "text": "YardU did a great job!!! We will definitely be using them again!"
+    },
+    {
+      "name": "Loretta T Consiglio",
+      "rating": 5,
+      "text": "I\u2019m very happy with YardU & their service to my yard. I love the concept behind their business. Check them out! I\u2019ve dealt with Jackson and he\u2019s the BEST!"
+    },
+    {
+      "name": "Gayne Guggenmos",
+      "rating": 5,
+      "text": "Jackson and his team do a great job on my yard! They also take care of all of my leaves, which I super appreciate!!"
+    },
+    {
+      "name": "Spaceboy Strains LLC",
+      "text": "YardU did an outstanding job with my spring property clean up! They showed up on time and were super professional, I will %100 have them back.",
+      "rating": 5
+    },
+    {
+      "name": "Jeffrey Sharp",
+      "text": "Jackson and the guys did a great job. Very responsive and very Price Fair quote. Happy to use them again and in fact, I will be using them again.",
+      "rating": 5
+    },
+    {
+      "name": "Kaylee Snead",
+      "text": "They did a great job on our yard- very professional and easy to work with!",
+      "rating": 5
+    },
+    {
+      "name": "Adam Sabourin",
+      "text": "The guys did a bang up job with my junk removal job! Highly recommend!",
+      "rating": 5
+    },
+    {
+      "name": "Tyree",
+      "text": "Great team of young guys that are committed and passionate about their work !!! Jackson has a great team of guys that will make you love your yard again, or for the first time ever  !!!",
+      "rating": 5
+    }
+  ]
+}
