@@ -138,3 +138,9 @@ html{background:#000}
 .trust-rail .trust-card{min-height:0!important;padding:18px!important}.trust-rail .trust-display{font-size:24px!important}.trust-rail .trust-card h2{font-size:15px!important}.trust-rail .trust-card p{font-size:13px!important}@media(max-width:700px){.trust-rail{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important}.trust-rail .trust-card{padding:12px!important}.trust-rail .trust-display{font-size:19px!important}}
 /* Preserve both panels, labels and branding in the client-supplied comparison. */
 .album-project img[src$="yardu-play-area-before-after.jpg"]{object-fit:contain;background:#111}
+
+/* Reveal only the two labeled photo panels; preserve the original composite link. */
+.comparison-play-area .comparison-stage{aspect-ratio:3/4}
+.comparison-play-area .comparison-composite{background-size:218.182% 163.636%}
+.comparison-play-area .comparison-composite-before{background-position:6.154% 41.429%}
+.comparison-play-area .comparison-composite-after{background-position:93.333% 41.429%}

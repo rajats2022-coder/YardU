@@ -2,6 +2,29 @@
   "version": 1,
   "stories": [
     {
+      "id": "play-area-refresh",
+      "heading": "Before and after: a backyard play area",
+      "location": "YardU project photos",
+      "intro": "Compare the play area before and after the bed refresh.",
+      "detail": "The supplied photos show the same play structure and fenced yard, with the bed surface changing from lighter, uneven coverage to a darker, more defined area.",
+      "planning_heading": "Planning a similar bed refresh?",
+      "planning": "Send photos of the area, the edges you want to keep and access to the yard. YardU can discuss the material and included work for your property.",
+      "images": [
+        {
+          "file": "yardu-play-area-before-after.jpg",
+          "width": 360,
+          "height": 360,
+          "alt": "Original YardU-labeled before-and-after play-area comparison"
+        }
+      ],
+      "comparison_alts": {
+        "before": "Play area before the bed refresh, as labeled in the supplied photo",
+        "after": "Play area after the bed refresh, as labeled in the supplied photo"
+      },
+      "comparison_caption": "The two views come from the original labeled comparison supplied by YardU.",
+      "comparison_play_area_crop": true
+    },
+    {
       "id": "north-hills-retaining-wall",
       "heading": "Block retaining walls frame a North Hills front entry",
       "location": "North Hills \u00b7 Raleigh, NC",
