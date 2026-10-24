@@ -681,5 +681,33 @@
     "width": 1536,
     "height": 1024,
     "bytes": 2707929
+  },
+  "yardu-play-area-before-after.jpg": {
+    "width": 360,
+    "height": 360
+  },
+  "yardu-front-bed-mulch.jpg": {
+    "width": 360,
+    "height": 374
+  },
+  "yardu-side-bed-stone-border.jpg": {
+    "width": 359,
+    "height": 386
+  },
+  "yardu-front-landscape-bed.jpg": {
+    "width": 359,
+    "height": 386
+  },
+  "yardu-screened-porch-bed.jpg": {
+    "width": 359,
+    "height": 394
+  },
+  "stock-christmas-house.jpg": {
+    "width": 933,
+    "height": 1400
+  },
+  "stock-autumn-house.jpg": {
+    "width": 933,
+    "height": 1400
   }
 }
