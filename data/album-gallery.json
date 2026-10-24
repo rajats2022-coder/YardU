@@ -1,40 +1,30 @@
 [
   {
-    "source": "649A4746-70EB-4A73-9195-621BB42CB48E_4_5005_c.jpeg",
-    "file": "yardu-play-area-before-after.jpg",
-    "title": "Play-area before and after",
-    "alt": "YardU-branded before-and-after comparison of a backyard play area",
-    "description": "Before and after shown in the client-supplied comparison.",
-    "service": "mulch-straw-rock",
-    "width": 360,
-    "height": 360
-  },
-  {
     "source": "C538D8AE-A598-4821-8C4F-CEBFAAD1562E_4_5005_c.jpeg",
     "file": "yardu-front-bed-mulch.jpg",
     "title": "Front landscape bed",
     "alt": "Mulched landscape bed with a low stone border beside a house entrance",
-    "description": "Client-supplied project photo.",
+    "description": "After photo supplied by YardU.",
     "service": "mulch-straw-rock",
     "width": 360,
     "height": 374
-  },
-  {
-    "source": "1591088F-07CE-470D-9C5D-E16F23E28AB5_4_5005_c.jpeg",
-    "file": "yardu-side-bed-stone-border.jpg",
-    "title": "Side-yard landscape bed",
-    "alt": "Curved stone edging around a mulched bed with shrubs and a tree",
-    "description": "Client-supplied project photo.",
-    "service": "mulch-straw-rock",
-    "width": 359,
-    "height": 386
   },
   {
     "source": "A77CD6E5-CAD5-48B3-9002-68D2F1C9343A_4_5005_c.jpeg",
     "file": "yardu-front-landscape-bed.jpg",
     "title": "Front-yard bed and shrubs",
     "alt": "House frontage with trimmed shrubs, mulch and stone bed edging",
-    "description": "Client-supplied project photo.",
+    "description": "After photo supplied by YardU.",
+    "service": "mulch-straw-rock",
+    "width": 359,
+    "height": 386
+  },
+  {
+    "source": "1591088F-07CE-470D-9C5D-E16F23E28AB5_4_5005_c.jpeg",
+    "file": "yardu-side-bed-stone-border.jpg",
+    "title": "Side-yard landscape bed",
+    "alt": "Curved stone edging around a mulched bed with shrubs and a tree",
+    "description": "After photo supplied by YardU.",
     "service": "mulch-straw-rock",
     "width": 359,
     "height": 386
@@ -44,7 +34,7 @@
     "file": "yardu-screened-porch-bed.jpg",
     "title": "Landscape bed beside screened porch",
     "alt": "Mulched bed with shrubs and stone edging beside a screened porch",
-    "description": "Client-supplied project photo.",
+    "description": "After photo supplied by YardU.",
     "service": "mulch-straw-rock",
     "width": 359,
     "height": 394
