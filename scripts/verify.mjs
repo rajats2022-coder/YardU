@@ -18,7 +18,7 @@ for(const route of manifest.routes){
  check(!/envision|jobber|googletagmanager|gtag\(|jotform|localStorage|sessionStorage/i.test(html),`${route.path}: tenant isolation`);
  check(html.includes('tel:+19195928328'),`${route.path}: YardU phone`);
  check(html.includes('mailto:jackson@hireyardu.com'),`${route.path}: confirmed public email`);
- check(html.includes('Contact hours: 7 AM–7 PM every day'),`${route.path}: confirmed contact hours without invented days`);
+ check(html.includes('Contact hours: 7 AM–7 PM every day, including holidays'),`${route.path}: confirmed contact hours without invented days`);
  check(!/Thayer|Thomas|Co-Founder|cofounder|YardU’s founders/i.test(html),`${route.path}: sole Jackson founder credit`);
  if(html.includes('one-time projects'))check(html.includes('Wake Forest'),`${route.path}: one-time limitation identifies confirmed community`);
  check(html.includes('viewport-fit=cover'),`${route.path}: safe-area viewport`);
@@ -56,7 +56,7 @@ check(shareImage.subarray(0,8).toString('hex')==='89504e470d0a1a0a'&&shareImage.
 check(pages.get('/').includes('property="og:title" content="YardU | Landscaping with a Purpose"'),'Home share title is separate from SEO title');
 check(pages.get('/').includes('<title>Lawn Care in Raleigh &amp; the Triangle | YardU</title>'),'Home SEO title unchanged');
 check(pages.get('/service-areas/wake-forest/').includes('Landscaping in'),'Wake Forest property context retained');
-const wfMain=pages.get('/service-areas/wake-forest/').match(/<main\b[^>]*>(.*?)<\/main>/s)[1];check(!/weekly|recurring|ongoing maintenance/.test(wfMain),'Wake Forest makes no recurring-service promise');
+const wfMain=pages.get('/service-areas/wake-forest/').match(/<main\b[^>]*>(.*?)<\/main>/s)[1];check(/recurring mowing/.test(wfMain),'Wake Forest includes owner-confirmed recurring services');
 for(const service of ['sod','property-cleanups'])check(pages.has('/services/'+service+'/'),'Confirmed new service route '+service);
 const robots=await readFile(resolve(dist,'robots.txt'),'utf8');check(robots.includes('Disallow: /'),'Review robots');
 const sitemap=await readFile(resolve(dist,'sitemap.xml'),'utf8');check(!sitemap.includes('<loc>'),'No noindex URLs in review sitemap');

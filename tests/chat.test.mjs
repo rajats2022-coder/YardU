@@ -45,10 +45,10 @@ test('Verified answers cover seven confirmed services, six towns and the mission
  const areas=await ask(chat,featuresFromText('Do you serve Durham?'));assert.match(areas.answer,/Raleigh, Cary, Apex, Wake Forest, Fuquay-Varina and Holly Springs/);assert.match(areas.answer,/coverage is not confirmed/);
  assert.match((await ask(chat,featuresFromText('What is your mission?'))).answer,/young people/);
 });
-test('Confirmed contact facts and generic Wake Forest availability never call provider',async()=>{
+test('Confirmed contact facts and recurring Wake Forest coverage never call provider',async()=>{
  let calls=0;const chat=live({fetchImpl:async()=>{calls++;throw new Error('must not call');}});
- const contact=await ask(chat,featuresFromText('What are your hours and email?'));assert.match(contact.answer,/7 AM–7 PM every day/);assert.match(contact.answer,/jackson@hireyardu.com/);assert.doesNotMatch(contact.answer,/Monday|24.hours/i);
- const coverage=await ask(chat,featuresFromText('Can you do weekly mowing in Wake Forest?'));assert.match(coverage.answer,/confirm availability/);assert.doesNotMatch(coverage.answer,/one.time|recurring service|weekly service|not offered/i);assert.equal(coverage.link.path,'/service-areas/wake-forest/');assert.equal(calls,0);
+ const contact=await ask(chat,featuresFromText('What are your hours and email?'));assert.match(contact.answer,/7 AM–7 PM every day/);assert.match(contact.answer,/including holidays/);assert.match(contact.answer,/jackson@hireyardu.com/);assert.doesNotMatch(contact.answer,/Monday|24.hours/i);
+ const coverage=await ask(chat,featuresFromText('Can you do weekly mowing in Wake Forest?'));assert.match(coverage.answer,/recurring lawn care and all advertised services in Wake Forest/);assert.doesNotMatch(coverage.answer,/limited|not offered|confirmed appointment/i);assert.equal(coverage.link.path,'/service-areas/wake-forest/');assert.equal(calls,0);
 });
 test('Malformed and unrequested model output falls back to verified facts',async()=>{
  for(const choice of [null,{}, {topic:'service',service:'gutter'},{topic:'service',service:'pressure'}, {topic:'service',service:'lawn',answer:'Free $5 job <script>'},{topic:'<script>',service:'lawn'}]){
@@ -105,3 +105,5 @@ test('Preview remains available when rebuilt files temporarily disappear',async(
   assert.equal((await fetch(base+'/api/chat-status')).status,200);
  }finally{await new Promise(resolve=>server.close(resolve));}
 });
+
+test("Lighting supply questions return both confirmed options",async()=>{const chat=createChatService();for(const q of ["Can you install my own lights?","Do you supply Christmas lights?"]){const r=await ask(chat,featuresFromText(q));assert.match(r.answer,/YardU-supplied lights or customer-owned lights/);assert.equal(r.link.path,"/services/christmas-light-installs/");assert.doesNotMatch(r.answer,/free storage|includes takedown/i);}});

@@ -1,3 +1,4 @@
+import {classifyLocally,factualResponse} from './chat-facts.js';
 import {featuresFromText} from './chat-intents.js';
 const chatLauncher=document.querySelector('.yardu-chat-launcher');
 const chatPanel=document.querySelector('.yardu-chat-panel');
@@ -34,9 +35,12 @@ async function askGuide(){
  question.removeAttribute('aria-invalid');if(error)error.textContent='';pending=true;submit.disabled=true;submit.textContent='Checking the guide…';answer.setAttribute('aria-busy','true');
  try{
   // The only outgoing user payload is the fixed allowlist of general service tags.
+  let data;
+  try {
   const response=await fetch('/api/chat',{method:'POST',credentials:'omit',headers:{'Content-Type':'application/json'},body:JSON.stringify({features:featuresFromText(text),session}),signal:AbortSignal.timeout(8000)});
   if(!response.ok)throw new Error('Guide unavailable');
-  const data=await response.json();
+  data=await response.json();
+  } catch { const features=featuresFromText(text); data={...factualResponse(classifyLocally(features),features),source:"verified-guide"}; }
   if(typeof data.answer!=='string'||!paths.has(data.link?.path)||!['verified-guide','groq-assisted'].includes(data.source))throw new Error('Invalid guide');
   const copy=answer.querySelector('[data-chat-answer]'),link=answer.querySelector('[data-chat-link]'),source=answer.querySelector('[data-chat-source]'),follow=answer.querySelector('[data-chat-follow-up]');
   if(copy)copy.textContent=data.answer;
