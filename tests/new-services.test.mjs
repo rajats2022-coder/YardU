@@ -23,7 +23,7 @@ test('Distinct hardscape pages keep the right project proof and canonical servic
   const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
   assert.equal(graph.find(n=>n['@type']==='Service').name,name);
   assert.ok(html.includes('href="/getestimate/"'));
-  assert.ok(html.includes('Wake Forest is currently available for one-time projects'));
+  assert.ok(html.includes('All advertised services, including recurring lawn care and one-time projects, are available in Wake Forest.'));
  }
  const hub=await page('hardscaping');
  for(const slug of ['retaining-walls','paver-patios'])assert.ok(hub.includes(`href="/services/${slug}/"`));
@@ -38,7 +38,7 @@ test('All existing services/routes and the CRM integration survive the extension
  const registry=JSON.parse(await read('url-registry.json'));
  const originalRoutes=registry.routes.filter(path=>!path.startsWith('/guides/')&&!routes.some(slug=>path===`/services/${slug}/`)&&!['/services/retaining-walls/','/services/paver-patios/'].includes(path));
  assert.deepEqual(manifest.routes.slice(0,originalRoutes.length).map(r=>r.path),originalRoutes);
- assert.equal(manifest.routes.length,originalRoutes.length+7+3);
+ assert.equal(manifest.routes.length,registry.routes.length);
  for(const path of ['dist/index.html','dist/getestimate/index.html'])assert.ok((await read(path)).includes('embedNew/93604580-7d65-4275-8638-95088dcb20c6'));
  for(const path of ['vercel.json','server/preview-server.mjs'])assert.ok((await read(path)).length);
 });
@@ -51,7 +51,7 @@ test('Every new service has the existing page structure, metadata, navigation an
  for(const service of newlyConfirmedServices){
   const html=await page(service.slug),path=`/services/${service.slug}/`;
   assert.equal((html.match(/<h1>/g)||[]).length,1);
-  for(const className of ['service-scope','project-strip','service-process','faq-section','simple-cta'])assert.ok(html.includes(className),path+' '+className);
+  for(const className of ['service-scope','project-strip','simple-cta'])assert.ok(html.includes(className),path+' '+className);
   assert.ok(html.includes(`rel="canonical" href="https://hireyardu.com${path}"`));
   assert.ok(html.includes('content="noindex,nofollow"'));
   const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];

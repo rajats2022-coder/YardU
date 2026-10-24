@@ -1,6 +1,6 @@
 // Both cities are client-confirmed service areas. North Hills project locations
 // are user-confirmed in data/project-stories.json; Apex photo locations are unknown.
-const contact = city => `<div class="resource-box"><h3>Start with a free property estimate</h3><p><a href="/getestimate/">Request a ${city} estimate</a> or <a href="tel:+19195928328">call (919) 592-8328</a>. Share your address, photos, the work you have in mind, and preferred timing. Contact hours are 7 AM–7 PM every day.</p></div>`;
+const contact = city => `<div class="resource-box"><h3>Start with a free property estimate</h3><p><a href="/getestimate/">Request a ${city} estimate</a> or <a href="tel:+19195928328">call (919) 592-8328</a>. Share your address, photos, the work you have in mind, and preferred timing. Contact hours are 7 AM–7 PM every day, including holidays.</p></div>`;
 const otherServices = `<p>For additional needs, explore <a href="/services/sod/">sod installation</a>, <a href="/services/pressure-washing/">pressure washing</a>, and <a href="/services/snow-removal/">snow removal</a>. YardU will confirm the scope and availability for each request.</p>`;
 
 export const apexGuide = {
