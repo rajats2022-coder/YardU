@@ -3,6 +3,11 @@ const escape = value => String(value).replaceAll('&','&amp;').replaceAll('<','&l
 // Supplied labeled composites are displayed as two halves using CSS;
 // the original file remains intact and available beneath the comparison.
 export function photoComparison(story, img) {
+ // Keep the supplied 360px collage intact until separate source photos arrive.
+ if(story.comparison_play_area_crop){
+  const photo=story.images[0];
+  return `<figure class="photo-comparison comparison-play-area-original"><img src="${escape(img(photo.file))}" alt="${escape(photo.alt)}" width="${photo.width}" height="${photo.height}" loading="lazy" decoding="async"><figcaption><strong>Before &amp; after</strong><p>${escape(story.comparison_caption)}</p><a href="${escape(img(photo.file))}" target="_blank" rel="noopener">View original comparison photo</a></figcaption></figure>`;
+ }
  const composite = story.images.length === 1;
  const before = story.images[0];
  const after = composite ? before : story.images[1];

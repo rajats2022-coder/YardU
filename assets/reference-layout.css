@@ -144,3 +144,7 @@ html{background:#000}
 .comparison-play-area .comparison-composite{background-size:218.182% 163.636%}
 .comparison-play-area .comparison-composite-before{background-position:6.154% 41.429%}
 .comparison-play-area .comparison-composite-after{background-position:93.333% 41.429%}
+
+/* Native-size fallback for the low-resolution supplied collage. */
+.comparison-play-area-original{max-width:360px;margin-inline:auto}
+.comparison-play-area-original>img{display:block;width:100%;height:auto;max-width:360px}
