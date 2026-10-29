@@ -24,6 +24,13 @@ The municipal Yard Waste Center also says commercial vendors cannot drop off yar
 
 Before hiring anyone, ask how the material will be handled, who is responsible for it, and whether hauling and disposal are included in the written estimate. YardU’s specific arrangement should be agreed for the property before work begins. This guide does not promise a disposal destination or an included hauling allowance.
 
+## Choose the request that matches your yard
+
+- Handling your own leaves? Check your address and the city’s current residential collection rules before setting anything out.
+- Hiring a cleanup? Identify the areas to clear, then agree on who will handle the collected material and whether hauling and disposal are included.
+- Already have a pile? Show its location, contents and access, and ask whether the estimate includes collection, loading and haul-away.
+- Need broader work? Describe the other areas and tasks as part of a [property-cleanup request](/services/property-cleanups/), with a separate agreed scope.
+
 ## Decide what you want cleared and what should stay
 
 A useful request describes the finish you want, not just “remove the leaves.” A lawn, planted bed, patio and wooded edge may need different treatment. Identify the areas to include and any leaves, mulch or other material you want retained.
@@ -35,6 +42,12 @@ A useful request describes the finish you want, not just “remove the leaves.�
 - Explain whether the request is for one cleanup or a discussion about later visits as more leaves fall.
 
 For work beyond accumulated leaves and agreed debris, compare [property cleanup](/services/property-cleanups/) with leaf removal. Regular mowing and blowing off finished surfaces are a different scope from clearing existing buildup.
+
+## A simple way to describe your request
+
+When you contact a provider, include your address, the work areas, anything to leave untouched, access details and your preferred timing. Say whether you want one visit or want to discuss later visits, and ask the provider to specify the material-handling and disposal arrangements in the estimate.
+
+For example: “Please estimate leaf cleanup for the lawn and patio. Leave the planting beds untouched. The backyard has a narrow gate. Please specify whether hauling and disposal are included.” Adapt the details to your actual property; this is a planning example, not a description of a completed job.
 
 ## Questions to settle in the written estimate
 
