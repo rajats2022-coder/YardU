@@ -8,7 +8,7 @@ const htmlFor=path=>readFile(new URL(`dist/${path.slice(1)}index.html`,root),'ut
 const graphFor=guide=>JSON.parse(structuredData({path:guide.path,title:guide.title,description:guide.description,guide,breadcrumbName:guide.heading}).match(/<script[^>]*>(.*)<\/script>/s)[1])['@graph'];
 
 test('each guide has its own article identity, canonical page, and actual Organization author',()=>{
- assert.equal(guides.length,3);
+ assert.equal(guides.length,4);
  for(const guide of guides){const graph=graphFor(guide),article=graph.find(n=>n['@type']==='BlogPosting'),page=graph.find(n=>n['@type']==='WebPage');
   assert.equal(article['@id'],origin+guide.path+'#article');assert.equal(article.url,page.url);assert.equal(article.mainEntityOfPage['@id'],page['@id']);assert.equal(page.mainEntity['@id'],article['@id']);
   assert.equal(article.author['@id'],origin+'/#organization');assert.equal(article.publisher['@id'],article.author['@id']);assert.ok(!graph.some(n=>n['@type']==='Person'&&n.name==='YardU Team'));assert.ok(!graph.some(n=>n['@type']==='FAQPage'));

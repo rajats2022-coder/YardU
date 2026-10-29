@@ -642,6 +642,24 @@
       ],
       "cta": "/getestimate/",
       "releaseDisposition": "published candidate; provider indexing checked separately"
+    },
+    {
+      "path": "/guides/christmas-light-installation-own-lights/",
+      "title": "Christmas Light Installation With Your Own Lights | YardU",
+      "description": "Already own Christmas lights? Learn what to share with YardU and what to confirm before booking installation.",
+      "canonical": "https://hireyardu.com/guides/christmas-light-installation-own-lights/",
+      "indexable": true,
+      "type": "article",
+      "parent": "/guides/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "BlogPosting"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     }
   ],
   "redirects": {
