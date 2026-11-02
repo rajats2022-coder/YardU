@@ -709,5 +709,15 @@
   "stock-autumn-house.jpg": {
     "width": 933,
     "height": 1400
+  },
+  "yardu-paver-landing-before.jpg": {
+    "width": 1600,
+    "height": 1200,
+    "bytes": 867902
+  },
+  "yardu-paver-landing-after.jpg": {
+    "width": 1600,
+    "height": 1200,
+    "bytes": 847638
   }
 }

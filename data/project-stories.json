@@ -25,11 +25,48 @@
       "comparison_play_area_crop": true
     },
     {
+      "id": "paver-landing-refresh",
+      "heading": "A refreshed paver landing",
+      "location": "YardU project photos",
+      "intro": "See the change to a small paver landing beside a side door.",
+      "detail": "The project photos show the original landing and the completed paver surface at the same entrance.",
+      "planning_heading": "Planning a paver project?",
+      "planning": "Share photos of the area, its approximate dimensions and access to the property. YardU can discuss the scope and materials for your project.",
+      "images": [
+        {
+          "file": "yardu-paver-landing-before.jpg",
+          "width": 1600,
+          "height": 1200,
+          "alt": "Paver landing beside a side door before the project, with grass growing between the pavers."
+        },
+        {
+          "file": "yardu-paver-landing-after.jpg",
+          "width": 1600,
+          "height": 1200,
+          "alt": "Paver landing beside the same side door after the project, with a defined rectangular surface."
+        }
+      ],
+      "comparison_caption": "The same side-door landing before and after the project.",
+      "comparison_portrait": true,
+      "provenance": {
+        "images": {
+          "source": "Jackson supplied original photos IMG_2539 and IMG_2545; Rajat confirmed YardU project November 2, 2026."
+        },
+        "unconfirmed": [
+          "project location",
+          "date",
+          "scope details",
+          "material specifications",
+          "customer publication permission"
+        ]
+      }
+    },
+    {
       "id": "north-hills-retaining-wall",
       "heading": "Block retaining walls frame a North Hills front entry",
-      "location": "North Hills \u00b7 Raleigh, NC",
+      "location": "North Hills · Raleigh, NC",
       "intro": "A sloping front lawn and planting beds became a more defined entrance, with red block retaining walls on both sides of the porch steps.",
-      "detail": "The photos show staggered rows of blocks following the changing height of the yard. The walls trace the planting beds beside the existing walk and steps, giving the lawn and front garden a clear boundary. The red blocks also pick up the color of the porch\u2019s brickwork.",
+      "detail": "The photos show staggered rows of blocks following the changing height of the yard. The walls trace the planting beds beside the existing walk and steps, giving the lawn and front garden a clear boundary. The red blocks also pick up the color of the porch’s brickwork.",
       "planning_heading": "Plan the entrance as a whole",
       "planning": "For a similar front-yard project, share photos of the slope, planting beds, driveway, and entry steps. Discuss wall placement, access, drainage needs, material options, and any site-specific requirements with YardU before agreeing on the scope.",
       "images": [
@@ -87,9 +124,9 @@
     {
       "id": "north-hills-paver-patio",
       "heading": "From gravel base to patterned pavers in North Hills",
-      "location": "North Hills \u00b7 Raleigh, NC",
+      "location": "North Hills · Raleigh, NC",
       "intro": "This YardU before-and-after shows a patio taking shape beside a North Hills home. The gravel-base stage is followed by a finished surface of rectangular pavers in varied gray and warm brown tones.",
-      "detail": "The layout mixes paver sizes and follows the edge of the house, with fitted pieces around the outdoor air-conditioning unit. The finished pattern gives the space a cohesive look\u2014a useful detail to consider when planning the connection between your home and an outdoor living area.",
+      "detail": "The layout mixes paver sizes and follows the edge of the house, with fitted pieces around the outdoor air-conditioning unit. The finished pattern gives the space a cohesive look—a useful detail to consider when planning the connection between your home and an outdoor living area.",
       "planning_heading": "Start with how you want to use the space",
       "planning": "Tell YardU whether you have a seating area, dining space, or a connection to the garden in mind. Share the doors, utilities, access points, and surrounding yard that the layout needs to accommodate. Discuss the footprint, paver choices, preparation, drainage, and finishing details as part of your estimate.",
       "images": [
