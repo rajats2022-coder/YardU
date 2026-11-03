@@ -26,12 +26,12 @@
     },
     {
       "id": "paver-landing-refresh",
-      "heading": "A refreshed paver landing",
+      "heading": "An outdoor remodel: a paver landing and walkway",
       "location": "YardU project photos",
-      "intro": "See the change to a small paver landing beside a side door.",
-      "detail": "The project photos show the original landing and the completed paver surface at the same entrance.",
-      "planning_heading": "Planning a paver project?",
-      "planning": "Share photos of the area, its approximate dimensions and access to the property. YardU can discuss the scope and materials for your project.",
+      "intro": "This YardU project brought together a refreshed paver landing and a curved walkway through the yard.",
+      "detail": "The side-door landing is shown before and after. The walkway photos show the crew at work and a later view of the path.",
+      "planning_heading": "Planning an outdoor remodel?",
+      "planning": "Share photos and approximate dimensions of each area, how the spaces connect, and the access to your property. Discuss the materials, preparation, drainage, included work, price and timing with YardU for your specific project.",
       "images": [
         {
           "file": "yardu-paver-landing-before.jpg",
@@ -56,9 +56,9 @@
           "project location",
           "date",
           "scope details",
-          "material specifications",
-          "customer publication permission"
-        ]
+          "material specifications"
+        ],
+        "publication_permission": "Rajat confirmed customer permission for website and Google on November 2, 2026."
       }
     },
     {
