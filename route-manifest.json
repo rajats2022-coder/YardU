@@ -660,6 +660,24 @@
       ],
       "cta": "/getestimate/",
       "releaseDisposition": "published candidate; provider indexing checked separately"
+    },
+    {
+      "path": "/guides/planning-paver-walkway-raleigh-cary/",
+      "title": "Planning a Paver Walkway in Raleigh and Cary | YardU",
+      "description": "Plan a paver walkway in Raleigh or Cary. See YardU project photos and learn what to share when requesting an estimate.",
+      "canonical": "https://hireyardu.com/guides/planning-paver-walkway-raleigh-cary/",
+      "indexable": true,
+      "type": "article",
+      "parent": "/guides/",
+      "schema": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList",
+        "BlogPosting"
+      ],
+      "cta": "/getestimate/",
+      "releaseDisposition": "published candidate; provider indexing checked separately"
     }
   ],
   "redirects": {
