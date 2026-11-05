@@ -14,7 +14,7 @@
   {
     "slug": "choosing-mowing-service-raleigh",
     "title": "Choosing a Mowing Service in Raleigh, NC | YardU",
-    "description": "Questions to ask about mowing, scheduling, grass care and written terms before choosing a Raleigh mowing service. Explore YardU’s lawn care package.",
+    "description": "Questions to ask about mowing, scheduling, grass care and written terms before choosing a Raleigh mowing service. Explore YardU\u2019s lawn care package.",
     "label": "Choosing a provider",
     "publishedAt": "2026-10-18T17:15:03Z",
     "modifiedAt": "2026-10-18T17:15:03Z",
@@ -26,7 +26,7 @@
   {
     "slug": "raleigh-leaf-collection-fall-2026",
     "title": "Raleigh Leaf Collection in Fall 2026 | YardU",
-    "description": "Understand Raleigh’s 2026 leaf collection changes, residential pickup limits and contractor-debris rules before planning a leaf cleanup estimate.",
+    "description": "Understand Raleigh\u2019s 2026 leaf collection changes, residential pickup limits and contractor-debris rules before planning a leaf cleanup estimate.",
     "label": "Fall cleanup planning",
     "parent": "/services/leaf-debris-removal/",
     "sources": [
@@ -46,5 +46,16 @@
     "sources": [],
     "publishedAt": "2026-10-29",
     "modifiedAt": "2026-10-29"
+  },
+  {
+    "slug": "planning-paver-walkway-raleigh-cary",
+    "title": "Planning a Paver Walkway in Raleigh and Cary | YardU",
+    "description": "Plan a paver walkway in Raleigh or Cary. See YardU project photos and learn what to share when requesting an estimate.",
+    "label": "Walkway planning",
+    "parent": "/services/hardscaping/",
+    "sources": [],
+    "heroImage": "yardu-paver-landing-after.jpg",
+    "heroAlt": "Paver landing beside a side door after a YardU project",
+    "publishedAt": "2026-11-05"
   }
 ]

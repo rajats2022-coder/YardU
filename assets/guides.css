@@ -2,3 +2,5 @@
 @media(max-width:900px){.guide-layout{grid-template-columns:minmax(0,1fr);gap:36px;max-width:760px}.guide-aside{position:static;display:grid;grid-template-columns:1fr 1fr;gap:28px}.guide-section-heading{align-items:start;flex-direction:column}.guide-card{padding:26px}.guide-page .inner-hero{min-height:330px}}
 @media(max-width:600px){.guide-cards,.guide-aside{grid-template-columns:1fr}.guide-card{padding:26px 22px}.guide-page .inner-hero-content{padding-block:44px}.guide-page .inner-hero h1{font-size:34px}.guide-copy{font-size:16px;line-height:1.8}.guide-copy h2{margin-top:34px}.guide-page .breadcrumbs{padding-block:18px}.guide-page .breadcrumbs li:last-child{flex-basis:100%}.guide-contact .button{min-height:46px}.guide-aside nav a{min-height:44px}.guide-promo .guide-section-heading h2{max-width:320px}}
 @media(prefers-reduced-motion:reduce){.guide-card{transition:none}}
+
+.guide-photo{margin:28px 0}.guide-photo img{display:block;width:100%;height:auto;border-radius:8px}
